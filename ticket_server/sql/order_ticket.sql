@@ -39,6 +39,7 @@ CREATE TABLE `order_ticket`  (
   `orderTicketFlow` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '操作流水号',
   `updateTime` datetime(0) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(0) COMMENT '更新时间',
   `status` int(11) NULL DEFAULT NULL COMMENT '执行状态码',
+  `errmsg` text NULL DEFAULT NULL COMMENT '西铁返回信息',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 142 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
