@@ -1,0 +1,73 @@
+2019-03-04 14:36:00,469 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!
+2019-03-04 14:36:02,220 - proxy_sever_test - post - 170 - INFO - ticket uid: for_test url: https://www.xt-kp.com/Ticket/reqOrderTicket.json
+2019-03-04 14:36:02,571 - proxy_sever_test - post - 201 - INFO - resp_headers: Server: nginx/1.13.7
+Date: Mon, 04 Mar 2019 06:36:02 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Application-Context: orderticket-config-wi:8081
+
+
+2019-03-04 14:36:02,571 - proxy_sever_test - post - 202 - INFO - resp_data: b'{"code":"FAIL","command":"3007","timestamp":"1551681362551","ver":"1.0","sign":"293924f6333ea4664f118affcb536b5d","errcode":"FAIL","errmsg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null","msg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null"}'
+2019-03-04 14:36:02,571 - proxy_sever_test - post - 220 - INFO - hdata: {'uid': 'for_test', 'merchantCode': '35385640507', 'merchantName': '美团', 'bizNo': '20190302', 'bizName': 'cancel_ticket', 'bizType': 'DPQX', 'orderId': '0000000', 'requestID': '20191224', 'cancelStatus': 1, 'update_Time': '2019-03-04 14:36:02'}
+2019-03-04 14:36:02,581 - proxy_sever_test - post - 241 - INFO - cost time: 0:00:00.361909
+2019-03-04 14:37:19,097 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!
+2019-03-04 14:37:22,892 - proxy_sever_test - post - 170 - INFO - ticket uid: for_test url: https://www.xt-kp.com/Ticket/reqOrderTicket.json
+2019-03-04 14:37:23,036 - proxy_sever_test - post - 201 - INFO - resp_headers: Server: nginx/1.13.7
+Date: Mon, 04 Mar 2019 06:37:23 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Application-Context: orderticket-config-wi:8081
+
+
+2019-03-04 14:37:23,036 - proxy_sever_test - post - 202 - INFO - resp_data: b'{"code":"FAIL","command":"3007","timestamp":"1551681443015","ver":"1.0","sign":"f98df5c78c5197556a280cc0d16dce48","errcode":"FAIL","errmsg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null","msg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null"}'
+2019-03-04 14:37:23,036 - proxy_sever_test - post - 220 - INFO - hdata: {'uid': 'for_test', 'merchantCode': '35385640507', 'merchantName': '美团', 'bizNo': '20190302', 'bizName': 'cancel_ticket', 'bizType': 'DPQX', 'orderId': '0000000', 'requestID': '20191224', 'cancelStatus': 1, 'update_Time': '2019-03-04 14:37:23'}
+2019-03-04 14:37:23,045 - proxy_sever_test - post - 241 - INFO - cost time: 0:00:00.153121
+2019-03-04 14:40:06,537 - proxy_sever_test - post - 170 - INFO - ticket uid: for_test url: https://www.xt-kp.com/Ticket/reqOrderTicket.json
+2019-03-04 14:40:07,676 - proxy_sever_test - post - 170 - INFO - ticket uid: for_test url: https://www.xt-kp.com/Ticket/reqOrderTicket.json
+2019-03-04 14:40:11,761 - proxy_sever_test - post - 201 - INFO - resp_headers: Server: nginx/1.13.7
+Date: Mon, 04 Mar 2019 06:40:07 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Application-Context: orderticket-config-wi:8081
+
+
+2019-03-04 14:40:11,761 - proxy_sever_test - post - 202 - INFO - resp_data: b'{"code":"FAIL","command":"3007","timestamp":"1551681607660","ver":"1.0","sign":"c126cb2bb190cd107ca0ccd110d803d2","errcode":"FAIL","errmsg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null","msg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null"}'
+2019-03-04 14:40:11,762 - proxy_sever_test - post - 220 - INFO - hdata: {'uid': 'for_test', 'merchantCode': '35385640507', 'merchantName': '美团', 'bizNo': '20190302', 'bizName': 'cancel_ticket', 'bizType': 'DPQX', 'orderId': '0000000', 'requestID': '20191224', 'cancelStatus': 1, 'update_Time': '2019-03-04 14:40:11'}
+2019-03-04 14:40:11,771 - proxy_sever_test - post - 201 - INFO - resp_headers: Server: nginx/1.13.7
+Date: Mon, 04 Mar 2019 06:40:11 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Application-Context: orderticket-config-wi:8081
+
+
+2019-03-04 14:40:11,771 - proxy_sever_test - post - 202 - INFO - resp_data: b'{"code":"FAIL","command":"3007","timestamp":"1551681611746","ver":"1.0","sign":"cd2ecfb89e199ab5280e45d84bf9c5d2","errcode":"FAIL","errmsg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null","msg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null"}'
+2019-03-04 14:40:11,772 - proxy_sever_test - post - 220 - INFO - hdata: {'uid': 'for_test', 'merchantCode': '35385640507', 'merchantName': '美团', 'bizNo': '20190302', 'bizName': 'cancel_ticket', 'bizType': 'DPQX', 'orderId': '0000000', 'requestID': '20191224', 'cancelStatus': 1, 'update_Time': '2019-03-04 14:40:11'}
+2019-03-04 14:40:11,779 - proxy_sever_test - post - 241 - INFO - cost time: 0:00:04.102858
+2019-03-04 14:43:59,966 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!
+2019-03-04 14:44:01,841 - proxy_sever_test - post - 170 - INFO - ticket uid: for_test url: https://www.xt-kp.com/Ticket/reqOrderTicket.json
+2019-03-04 14:44:03,019 - proxy_sever_test - post - 170 - INFO - ticket uid: for_test url: https://www.xt-kp.com/Ticket/reqOrderTicket.json
+2019-03-04 14:44:06,163 - proxy_sever_test - post - 201 - INFO - resp_headers: Server: nginx/1.13.7
+Date: Mon, 04 Mar 2019 06:44:03 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Application-Context: orderticket-config-wi:8081
+
+
+2019-03-04 14:44:06,163 - proxy_sever_test - post - 202 - INFO - resp_data: b'{"code":"FAIL","command":"3007","timestamp":"1551681843002","ver":"1.0","sign":"5a5cdfe5887e2d1edc0579ed020190ba","errcode":"FAIL","errmsg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null","msg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null"}'
+2019-03-04 14:44:06,163 - proxy_sever_test - post - 220 - INFO - hdata: {'uid': 'for_test', 'merchantCode': '35385640507', 'merchantName': '美团', 'bizNo': '20190302', 'bizName': 'cancel_ticket', 'bizType': 'DPQX', 'orderId': '0000000', 'requestID': '20191224', 'cancelStatus': 1, 'update_Time': '2019-03-04 14:44:06'}
+2019-03-04 14:44:06,174 - proxy_sever_test - post - 201 - INFO - resp_headers: Server: nginx/1.13.7
+Date: Mon, 04 Mar 2019 06:44:06 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Application-Context: orderticket-config-wi:8081
+
+
+2019-03-04 14:44:06,174 - proxy_sever_test - post - 202 - INFO - resp_data: b'{"code":"FAIL","command":"3007","timestamp":"1551681846142","ver":"1.0","sign":"11704fb2eb01273508747425d8dc77ab","errcode":"FAIL","errmsg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null","msg":"\xe7\x94\xb3\xe8\xaf\xb7\xe8\xae\xa2\xe7\xa5\xa8\xe5\xa4\xb1\xe8\xb4\xa5\xef\xbc\x81null"}'
+2019-03-04 14:44:06,175 - proxy_sever_test - post - 220 - INFO - hdata: {'uid': 'for_test', 'merchantCode': '35385640507', 'merchantName': '美团', 'bizNo': '20190302', 'bizName': 'cancel_ticket', 'bizType': 'DPQX', 'orderId': '0000000', 'requestID': '20191224', 'cancelStatus': 1, 'update_Time': '2019-03-04 14:44:06'}
+2019-03-04 14:44:06,182 - proxy_sever_test - post - 241 - INFO - cost time: 0:00:03.163076

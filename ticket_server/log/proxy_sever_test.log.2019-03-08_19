@@ -1,0 +1,8 @@
+2019-03-07 12:12:44,861 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!
+2019-03-07 12:15:25,357 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!
+2019-03-07 12:16:47,065 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!
+2019-03-07 12:17:04,713 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!
+2019-03-07 12:17:16,556 - proxy_sever_test - get - 65 - INFO - 127.0.0.1:9002/admin/manage/bb?
+2019-03-07 12:17:27,229 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!
+2019-03-07 12:17:28,965 - proxy_sever_test - get - 65 - INFO - 127.0.0.1:9002/admin/manage/bb?
+2019-03-07 12:17:45,755 - proxy_sever_test - connect - 55 - INFO - redis connect is ok!

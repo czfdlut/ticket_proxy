@@ -1,0 +1,1 @@
+./configure --prefix=/home/work/nginx --with-ld-opt="-Wl,-rpath,/home/work/nginx/luajit" --add-module=/home/work/package/ngx_devel_kit --add-module=/home/work/package/lua-nginx-module  --with-http_ssl_module
