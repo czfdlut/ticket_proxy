@@ -3,8 +3,7 @@ from mysql_client import MySqlClient
 from redis_client import RedisClient
 from req_order_ticket import ReqOrderTicketHandler
 from order_cancel import OrderCancel
-from order_cancel2 import OrderCancel2
-from admin_manage import AdminManageHandler
+from admin_update_balance import UpdateBalanceHandler
 from util import logger_handler
 import tornado.httpserver
 import tornado.ioloop
@@ -17,7 +16,6 @@ from tornado.httpclient import AsyncHTTPClient
 tornado.options.define("port", default=9002, type=int, help="port")
 tornado.options.define("bind", default="0.0.0.0", help="address bind to")
 tornado.options.define("debug", help="0:info | 1:debug", type=int, default=0)
-tornado.options.define("publish", help="0:test | 1:online", type=int, default=0)
 
 class Test1Handler(tornado.web.RequestHandler):
     @tornado.gen.coroutine
@@ -43,11 +41,8 @@ class StatusCheck(tornado.web.RequestHandler):
 
 class EventApplication(tornado.web.Application):
     def __init__(self):
-        log_name = "proxy_sever_test"
-        config_path = "./conf/config_test.conf"
-        if tornado.options.options.publish == 1:
-            config_path = "./conf/config.conf"
-            log_name = "proxy_sever"
+        log_name = "proxy_sever"
+        config_path = "./conf/config.conf"
 
         try:
             self.config = configparser.ConfigParser()
@@ -59,7 +54,6 @@ class EventApplication(tornado.web.Application):
         self.logger = logger_handler(log_name, logpath=log_path, debug=tornado.options.options.debug)
 
         self.mysql_db = MySqlClient(config_path, "MYSQL", self.logger)
-
         self.redis_client = RedisClient(config_path, "REDIS", self.logger)
 
         self.redis_client.connect()
@@ -69,8 +63,7 @@ class EventApplication(tornado.web.Application):
             (r"/status", StatusCheck),
             (r"/Ticket/reqOrderTicket.json", ReqOrderTicketHandler),
             (r"/Ticket/orderCancel.json", OrderCancel),
-            (r"/Ticket/orderCancel2.json", OrderCancel2),
-            (r"/admin/manage/(.*)", AdminManageHandler),
+            (r"/admin/update/balance", UpdateBalanceHandler),
             (r"/test", Test1Handler),
         ])
 

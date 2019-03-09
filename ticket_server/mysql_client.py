@@ -57,14 +57,16 @@ class MySqlClient(object):
             results = cursor.fetchall()
         except mysql.connector.Error as err:
             self.logger.error("mysql connect error %s %s"%(str(err), sql))
+            return results, err
         except Exception as err:
             self.logger.error("query result error: %s %s"%(str(err), sql))
+            return results, err
         finally:
             if cursor:
                 cursor.close()
         if cnx:
             cnx.close()
-        return results
+        return results, None
 
     def insert(self, table, hdata):
         cnx = None

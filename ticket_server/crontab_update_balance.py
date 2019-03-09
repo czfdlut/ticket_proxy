@@ -96,8 +96,8 @@ class CrontabBalance():
 
 if __name__ == "__main__":
     obj = CrontabBalance()
-    obj.crontab_uids()
+    #obj.crontab_uids()
 
-    # io_loop = tornado.ioloop.IOLoop.current()
-    # tornado.ioloop.PeriodiCallback(lambda: crontab_update_balance(logger), 30000).start()
-    # io_loop.start()
+    io_loop = tornado.ioloop.IOLoop.current()
+    tornado.ioloop.PeriodiCallback(obj.crontab_uids, 30000).start()
+    io_loop.start()

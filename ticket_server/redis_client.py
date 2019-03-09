@@ -204,9 +204,9 @@ class RedisClient(Singleton):
             self.logger.error(err)
             return None
 
-    def set(self, key):
+    def set(self, key, value):
         try:
-            return self.r_con.set(key)
+            return self.r_con.set(key, value)
         except Exception as err:
             self.logger.error(err)
             return None
@@ -250,9 +250,19 @@ class RedisClient(Singleton):
 
 if __name__ == '__main__':
     from util import logger_handler
-    redis_client = RedisClient("./conf/config_test/conf", keyword, logger_handler("test"))
+    print("----------------------------------------aaa")
+    logger = logger_handler("test", logpath="./log", debug=1)
+
+    redis_client = RedisClient("./conf/config_test.conf", "REDIS", logger)
     redis_client.connect()
+
+    print("-----------------------------------------11")
+    #r = redis_client.set("ticket-uid_for_test", 121231.22)
+    #from datetime import datetime
+    #r = datetime.strptime("2019-03-09 11:12:45", "%Y-%m-%d")
+    print("-----------------------------------------22222", r)
+
     #print("111: ", redis_client.hset("msg_host", "aa", "bb"))
-    lock = redis_client.acquire("test", 5)
-    print("get lock====================", lock)
+    #lock = redis_client.acquire("test", 5)
+    #print("get lock====================", lock)
     #redis_client.release(lock)
