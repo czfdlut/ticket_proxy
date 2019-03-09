@@ -1,5 +1,11 @@
 <?php
 
+/****************************************/
+/* purpose: client.php */
+/* author:  xiti  */
+/* date:    2019-03-09 */
+/****************************************/
+
 require_once("get_access_token.php");
 require_once("req_order_ticket.php");
 require_once("query_ticket_result.php");
