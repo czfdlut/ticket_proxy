@@ -42,7 +42,7 @@ function req_ticket($access_token)
     $sign = create_sign($content, $extra_code);
     $content['sign'] = $sign;
     
-    $type = 1;
+    $type = 2;
     $post_data = "";
     $header = array();
     if ($type == 1) 

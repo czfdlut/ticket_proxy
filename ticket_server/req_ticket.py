@@ -144,6 +144,7 @@ class ReqTicketHandler(tornado.web.RequestHandler):
     @tornado.web.asynchronous
     @tornado.gen.coroutine
     def post(self):
+        print("----")
         start_time = datetime.now()
 
         uid = self.get_uid_from_headers()
