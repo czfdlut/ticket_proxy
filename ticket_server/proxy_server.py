@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*
 from mysql_client import MySqlClient
 from redis_client import RedisClient
+from req_ticket import ReqTicketHandler
 from req_order_ticket import ReqOrderTicketHandler
 from order_cancel import OrderCancel
 from admin_update_balance import UpdateBalanceHandler
@@ -61,6 +62,7 @@ class EventApplication(tornado.web.Application):
 
         tornado.web.Application.__init__(self, [
             (r"/status", StatusCheck),
+            (r"/Ticket/reqTicket.json", ReqTicketHandler),
             (r"/Ticket/reqOrderTicket.json", ReqOrderTicketHandler),
             (r"/Ticket/orderCancel.json", OrderCancel),
             (r"/admin/update/balance", UpdateBalanceHandler),

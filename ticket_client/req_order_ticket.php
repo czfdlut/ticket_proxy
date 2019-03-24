@@ -50,7 +50,7 @@ function req_order_ticket($access_token)
     $mobile = '18688886666';
     $userId = '1111';
     $address = '陕西渭南';
-    $requestID = '20190322';
+    $requestID = '20190324';
     $ticketObtainMode = '1';
     $officeId = '2';
     $ticketTakpePoint = '1';

@@ -20,7 +20,7 @@ def validate_date_str(date_str, date_format):
     try:
         datetime.strptime(date_str, date_format)
         return True
-    except VaueError:
+    except:
         return False
 
 def logger_handler(keyword, logpath="log", debug=0):

@@ -24,11 +24,11 @@ class CrontabBalance():
 
         self.logger = logger_handler(log_name, logpath=log_path, debug=1)
         self.mysql_db = MySqlClient(config_path, "MYSQL", self.logger)
-        self.admin_url = "http://127.0.0.1:9002/admin/update/balance"
+        self.admin_url = "http://127.0.0.1:8080/admin/update/balance"
 
     def crontab_update(self, uid):
-        start_time = datetime.now()
-        end_time = start_time - timedelta(days=1)
+        end_time = datetime.now()
+        start_time = end_time + timedelta(days=-1)
 
         stime = start_time.strftime("%Y-%m-%d 00:00:00")
         utime = end_time.strftime("%Y-%m-%d 00:00:00")
@@ -36,7 +36,7 @@ class CrontabBalance():
         param = {"start_time": stime, "end_time": utime, "uid": uid}
         url = self.admin_url + "?" + urllib.parse.urlencode(param)
 
-        self.logger.info("url: ", url)
+        self.logger.info("url: %s" % url)
 
         resp_headers, resp_data, status_code, err = request_query(url)
         if err is not None:
@@ -99,5 +99,5 @@ if __name__ == "__main__":
     #obj.crontab_uids()
 
     io_loop = tornado.ioloop.IOLoop.current()
-    tornado.ioloop.PeriodiCallback(obj.crontab_uids, 30000).start()
+    tornado.ioloop.PeriodicCallback(obj.crontab_uids, 30000).start()
     io_loop.start()

@@ -18,7 +18,7 @@ function main()
     // 获取token
     $access_token = get_access_token();
     print_r($access_token."\n");
-    $type = 5;
+    $type = 1;
     if ($type == 1) {
         // 申请订票
         req_order_ticket($access_token);
