@@ -170,8 +170,8 @@ class ReqTicketHandler(tornado.web.RequestHandler):
         ##查询余票信息
         sql = "select * from ticket where train_id='%s' and start_station_id='%s' and arrival_station_id='%s' limit 1" % (param['train_id'], param['start_station_id'], param['arrival_station_id'])
         self.logger.info("sql: %s" % sql)
-
-        qs = self.mysql_db.execute_query_sql(sql)
+        qs, err = self.mysql_db.execute_query_sql(sql)
+    
         self.logger.info("ticket info: %s" % qs)
 
         if qs is None or len(qs) == 0:

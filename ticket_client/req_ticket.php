@@ -74,7 +74,7 @@ function req_ticket($access_token)
         );
     }
 
-    //$uri = "http://127.0.0.1:80/Ticket/reqTicket.json";
+    //$uri = "http://127.0.0.1:9002/Ticket/reqTicket.json";
     $uri = "http://test.maidaopiao.com/Ticket/reqTicket.json";
     $ret_data = "";
     $errcode = request_xiti($header, $uri, $post_data, 1000, 2, $ret_data);
