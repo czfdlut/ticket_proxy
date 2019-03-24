@@ -149,7 +149,7 @@ class ReqTicketHandler(tornado.web.RequestHandler):
         uid = self.get_uid_from_headers()
         self.logger.info("ticket uid: %s url: %s " % (uid, self.url))
         ## uid合法性校验
-        sql = "select balance from account_balance where uid='%s' and balance > 1.0 limit 1" % uid
+        sql = "select totalBalance from account_balance where uid='%s' and totalBalance > 1.0 limit 1" % uid
         qs = self.mysql_db.execute_query_sql(sql)
         if qs is None or len(qs) == 0:
             self.finish_err_msg(r"非法uid")
@@ -167,9 +167,12 @@ class ReqTicketHandler(tornado.web.RequestHandler):
         self.logger.info("reqeust_body: %s " % self.request.body)
         
         ##查询余票信息
-        sql = "select * from ticket where train_id='%s' and start_station_id='%s' and arrival_station_id='%s' \
-                limit 1" % (param['train_id'], param['start_station_id'], param['arrival_station_id'])
+        sql = "select * from ticket where train_id='%s' and start_station_id='%s' and arrival_station_id='%s' limit 1" % (param['train_id'], param['start_station_id'], param['arrival_station_id'])
+        self.logger.info("sql: %s" % sql)
+
         qs = self.mysql_db.execute_query_sql(sql)
+        self.logger.info("ticket info: %s" % qs)
+
         if qs is None or len(qs) == 0:
             self.finish_err_msg(r"非法参数")
             return
