@@ -1,0 +1,4 @@
+insert into ticket(`train_id`, `train_name`, `start_station_id`, `start_station_name`, `arrival_station_id`, `arrival_station_name`, `seat_type`, `ticket_price`, `ticket_count`, `status`) values('G101','高铁101', 'beijing-01', '北京', 'shanghai-01', '上海', '2', '553', '1000', '0');
+insert into ticket(`train_id`, `train_name`, `start_station_id`, `start_station_name`, `arrival_station_id`, `arrival_station_name`, `seat_type`, `ticket_price`, `ticket_count`, `status`) values('G101','高铁101', 'beijing-01', '北京', 'shanghai-01', '上海', '1', '933', '1000', '0');
+insert into ticket(`train_id`, `train_name`, `start_station_id`, `start_station_name`, `arrival_station_id`, `arrival_station_name`, `seat_type`, `ticket_price`, `ticket_count`, `status`) values('G101','高铁101', 'beijing-01', '北京', 'shanghai-01', '上海', '0', '1748', '100', '0');
+

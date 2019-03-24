@@ -17,9 +17,9 @@
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
--- ----------------------------
--- Table structure for order_ticket
--- ----------------------------
+-- ------------------------------------
+-- Table structure for ticket's infoes
+-- ------------------------------------
 DROP TABLE IF EXISTS `ticket`;
 CREATE TABLE `ticket`  (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
