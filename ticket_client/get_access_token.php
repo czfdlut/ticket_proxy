@@ -37,7 +37,7 @@ function get_access_token()
 
     $post_data = json_encode($content);
     //print_r($post_data);
-    $uri = "https://www.xt-kp.com/base/doAction";
+    $uri = "https://test.maidaopiao.com/base/doAction";
     $header = array(
 	    "Content-type: application/json;charset='utf-8'", 
 	    "Accept: application/json", 

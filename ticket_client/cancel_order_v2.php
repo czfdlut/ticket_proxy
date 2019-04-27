@@ -45,7 +45,7 @@ function cancel_order_v2($access_token)
     $content['sign'] = $sign;
 
     $post_data = make_request($content);
-    $uri = "https://www.xt-kp.com/Ticket/orderCancel2.json";
+    $uri = "https://test.maidaopiao.com/Ticket/orderCancel2.json";
     $header = array(
 	    "Content-type: application/x-www-form-urlencoded;charset='utf-8'", 
 	    "Accept: application/json", 

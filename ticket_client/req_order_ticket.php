@@ -17,7 +17,7 @@ function req_order_ticket($access_token)
     
     $merchantCode = $appid;
     $merchantName = "美团订票系统";
-    $bizNo = "20190322";
+    $bizNo = "20190401";
     $bizType = 'DP';
     $bizName = '订票';
     $bizBrief = '用户订票';
@@ -31,7 +31,7 @@ function req_order_ticket($access_token)
     $trainType = 'G';
     $seatType = '0';
     $tomorrow = strtotime("tomorrow");
-    $startTime = "2019-03-23 13:00:00";//date("Y-m-d h:i:s", $tomorrow);
+    $startTime = "2019-04-21 13:00:00";//date("Y-m-d h:i:s", $tomorrow);
     $endTime = $startTime;
     $ticketTime = $startTime;
     $ticketType = '1';
@@ -39,7 +39,7 @@ function req_order_ticket($access_token)
     $ticketNum = '1';
     $idType = '1';
     $idNo = '1:440101200702060012';
-    $IdName = '张三';
+    $IdName = '张三1';
     $ticketPrices = '68.5';
     $couponValue = "50.0";
     $bonusFlag = '2.0';
@@ -50,7 +50,7 @@ function req_order_ticket($access_token)
     $mobile = '18688886666';
     $userId = '1111';
     $address = '陕西渭南';
-    $requestID = '20190324';
+    $requestID = '20190401';
     $ticketObtainMode = '1';
     $officeId = '2';
     $ticketTakpePoint = '1';
@@ -148,9 +148,8 @@ function req_order_ticket($access_token)
         );
     }
 
-    $uri = "https://www.xt-kp.com/Ticket/reqOrderTicket.json";
-    //$uri = "http://127.0.0.1:80/Ticket/reqOrderTicket.json";
-    //$uri = "http://test.maidaopiao.com/Ticket/reqOrderTicket.json";
+    //$uri = "https://www.xt-kp.com/Ticket/reqOrderTicket.json";
+    $uri = "http://test.maidaopiao.com/Ticket/reqOrderTicket.json";
     $ret_data = "";
     $errcode = request_xiti($header, $uri, $post_data, 1000, 2, $ret_data);
     print_r("ec=".$errcode."\n");

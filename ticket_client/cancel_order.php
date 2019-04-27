@@ -72,9 +72,8 @@ function cancel_order($access_token)
     }
  
     $ret_data = "";
-    $uri = "https://www.xt-kp.com/Ticket/orderCancel.json";
-    #$uri = "http://127.0.0.1:8080/Ticket/orderCancel.json";
-    //$uri = "http://test.maidaopiao.com/Ticket/orderCancel.json";
+    //$uri = "https://www.xt-kp.com/Ticket/orderCancel.json";
+    $uri = "http://test.maidaopiao.com/Ticket/orderCancel.json";
     $errcode = request_xiti($header, $uri, $post_data, 1000, 2, $ret_data);
     print_r("ec=".$errcode."\n");
     print_r("ret=".$ret_data."\n");
