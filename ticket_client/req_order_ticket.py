@@ -45,31 +45,34 @@ def create_sign(data, extra_code):
     #print sign
     return sign
 
-function make_form_request_v2($content, &$header, &$body)
-{
-    $boundary = "-----------------------------7d83e2d7a141e";
-    $multipart_header_fmt = "multipart/form-data; boundary=%s";
-    $multipart_fmt = "--%s\r\nContent-Disposition: form-data; name=\"%s\"\r\n\r\n%s\r\n";
-    $multipart_end_fmt = "--%s--\r\n";
-    $header = sprintf($multipart_header_fmt, $boundary);
-    $body = "";
-    foreach($content as $key => $value) 
-    {
-        if ($key != "param") 
-        {
-            $tmp = sprintf($multipart_fmt, $boundary, $key, $value);
-            $body = $body.$tmp;
-        }
-        else
-        {
-            $new_value = json_encode($value);
-            $tmp = sprintf($multipart_fmt, $boundary, $key, $new_value);
-            $body = $body.$tmp;
-        }
-    }
-    $tmp = sprintf($multipart_end_fmt, $boundary);
-    $body = $body.$tmp;
-}
+
+def make_form_request_v2(data):
+    boundary = "-----------------------------7d83e2d7a141e"
+    multipart_header_fmt = "multipart/form-data; boundary=%s"
+    multipart_fmt = "--%s\r\nContent-Disposition: form-data; name=\"%s\"\r\n\r\n%s\r\n"
+    multipart_end_fmt = "--%s--\r\n"
+    header = multipart_header_fmt % (boundary)
+    #print(header)
+    
+    body = "";
+    keys = data.keys()
+    keys.sort()
+    for k in keys:
+        value = data[k]
+        if k != "param":
+            tmp = multipart_fmt % (boundary, k, value)
+            #print(tmp)
+            body = body + tmp
+        else:
+            new_value = json.dumps(value)
+            tmp = multipart_fmt % (boundary, k, new_value)
+            #print(tmp)
+            body = body + tmp
+
+    tmp = multipart_end_fmt % (boundary)
+    #print(tmp)
+    body = body + tmp
+    return header, body
 
 if __name__ == "__main__":
     dt = test()
@@ -77,5 +80,7 @@ if __name__ == "__main__":
     sign = create_sign(dt, "abx23579436")
     dt['sign'] = sign
     print dt
-    make_form_request_v2(dt, header, body)
+    header, body = make_form_request_v2(dt)
+    print header
+    print body
 
