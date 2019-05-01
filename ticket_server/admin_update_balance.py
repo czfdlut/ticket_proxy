@@ -17,30 +17,31 @@ class UpdateBalanceHandler(tornado.web.RequestHandler):
     def redis_client(self):
         return self.application.redis_client
 
-    def stats_curday_balance(self, uid, start_tme, end_time):
+    def stats_curday_balance(self, uid, start_time, end_time):
         data = {"order_balance": None, "cancel_balance": None, "updateTime": None}
 
-        sql = "select sum(ticketPrices),updateTime from order_ticket where uid='%s' \
-                        and status=1 and updateTime>='%s' and updateTime<'%s'" % (uid, start_tme, end_time)
+        sql = "select sum(ticketPrices),updateTime from order_ticket where uid='%s' and status=1 and updateTime>='%s' and updateTime<'%s'" % (uid, start_time, end_time)
+        self.logger.info(sql)
+
         qs, err = self.mysql_db.execute_query_sql(sql)
         if err is not None:
             return data, err
-
+        
         self.logger.info("order balance: %s" % str(qs))
-        if qs is None or len(qs) == 0:
+        if tuple(qs[0]) == (None, None):
             return data, None
-
+       
         data["order_balance"] = qs[0][0]
         data["updateTime"]  = qs[0][1].strftime("%Y-%m-%d %H:%M:%S")
 
-        sql = "select sum(ticketPrices),updateTime from order_cancel where uid='%s' \
-                    and cancelStatus=1 and updateTime>='%s' and updateTime<'%s'" % (uid, start_tme, end_time)
+        sql = "select sum(ticketPrices),updateTime from order_cancel where uid='%s' and cancelStatus=1 and updateTime>='%s' and updateTime<'%s'" % (uid, start_time, end_time)
+        self.logger.info(sql)
         qs, err = self.mysql_db.execute_query_sql(sql)
         if err is not None:
             return data, err
 
         self.logger.info("cancel balance: %s" % str(qs))
-        if qs is None or len(qs) == 0:
+        if tuple(qs[0]) == (None, None):
             return data, None
 
         data["cancel_balance"] = qs[0][0]
@@ -97,7 +98,7 @@ class UpdateBalanceHandler(tornado.web.RequestHandler):
             self.finish()
             return
 
-        if qs is None or len(qs) == 0:
+        if tuple(qs[0]) == (None, None):
             self.write({"errcode": -1, "errmsg": r"非法uid", "data": {}})
             self.finish()
             return
@@ -121,8 +122,8 @@ class UpdateBalanceHandler(tornado.web.RequestHandler):
 
         self.logger.info("query balance: %s" % json.dumps(data))
         if data["order_balance"] is None and data["cancel_balance"]  is None:
-            self.logger.info("%s-%s无交易余额" % (start_tme, end_time))
-            self.write({"errcode": 0, "errmsg": "%s-%s无交易余额" % (start_tme, end_time), "data": {}})
+            self.logger.info("%s-%s无交易余额" % (start_time, end_time))
+            self.write({"errcode": 0, "errmsg": "%s-%s无交易余额" % (start_time, end_time), "data": {}})
             self.finish()
             return
 

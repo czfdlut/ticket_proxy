@@ -4,7 +4,7 @@
 ##         req_order            ##
 ##                              ##
 #####################################################
-from util import request_query
+from util import request_query, add_headers
 import tornado.web
 from datetime import datetime
 import json
@@ -128,10 +128,6 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
         if "merchantCode" in param:
             hdata["merchantCode"] = param["merchantCode"]
 
-        #if "orderTicketFlow" in param:
-        #    hdata["orderTicketFlow"] = param["orderTicketFlow"]
-
-        #hdata["orderTicketFlow"] = resp_data["data"]["orderTicketFlow"]
         hdata["updateTime"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         return hdata
@@ -149,15 +145,6 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
                 return v
         return None
 
-    def add_headers(self, headers, k, v):
-        is_exist_kv = False
-        for k ,v in headers.items():
-            if k.lower() == k.lower():
-                is_exist_kv = true
-
-        if is_exist_kv:
-            headers[k] = v
-
     @tornado.gen.coroutine
     def reqeust_proxy_server(self, headers, body):
         return request_query(self.url, headers=headers, data=body, timeout=self.timeout)
@@ -170,9 +157,13 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
         uid = self.get_uid_from_headers()
         self.logger.info("ticket uid: %s url: %s " % (uid, self.url))
         ## uid合法性校验
-        sql = "select balance from account_balance where uid='%s' and balance > 1.0 limit 1" % uid
-        qs = self.mysql_db.execute_query_sql(sql)
-        if qs is None or len(qs) == 0:
+        sql = "select totalBalance from account_balance where uid='%s' and totalBalance > 1.0 limit 1" % uid
+        qs, err = self.mysql_db.execute_query_sql(sql)
+        if err is not None:
+            self.finish_err_msg(str(err))
+            return
+        
+        if qs[0][0] is None:
             self.finish_err_msg(r"非法uid")
             return
 
@@ -223,11 +214,9 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
 
         ##请求西铁
         headers = self.content_type_from_headers()
-        resp_headers, resp_data, err = yield tornado.gen.Task(self.reqeust_proxy_server, headers, self.request.body)
-
-        self.logger.info("resp_headers: %s" % str(resp_headers))
-        self.logger.info("resp_data: %s" % str(resp_data))
-        self.logger.info("err: %s" % str(err))
+        resp_headers, resp_data, status_code, err = yield tornado.gen.Task(self.reqeust_proxy_server, headers, self.request.body)
+        
+        self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s" % (resp_headers, resp_data, status_code, err))
 
         if err is not None:
             self.logger.error("request error:%s" % err)
@@ -237,8 +226,7 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
             return
 
         ##notify client
-        #self.add_headers(resp_headers, "Content-Type", "application/json;charset=UTF-8")
-        resp_headers = {"Content-Type":"application/json"}
+        add_headers(resp_headers, "Content-Type", "application/json;charset=UTF-8")    
         self.set_response_header(resp_headers)
         self.set_response_status(200)
 

@@ -15,7 +15,7 @@ from datetime import datetime
 from tornado.httpclient import AsyncHTTPClient
 
 tornado.options.define("port", default=9002, type=int, help="port")
-tornado.options.define("bind", default="0.0.0.0", help="address bind to")
+tornado.options.define("bind", default="0.0.0.0", type=str, help="address bind to")
 tornado.options.define("debug", help="0:info | 1:debug", type=int, default=0)
 
 class Test1Handler(tornado.web.RequestHandler):
@@ -67,7 +67,7 @@ class EventApplication(tornado.web.Application):
             (r"/Ticket/orderCancel.json", OrderCancel),
             (r"/admin/update/balance", UpdateBalanceHandler),
             (r"/test", Test1Handler),
-        ])
+        ], debug=True)
 
 if __name__ == "__main__":
     tornado.options.parse_command_line()

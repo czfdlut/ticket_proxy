@@ -47,6 +47,8 @@ class MySqlClient(object):
         cursor = None
         results = None
 
+        #self.logger.info(sql)
+
         try:
             cnx = self.cnxpool.get_connection()
             cnx.set_charset_collation('utf8')

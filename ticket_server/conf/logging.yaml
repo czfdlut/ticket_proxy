@@ -15,7 +15,7 @@ loggers:
   XXXXX:
     handlers: [app_XXXXX]
     propagate: false
-    backupCount: 100
+    backupCount: 30
 
 handlers:
   console:
@@ -30,7 +30,7 @@ handlers:
     formatter: simple
     when: H
     filename: ./log/XXXXX.log
-    backupCount: 100
+    backupCount: 30
 
 root:
   level: INFO

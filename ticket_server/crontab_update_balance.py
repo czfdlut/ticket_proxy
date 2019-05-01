@@ -24,7 +24,7 @@ class CrontabBalance():
 
         self.logger = logger_handler(log_name, logpath=log_path, debug=1)
         self.mysql_db = MySqlClient(config_path, "MYSQL", self.logger)
-        self.admin_url = "http://127.0.0.1:8080/admin/update/balance"
+        self.admin_url = "http://127.0.0.1:9002/admin/update/balance"
 
     def crontab_update(self, uid):
         end_time = datetime.now()
@@ -74,24 +74,23 @@ class CrontabBalance():
         if err is not None:
             self.logger.error(err)
             return
-
+        
         cuids = [{"uid": q[0], "status":-1} for q in qs]
-        self.logger.info("uids: %s" % cuids)
 
         while True:
             htime = datetime.now().strftime("%H")
-            self.logger.info("cur time: %s" % datetime.now())
             if int(htime) < 1 or int(htime) > 3:
-                time.sleep(30)
+                time.sleep(300)
                 break
 
+            self.logger.info("crontab time: %s" % datetime.now())
             for cuid in cuids:
                 if cuid["status"] == 0:
                     continue
 
                 if self.crontab_update(cuid["uid"]) is None:
                     cuid["status"] = 0
-            time.sleep(30)
+            time.sleep(300)
 
 
 if __name__ == "__main__":

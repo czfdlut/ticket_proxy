@@ -59,8 +59,12 @@ class OrderCancel(tornado.web.RequestHandler):
         
         sql = "select ticketPrices from order_ticket where uid='%s' and orderNo ='%s' limit 1" \
             % (uid, orderId)
-        qs = self.mysql_db.execute_query_sql(sql)
-        if qs is None or len(qs) == 0:
+        qs, err = self.mysql_db.execute_query_sql(sql)
+        if err is not None:
+            self.logger.error(str(err))
+            return None        
+        
+        if qs[0][0] is None:
             self.logger.error("not found uid:%s orderid:%s" %(uid, orderId))
             return None
         ticket_prices = qs[0][0]
@@ -123,9 +127,6 @@ class OrderCancel(tornado.web.RequestHandler):
         
         if "orderId" in param:
             hdata["orderId"] = param["orderId"]
-
-        #if "mobile" in param:
-        #    hdata["mobile"] = param["mobile"]
 
         if "requestID" in param:
             hdata["requestID"] = param["requestID"]
@@ -192,10 +193,9 @@ class OrderCancel(tornado.web.RequestHandler):
  
         ##请求西铁
         headers = self.content_type_from_headers()
-        resp_headers, resp_data, err = yield tornado.gen.Task(self.reqeust_proxy_server, headers, self.request.body)
-    
-        self.logger.info("resp_headers: %s" % str(resp_headers))
-        self.logger.info("resp_data: %s" % str(resp_data))
+        resp_headers, resp_data, status_code, err  = yield tornado.gen.Task(self.reqeust_proxy_server, headers, self.request.body)
+        
+        self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s" % (resp_headers, resp_data, status_code, err))    
 
         ##请求失败
         if err is not None:         

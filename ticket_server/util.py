@@ -11,6 +11,15 @@ import urllib.request
 import http.client
 import socket
 
+def add_headers(self, headers, k, v):
+    is_exist_kv = False
+    for k ,v in headers.items():
+        if k.lower() == k.lower():
+            is_exist_kv = True
+
+    if is_exist_kv:
+        headers[k] = v
+
 def sha256(url):
     m = hashlib.sha256()
     m.update(url)
@@ -73,7 +82,7 @@ def request_query(url, headers={}, data=None, timeout=30):
     except (socket.error, socket.timeout) as err:
         return None, None, None, str(err)
     except Exception as err:
-        return None, Nne, None, str(err)
+        return None, None, None, str(err)
 
 if __name__ == "__main__":
     #print("test query: ", request_query("http://127.0.0.1:8888/mod_lucenewriter/_bulk_add", data={"ff": "data"}))
