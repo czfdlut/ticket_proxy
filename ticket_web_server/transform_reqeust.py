@@ -130,10 +130,10 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         content_type, post_data = make_form_request_v2(data)
                  
         headers = {
-                   "Content-type": "%s; charset='utf-8'" % content_type
+                   "Content-type": "%s; charset='utf-8'" % content_type,
                    "Accept": "application/json",
-                   "Cache-Control: no-cache", 
-                   "Pragma: no-cache",
+                   "Cache-Control" : "no-cache", 
+                   "Pragma" : "no-cache",
                    "ticket-uid": self.ticket_token["ticket-uid"]
                   }
  

@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*
+import json
+import hashlib
 from util import md5, request_query, add_headers
 
-def get_access_token():
-    access_token = ""
-    return access_token
+#################################################
+def md5(url):
+    m = hashlib.md5(url)
+    return m.hexdigest()
 
+
+#################################################
 def test():
     data = {'sign' : 'abcdefg',
         'ver': "1.0",
@@ -24,8 +29,12 @@ def test():
     #new_data = sorted(data.items(), key=lambda d:d[0])
     return data
 
+
+#################################################
 def create_sign(data, extra_code):
-    keys = data.keys()
+    dict_keys = data.keys()
+    #print(dict_keys)
+    keys = list(dict_keys)
     keys.sort()
     #print [key for key in keys]
     #print [data[key] for key in keys]
@@ -40,12 +49,13 @@ def create_sign(data, extra_code):
                 message = message + tmp
         
     message = message + extra_code
-    sign = md5(message)
-    print message
+    print("message=%s" %message)
+    sign = md5(message.encode("utf-8"))
     #print sign
     return sign
 
 
+#################################################
 def make_form_request_v2(data):
     boundary = "-----------------------------7d83e2d7a141e"
     multipart_header_fmt = "multipart/form-data; boundary=%s"
@@ -74,13 +84,53 @@ def make_form_request_v2(data):
     body = body + tmp
     return header, body
 
+
+#################################################
+'''def get_access_token():
+    access_token = ""
+    return access_token
+'''
+
+#################################################
+def get_access_token(data, extra_code):
+    
+    print("data=%s" %data)
+    sign = create_sign(data, extra_code)
+    data['sign'] = sign
+    print("data=%s" %data)
+
+    post_data = json.dumps(data)
+    print("post_data=%s" %post_data)
+
+    url = "https://test.maidaopiao.com/base/doAction";
+    headers = {
+	    "Content-type": "application/json;charset='utf-8'", 
+	    "Accept" : "application/json", 
+	    "Cache-Control" : "no-cache", 
+	    "Pragma" : "no-cache" 
+    }
+    #request_query(url, headers, post_data, 1000)
+    resp_headers, resp_data, status_code, err  = request_query(url, headers=headers, data=post_data, timeout=1000)
+    print(resp_headers)
+    print(resp_data)
+    #$ret_array = json_decode($ret_data, true);
+    #return $ret_array['data']['token'];
+
+
+#################################################
 if __name__ == "__main__":
     dt = test()
-    print dt
+    print(dt)
+    #ll = ['sign', 'ver', 'command', 'token', 'timestamp', 'openid', 'param']
+    #ll.sort()
+    #print(ll)
+    '''
     sign = create_sign(dt, "abx23579436")
     dt['sign'] = sign
-    print dt
+    print(dt)
     header, body = make_form_request_v2(dt)
-    print header
-    print body
+    print(header)
+    print(body)
+    '''
+    get_access_token(dt, "abx23579436")
 
