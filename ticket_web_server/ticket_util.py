@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*
+import datetime
+import time
 import json
 import hashlib
 from util import md5, request_query, add_headers
-
-#################################################
-#def md5(url):
-#    m = hashlib.md5(url)
-#    return m.hexdigest()
-
 
 #################################################
 def test():
@@ -29,13 +25,30 @@ def test():
     #new_data = sorted(data.items(), key=lambda d:d[0])
     return data
 
+#################################################
+def get_time_stamp13():
+    # 生成13时间戳   eg:1540281250399895
+    datetime_now = datetime.datetime.now()
+
+    # 10位，时间点相当于从1.1开始的当年时间编号
+    date_stamp = str(int(time.mktime(datetime_now.timetuple())))
+
+    # 3位，微秒
+    data_microsecond = str("%06d"%datetime_now.microsecond)[0:3]
+
+    date_stamp = date_stamp+data_microsecond
+    return date_stamp
 
 #################################################
 def create_sign(data, extra_code):
+    print("-----------")
+    #print(data)
     dict_keys = data.keys()
     #print(dict_keys)
     keys = list(dict_keys)
     keys.sort()
+    print(keys)
+    print("-----------")
     #print [key for key in keys]
     #print [data[key] for key in keys]
     message = ""
@@ -45,7 +58,7 @@ def create_sign(data, extra_code):
             if k != "param":
                 message = message + value
             else:
-                tmp = json.dumps(value)
+                tmp = json.dumps(value,separators=(',',':'))
                 message = message + tmp
         
     message = message + extra_code
@@ -68,76 +81,94 @@ def make_form_request_v2(data):
     dict_keys = data.keys()
     keys = list(dict_keys)
     keys.sort()
-    print(keys)
+    #print(keys)
     for k in keys:
         value = data[k]
         if k != "param":
             tmp = multipart_fmt % (boundary, k, value)
-            print(tmp)
+            #print(tmp)
             body = body + tmp
         else:
             new_value = json.dumps(value)
             tmp = multipart_fmt % (boundary, k, new_value)
-            print(tmp)
+            #print(tmp)
             body = body + tmp
 
     tmp = multipart_end_fmt % (boundary)
-    print("=================================")
-    print(tmp)
-    print("=================================")
+    #print("=================================")
+    #print(tmp)
+    #jprint("=================================")
     body = body + tmp
     
-    print("header=%s" % header)
-    print("body=%s" % body)
     return header, body
 
 
 #################################################
-def get_access_token(data, extra_code):
+def get_access_token_v2(data, extra_code):
     access_token = "123456789101112"
     return str(access_token)
 
 #################################################
-def get_access_token_v2(data, extra_code):
-    
-    print("data=%s" %data)
+def get_access_token(data, extra_code):
     sign = create_sign(data, extra_code)
     data['sign'] = sign
-    print("data=%s" %data)
 
     post_data = json.dumps(data)
+    post_data = post_data.encode(encoding='UTF8')
     print("post_data=%s" %post_data)
 
-    url = "https://test.maidaopiao.com/base/doAction";
+    url = "http://test.maidaopiao.com/base/doAction";
     headers = {
 	    "Content-type": "application/json;charset='utf-8'", 
 	    "Accept" : "application/json", 
 	    "Cache-Control" : "no-cache", 
-	    "Pragma" : "no-cache" 
+	    "Pragma" : "no-cache",
+        "ticket-uid": "proxy_test_uid" 
     }
-    #request_query(url, headers, post_data, 1000)
-    print("header=%s" %headers)
+
     resp_headers, resp_data, status_code, err  = request_query(url, headers=headers, data=post_data, timeout=1000)
-    print(resp_headers)
-    print(resp_data)
-    #$ret_array = json_decode($ret_data, true);
-    #return $ret_array['data']['token'];
+    if err is not None:
+        return None
+    
+    if status_code is None or status_code < 200 or status_code >= 400:
+        return None
+
+    print("resp_headers====%s" % resp_headers)
+    print("resp_data====%s" % resp_data)
+    print("status_code: ", status_code)
+    print("err:", err)
+    
+    try:
+        token = json.loads(resp_data)
+    except Exception as e:
+        print(e)
+        return None
+    
+    print("post_data: ", post_data)
+    print("resp_data: ", token)
+
+    return resp_data['data']['token'];
 
 
 #################################################
 if __name__ == "__main__":
-    dt = test()
-    print(dt)
-    #ll = ['sign', 'ver', 'command', 'token', 'timestamp', 'openid', 'param']
-    #ll.sort()
-    #print(ll)
-    '''
-    sign = create_sign(dt, "abx23579436")
-    dt['sign'] = sign
-    print(dt)
-    header, body = make_form_request_v2(dt)
-    print(header)
-    print(body)
-    '''
-    get_access_token_v2(dt, "abx23579436")
+    dt = {
+        "sign": "367dc4bea216b766ae5d0f44dc4d5169",
+        "ver": "1.0",
+        "command": "1001",
+        "token": "",
+        "param": {"appid" : "14324152292","secret" : "59a69169ff81415dfc30ac652353f69f"},
+        "timestamp": "1558857864000",
+        "openid": ""
+    }
+
+    #sign = create_sign(dt, "abx23579436")
+    #dt['sign'] = sign
+    dt['timestamp'] = get_time_stamp13()
+    print("data: ", dt)
+    #print(get_time_stamp13())
+    access_token = get_access_token(dt, "abx23579436")
+    #header, body = make_form_request_v2(dt)
+    #print("headers: ", header)
+    #print("body: ", body)
 
