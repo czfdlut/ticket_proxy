@@ -47,57 +47,7 @@ class TransformRequestHandler(tornado.web.RequestHandler):
     def http_request_server(self, headers, body):         
         url = "http://test.maidaopiao.com/" +  self.request.path
         return request_query(self.url, headers=headers, data=body, timeout=60)
-    """
-    def get_access_token(self)
-        return "test-123456"
-
-    def create_sign(self, data, extra_code):
-        keys = data.keys()
-        keys.sort()
-        #print [key for key in keys]
-        #print [data[key] for key in keys]
-        message = ""
-        for k in keys:
-            value = data[k]
-            if k != "sign":
-                if k != "param":
-                    message = message + value
-                else:
-                    tmp = json.dumps(value)
-                    message = message + tmp
-
-        message = message + extra_code
-        sign = md5(message)
-        print message
-        return sign
-
-    def make_form_request_v2(self, data):
-        boundary = "-----------------------------7d83e2d7a141e"
-        multipart_header_fmt = "multipart/form-data; boundary=%s"
-        multipart_fmt = "--%s\r\nContent-Disposition: form-data; name=\"%s\"\r\n\r\n%s\r\n"
-        multipart_end_fmt = "--%s--\r\n"
-        header = multipart_header_fmt % (boundary)
-
-        body = "";
-        keys = data.keys()
-        keys.sort()
-        for k in keys:
-            value = data[k]
-            if k != "param":
-                tmp = multipart_fmt % (boundary, k, value)
-                #print(tmp)
-                body = body + tmp
-            else:
-                new_value = json.dumps(value)
-                tmp = multipart_fmt % (boundary, k, new_value)
-                #print(tmp)
-                body = body + tmp
-
-        tmp = multipart_end_fmt % (boundary)
-        #print(tmp)
-        body = body + tmp
-        return header, body
-    """
+   
     @tornado.web.asynchronous
     @tornado.gen.coroutine
     def post(self):
@@ -106,10 +56,16 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         self.set_status(200)
         self.finish_err_msg("ok")
  
+        try:
+            data = json.loads(self.request.body)
+        except Exception as e:
+            self.finish_err_msg(str(e))
+            return
+
         key = "access_token_%s" % self.ticket_token["ticket-uid"]
         access_token = self.redis_client.get(key)
         if access_token is None:
-            access_token = get_access_token()
+            access_token = get_access_token(data, "abx23579436")
             self.redis_client.set(key, access_token)
             self.redis_client.expire(key, 3600)
         
@@ -117,12 +73,6 @@ class TransformRequestHandler(tornado.web.RequestHandler):
             self.finish_err_msg(r"验证失败")
             return
               
-        try:
-            data = json.loads(self.request.body)
-        except Exception as e:
-            self.finish_err_msg(str(e))
-            return
-        
         data["token"] = access_token
         sign = create_sign(data, "abx23579436") #self.ticket_token["extra_code"])
         data["sign"] = sign

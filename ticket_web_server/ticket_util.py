@@ -13,7 +13,7 @@ def md5(url):
 def test():
     data = {'sign' : 'abcdefg',
         'ver': "1.0",
-        'command' : "203",
+        'command' : "1001",
         'token' : "1261109",
         'timestamp' : "12131231",
         'openid' : "test_id",
@@ -86,13 +86,13 @@ def make_form_request_v2(data):
 
 
 #################################################
-'''def get_access_token():
+def get_access_token(data, extra_code):
     access_token = ""
-    return access_token
-'''
+    return "123456789101112"
+
 
 #################################################
-def get_access_token(data, extra_code):
+def get_access_token_v2(data, extra_code):
     
     print("data=%s" %data)
     sign = create_sign(data, extra_code)
@@ -110,6 +110,7 @@ def get_access_token(data, extra_code):
 	    "Pragma" : "no-cache" 
     }
     #request_query(url, headers, post_data, 1000)
+    print("header=%s" %headers)
     resp_headers, resp_data, status_code, err  = request_query(url, headers=headers, data=post_data, timeout=1000)
     print(resp_headers)
     print(resp_data)
@@ -132,5 +133,5 @@ if __name__ == "__main__":
     print(header)
     print(body)
     '''
-    get_access_token(dt, "abx23579436")
+    get_access_token_v2(dt, "abx23579436")
 

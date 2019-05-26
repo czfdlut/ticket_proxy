@@ -1,0 +1,2 @@
+2019-05-22 12:40:49,149 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-22 12:40:58,565 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok

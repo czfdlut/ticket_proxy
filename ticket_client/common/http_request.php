@@ -73,15 +73,24 @@ function http_post_request_with_header($header, $url, $timeout, &$post_data, &$r
     //curl_setopt($curl, CURLOPT_DNS_CACHE_TIMEOUT, 300);
     curl_setopt($curl, CURLOPT_NOSIGNAL, true);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl, CURLOPT_BINARYTRANSFER, true);  
+    //curl_setopt($curl, CURLOPT_BINARYTRANSFER, true);  
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); //不验证证书
     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false); //不验证证书
     curl_setopt($curl, CURLOPT_POST, true);
     if (isset($header)) {
-	curl_setopt($curl, CURLOPT_HTTPHEADER, $header); 
+	    curl_setopt($curl, CURLOPT_HTTPHEADER, $header); 
+        print_r("header=");
+        print_r($header);
+        print_r("\n");
     }
     curl_setopt($curl, CURLOPT_POSTFIELDS, $post_data);
+    print_r("body=");
+    print_r($post_data);
+    print_r("\n");
     $ret_data = curl_exec($curl);
+    print_r("ret_data=");
+    print_r($ret_data);
+    print_r("\n");
     $http_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     curl_close($curl);
     return $http_code;

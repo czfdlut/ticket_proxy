@@ -18,8 +18,8 @@ function main()
 {
     // 获取token
     $access_token = get_access_token();
-    print_r($access_token."\n");
-    $opt = 1;
+    print_r("access_token=".$access_token."\n");
+    $opt = -1;
     if ($opt == 0) {
         // 查询余票
         req_ticket($access_token);
