@@ -113,6 +113,10 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         
         resp_headers, resp_data, status_code, err = yield tornado.gen.Task(self.http_request_server, headers, post_data)
         self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s" % (resp_headers, resp_data, status_code, err))
+        print(resp_header)
+        print(resp_data)
+        print(status_code)
+        print(err)
         if err is not None:
             self.finish_err_msg(str(err))
             return
@@ -121,7 +125,6 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         self.set_response_header(resp_headers)
 
         self.write(resp_data)
-        print(resp_data)
         self.finish()
         
         self.logger.info("cost time: %s" %((datetime.now() - start_time)))

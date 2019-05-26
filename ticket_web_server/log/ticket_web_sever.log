@@ -75,3 +75,6 @@
 2019-05-26 13:27:36,656 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
 2019-05-26 13:28:07,042 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
 2019-05-26 13:28:11,289 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 13:31:44,752 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 13:31:48,528 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 13:31:54,942 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
