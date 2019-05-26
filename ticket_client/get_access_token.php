@@ -11,7 +11,8 @@ function get_access_token()
     global $appid, $appsecret, $extra_code;
     $cmd = '1001';
     $openid = '';
-    $timestamp = 1558841959333;//time() * 1000; //'1550130142439';
+    $timestamp = strval(time() * 1000); //'1550130142439';
+    
     $token = '';
     $ver = '1.0';
     $sign = '';
@@ -50,7 +51,6 @@ function get_access_token()
 	    "Accept: */*", 
 	    "Cache-Control: no-cache", 
 	    "Pragma: no-cache", 
-        "Host: www.xt-kp.com",
         "User-Agent: curl/7.29.0"
     );
 
@@ -64,6 +64,8 @@ function get_access_token()
     return $ret_array['data']['token'];
 }
 
+
+//get_access_token();
 
 ?>
 

@@ -114,7 +114,7 @@ function request_xiti($header, $uri, $post_data, $timeout_ms, $retry_cnt, &$ret_
     //print_r("header=");
     //print_r($header);
     //print_r("\n");
-    print_r("uri=".$uri."\n");
+    //print_r("uri=".$uri."\n");
     //print_r("body=");
     //print_r($post_data);
     //print_r("\n");

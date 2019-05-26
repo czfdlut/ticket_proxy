@@ -67,6 +67,7 @@ function http_post_request($url, $timeout, &$post_data)
 function http_post_request_with_header($header, $url, $timeout, &$post_data, &$ret_data)
 {
     $curl = curl_init();  
+    print_r("url=".$url);
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_TIMEOUT_MS, $timeout); //毫秒超时
     //curl_setopt($curl, CURLOPT_CONNECTTIMEOUT_MS, $timeout); //毫秒超时
