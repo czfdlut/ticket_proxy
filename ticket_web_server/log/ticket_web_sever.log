@@ -8,3 +8,25 @@
 2019-05-26 12:17:23,358 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
 2019-05-26 12:17:35,554 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
 2019-05-26 12:17:44,480 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:22:27,266 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:22:35,981 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:22:41,437 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:22:41,438 - ticket_web_sever - finish_err_msg - 33 - ERROR - 'bytes' object has no attribute 'encode'
+2019-05-26 12:24:32,663 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:24:37,379 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:25:26,995 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:25:31,649 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:26:52,011 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:26:57,041 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:33:15,243 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:33:26,215 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:36:43,452 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:36:47,769 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:36:54,606 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:37:18,977 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:37:59,683 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:38:05,664 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:38:13,090 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:38:57,371 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:39:01,894 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:39:05,103 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok

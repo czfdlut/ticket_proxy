@@ -87,9 +87,8 @@ def make_form_request_v2(data):
 
 #################################################
 def get_access_token(data, extra_code):
-    access_token = ""
-    return "123456789101112"
-
+    access_token = "123456789101112"
+    return access_token
 
 #################################################
 def get_access_token_v2(data, extra_code):

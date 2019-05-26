@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*
 from util import request_query, add_headers
-from ticket_util import create_sign, make_form_request_v2
+from ticket_util import get_access_token, create_sign, make_form_request_v2
 import tornado.web
 from datetime import datetime
 import json
@@ -56,19 +56,26 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         self.set_status(200)
         self.finish_err_msg("ok")
  
-        
+        request_data =""
         print("request.body=%s" % self.request.body)
         try:
-            data = json.loads(self.request.body) 
-            print("data=%s" % data)
+            request_data = json.loads(self.request.body) 
+            print("data=%s" % request_data)
         except Exception as e:
             self.finish_err_msg(str(e))
             return
-
-        key = "access_token_%s" % self.ticket_token["ticket-uid"]
+        print("**************************")
+        ticket_uid="test_meituan"
+        if "ticket-uid" in self.ticket_token.keys():
+            ticket_uid = self.ticket_token["ticket-uid"]
+        key = "access_token_%s" % ticket_uid
+        print("**************************")
+        
         access_token = self.redis_client.get(key)
+        print("token=%s" % access_token)
+
         if access_token is None:
-            access_token = get_access_token(data, "abx23579436")
+            access_token = get_access_token(request_data, "abx23579436")
             self.redis_client.set(key, access_token)
             self.redis_client.expire(key, 3600)
         
