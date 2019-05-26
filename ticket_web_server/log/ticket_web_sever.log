@@ -30,3 +30,9 @@
 2019-05-26 12:38:57,371 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
 2019-05-26 12:39:01,894 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
 2019-05-26 12:39:05,103 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:42:13,601 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:42:18,064 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:42:21,452 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 12:44:41,773 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:44:47,879 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 12:44:52,803 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok

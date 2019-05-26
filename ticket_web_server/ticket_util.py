@@ -4,9 +4,9 @@ import hashlib
 from util import md5, request_query, add_headers
 
 #################################################
-def md5(url):
-    m = hashlib.md5(url)
-    return m.hexdigest()
+#def md5(url):
+#    m = hashlib.md5(url)
+#    return m.hexdigest()
 
 
 #################################################

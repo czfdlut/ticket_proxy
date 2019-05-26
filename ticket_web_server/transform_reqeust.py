@@ -56,11 +56,11 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         self.set_status(200)
         self.finish_err_msg("ok")
  
-        request_data =""
+        data =""
         print("request.body=%s" % self.request.body)
         try:
-            request_data = json.loads(self.request.body) 
-            print("data=%s" % request_data)
+            data = json.loads(self.request.body) 
+            print("data=%s" % data)
         except Exception as e:
             self.finish_err_msg(str(e))
             return
@@ -75,7 +75,7 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         print("token=%s" % access_token)
 
         if access_token is None:
-            access_token = get_access_token(request_data, "abx23579436")
+            access_token = get_access_token(data, "abx23579436")
             self.redis_client.set(key, access_token)
             self.redis_client.expire(key, 3600)
         
@@ -87,7 +87,8 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         data["token"] = access_token
         sign = create_sign(data, "abx23579436") #self.ticket_token["extra_code"])
         data["sign"] = sign
-        
+        print("sign=%s" % sign)
+
         content_type, post_data = make_form_request_v2(data)
                  
         headers = {
