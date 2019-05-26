@@ -56,8 +56,11 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         self.set_status(200)
         self.finish_err_msg("ok")
  
+        
+        print("request.body=%s" % self.request.body)
         try:
-            data = json.loads(self.request.body)
+            data = json.loads(self.request.body) 
+            print("data=%s" % data)
         except Exception as e:
             self.finish_err_msg(str(e))
             return
@@ -69,6 +72,7 @@ class TransformRequestHandler(tornado.web.RequestHandler):
             self.redis_client.set(key, access_token)
             self.redis_client.expire(key, 3600)
         
+        print("token=%s" % access_token)
         if len(access_token) == 0:
             self.finish_err_msg(r"验证失败")
             return
@@ -87,6 +91,8 @@ class TransformRequestHandler(tornado.web.RequestHandler):
                    "ticket-uid": self.ticket_token["ticket-uid"]
                   }
  
+        print("head=%s" % headers)
+        print("post-data=%s" % post_data)
         resp_headers, resp_data, status_code, err = yield tornado.gen.Task(self.http_request_server, headers, post_data)
         self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s" % (resp_headers, resp_data, status_code, err))
         if err is not None:

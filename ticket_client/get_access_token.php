@@ -11,7 +11,7 @@ function get_access_token()
     global $appid, $appsecret, $extra_code;
     $cmd = '1001';
     $openid = '';
-    $timestamp = time() * 1000; //'1550130142439';
+    $timestamp = 1558841959333;//time() * 1000; //'1550130142439';
     $token = '';
     $ver = '1.0';
     $sign = '';
