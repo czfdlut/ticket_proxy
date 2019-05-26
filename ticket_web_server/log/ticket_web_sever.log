@@ -1,80 +1,3750 @@
-2019-05-26 12:03:55,403 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:04:04,840 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:08:43,109 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:10:20,687 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:10:25,672 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:14:10,648 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:14:19,299 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:17:23,358 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:17:35,554 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:17:44,480 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:22:27,266 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:22:35,981 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:22:41,437 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:22:41,438 - ticket_web_sever - finish_err_msg - 33 - ERROR - 'bytes' object has no attribute 'encode'
-2019-05-26 12:24:32,663 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:24:37,379 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:25:26,995 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:25:31,649 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:26:52,011 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:26:57,041 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:33:15,243 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:33:26,215 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:36:43,452 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:36:47,769 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:36:54,606 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:37:18,977 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:37:59,683 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:38:05,664 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:38:13,090 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:38:57,371 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:39:01,894 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:39:05,103 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:42:13,601 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:42:18,064 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:42:21,452 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:44:41,773 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:44:47,879 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:44:52,803 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:48:17,087 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:48:23,674 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:53:07,796 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:53:26,266 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 12:54:49,507 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 12:54:54,541 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:01:24,716 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:02:35,006 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:04:33,925 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:04:42,215 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:06:30,135 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:06:38,321 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:07:22,343 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:07:57,549 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:08:04,020 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:08:17,265 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:09:47,763 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:09:52,139 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:11:57,471 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:12:14,184 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:12:19,077 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:13:34,396 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:13:39,681 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:14:22,364 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:15:24,392 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:15:30,013 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:20:35,572 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:20:39,569 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:22:06,783 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:22:14,071 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:24:06,496 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:24:12,921 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:24:16,971 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:26:00,236 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:26:04,854 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:27:19,442 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:27:36,656 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:28:07,042 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:28:11,289 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
-2019-05-26 13:31:44,752 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:31:48,528 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-05-26 13:31:54,942 - ticket_web_sever - finish_err_msg - 33 - ERROR - ok
+2019-05-26 16:53:07,347 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 16:54:46,463 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 16:55:31,618 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 16:55:45,962 - ticket_web_sever - finish_err_msg - 27 - ERROR - not found ticket_uid
+2019-05-26 16:56:27,547 - ticket_web_sever - finish_err_msg - 27 - ERROR - not found ticket_uid
+2019-05-26 16:57:35,812 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 16:57:41,591 - ticket_web_sever - finish_err_msg - 27 - ERROR - not found ticket_uid
+2019-05-26 16:58:13,435 - ticket_web_sever - finish_err_msg - 27 - ERROR - not found ticket_uid
+2019-05-26 16:58:18,487 - ticket_web_sever - finish_err_msg - 27 - ERROR - not found ticket_uid
+2019-05-26 16:58:33,154 - ticket_web_sever - finish_err_msg - 27 - ERROR - not found ticket_uid
+2019-05-26 16:58:37,089 - ticket_web_sever - finish_err_msg - 27 - ERROR - not found ticket_uid
+2019-05-26 16:58:55,521 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 16:58:58,867 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 16:59:01,190 - ticket_web_sever - post - 52 - INFO - redis_access_token=None
+2019-05-26 16:59:01,190 - ticket_web_sever - post - 59 - INFO - access_token=None
+2019-05-26 16:59:01,190 - ticket_web_sever - post - 67 - INFO - sign=94b32875f216fc0f99c9ca0e89456bb8
+2019-05-26 16:59:01,190 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 16:59:01,190 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558861141050_44192
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558861141050_44192
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+94b32875f216fc0f99c9ca0e89456bb8
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 16:59:01,369 - ticket_web_sever - post - 82 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558861141328,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 16:59:01,369 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558861141328,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 16:59:04,000 - ticket_web_sever - post - 52 - INFO - redis_access_token=None
+2019-05-26 16:59:04,000 - ticket_web_sever - post - 59 - INFO - access_token=None
+2019-05-26 16:59:04,000 - ticket_web_sever - post - 67 - INFO - sign=102535b8fac25024a130ec34a6398f11
+2019-05-26 16:59:04,000 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 16:59:04,000 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 16:59:04,024 - ticket_web_sever - post - 82 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 08:59:04 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 16:59:04,024 - ticket_web_sever - post - 93 - INFO - cost time: 0:00:00.024882
+2019-05-26 16:59:13,391 - ticket_web_sever - post - 52 - INFO - redis_access_token=None
+2019-05-26 16:59:13,391 - ticket_web_sever - post - 59 - INFO - access_token=None
+2019-05-26 16:59:13,392 - ticket_web_sever - post - 67 - INFO - sign=fed91e8f446025898d093157acdbcf86
+2019-05-26 16:59:13,392 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 16:59:13,392 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+fed91e8f446025898d093157acdbcf86
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 16:59:13,474 - ticket_web_sever - post - 82 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558861153464,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 16:59:13,475 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558861153464,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:00:43,157 - ticket_web_sever - post - 52 - INFO - redis_access_token=None
+2019-05-26 17:00:43,158 - ticket_web_sever - post - 59 - INFO - access_token=None
+2019-05-26 17:00:43,158 - ticket_web_sever - post - 67 - INFO - sign=07ded76622f97e445acf855cd0504e97
+2019-05-26 17:00:43,158 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:00:43,158 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+07ded76622f97e445acf855cd0504e97
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:00:43,224 - ticket_web_sever - post - 82 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558861243213,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:00:43,225 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558861243213,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:01:00,077 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:02:34,787 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:02:40,080 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:02:40,080 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:02:40,080 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:02:40,080 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558861359850_28831
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558861359850_28831
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+66acbe39f944dbfdc56a7e77c27ec3cd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:02:40,138 - ticket_web_sever - post - 82 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558861360127,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:02:40,139 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558861360127,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:02:41,551 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:02:41,551 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:02:41,551 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:02:41,551 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558861361412_13557
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558861361412_13557
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+0281bbcf1f33224cf11ec28ed10d360c
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:02:41,613 - ticket_web_sever - post - 82 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558861361606,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:02:41,614 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558861361606,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:03:47,783 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:03:49,480 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:03:49,480 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:03:49,481 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:03:49,481 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+2019-05-27
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+北京
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+e0656ee4d9d92d314e84ba088a4286e3
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+上海
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+G20
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:03:49,494 - ticket_web_sever - post - 82 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:03:49 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:03:49,495 - ticket_web_sever - post - 93 - INFO - cost time: 0:00:00.015071
+2019-05-26 17:03:59,188 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:03:59,189 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:03:59,189 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:03:59,189 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558861439046_43179
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558861439046_43179
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+f647d9fcf0f56987958821f01b2a5c29
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:03:59,244 - ticket_web_sever - post - 82 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558861439236,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:03:59,244 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558861439236,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:04:01,632 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:04:01,632 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:04:01,632 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:04:01,633 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:04:01,644 - ticket_web_sever - post - 82 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:04:01 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:04:01,645 - ticket_web_sever - post - 93 - INFO - cost time: 0:00:00.013116
+2019-05-26 17:04:34,928 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:04:34,928 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:04:34,928 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:04:34,928 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:04:34,945 - ticket_web_sever - post - 82 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:04:34 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:04:34,945 - ticket_web_sever - post - 93 - INFO - cost time: 0:00:00.018237
+2019-05-26 17:05:40,341 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:05:40,342 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:05:40,342 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:05:40,342 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+2019-05-27
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+北京
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+e0656ee4d9d92d314e84ba088a4286e3
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+上海
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+G20
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:05:40,358 - ticket_web_sever - post - 82 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:05:40 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:05:40,359 - ticket_web_sever - post - 93 - INFO - cost time: 0:00:00.017714
+2019-05-26 17:06:11,993 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:07:31,702 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:07:36,793 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:07:39,084 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:07:39,084 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:07:39,084 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:07:39,084 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:07:39,097 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:07:39 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:07:39,098 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.014735
+2019-05-26 17:07:42,132 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:07:42,132 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:07:42,133 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:07:42,134 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:07:42,144 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:07:42 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:07:42,145 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.013010
+2019-05-26 17:09:38,385 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:09:41,259 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:09:41,259 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:09:41,259 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:09:41,259 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:09:41,278 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:09:41 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:09:41,279 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.020326
+2019-05-26 17:10:16,095 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:15:33,638 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:15:42,075 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:15:42,075 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:15:42,075 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:15:42,075 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558862141909_57060
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558862141909_57060
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+d47e1342ac45114e6cb226a299881ddc
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:15:42,170 - ticket_web_sever - post - 75 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558862142157,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:15:42,170 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558862142157,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:15:45,067 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:15:45,067 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:15:45,067 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:15:45,067 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558862144905_4673
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558862144905_4673
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+562923e4d5bd2bc711dcaac6fe129bba
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:15:45,127 - ticket_web_sever - post - 75 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558862145118,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:15:45,127 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558862145118,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:16:14,861 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:16:14,862 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:16:14,862 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:16:14,862 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558862174692_73000
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558862174692_73000
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+f19e5e113addea9f4c941584b1d86bde
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:16:14,919 - ticket_web_sever - post - 75 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558862174908,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:16:14,919 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558862174908,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:16:24,581 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:16:24,581 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:16:24,581 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:16:24,581 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:16:24,598 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:16:24 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:16:24,599 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.018643
+2019-05-26 17:17:32,018 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:17:37,408 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:17:37,408 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:17:37,409 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:17:37,409 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+2019-05-27
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+北京
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+e0656ee4d9d92d314e84ba088a4286e3
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+上海
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+G20
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:17:37,423 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:17:37 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:17:37,424 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.016417
+2019-05-26 17:19:17,059 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:27:30,568 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-05-26 17:27:39,503 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:27:39,504 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:27:39,504 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:27:39,504 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+2019-05-27
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+北京
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+e0656ee4d9d92d314e84ba088a4286e3
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+上海
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+G20
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:27:39,528 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:27:39 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:27:39,529 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.025727
+2019-05-26 17:30:04,988 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:30:04,988 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:30:04,988 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:30:04,988 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558863004756_39615
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558863004756_39615
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+bac50c17956db7aa20b00a53863fdc69
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:30:05,077 - ticket_web_sever - post - 75 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558863005064,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:30:05,077 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558863005064,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:30:06,070 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:30:06,070 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:30:06,070 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:30:06,070 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558863005870_39675
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558863005870_39675
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+9ea1bc71f7c917d7f3f01131e7b8b04c
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:30:06,144 - ticket_web_sever - post - 75 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558863006134,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:30:06,148 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558863006134,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:31:07,813 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:31:07,814 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:31:07,814 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:31:07,814 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:31:07,831 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:31:07 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:31:07,832 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.018656
+2019-05-26 17:31:16,068 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:31:16,068 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:31:16,068 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:31:16,069 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558863075887_26732
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558863075887_26732
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+da2af7b58230cae4c7a0bbb352d22013
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:31:16,120 - ticket_web_sever - post - 75 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558863076107,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:31:16,120 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558863076107,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:32:15,819 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:32:15,820 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:32:15,820 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:32:15,820 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:32:15,838 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:32:15 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:32:15,839 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.019932
+2019-05-26 17:39:11,090 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:39:11,090 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:39:11,090 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:39:11,091 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558863550906_58775
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageIndex"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="pageSize"
+
+100
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558863550906_58775
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+770cdd75bf5af776594a687ea5d317e9
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startBizTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:39:11,178 - ticket_web_sever - post - 75 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'{"timestamp":1558863551167,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:39:11,178 - ticket_web_sever - finish_err_msg - 27 - ERROR - b'{"timestamp":1558863551167,"status":500,"error":"Internal Server Error","exception":"java.lang.NullPointerException","message":"No message available","path":"/wi-orderticket/Ticket/queryTicketResult.json"}'
+2019-05-26 17:39:13,178 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:39:13,179 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:39:13,179 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:39:13,179 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:39:13,196 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:39:13 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:39:13,197 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.018787
+2019-05-26 17:39:20,389 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
+2019-05-26 17:39:20,389 - ticket_web_sever - post - 60 - INFO - access_token=None
+2019-05-26 17:39:20,390 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-05-26 17:39:20,390 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="IdName"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="address"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="allocationFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizBrief"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizName"
+
+订票
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizNo"
+
+DP_1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizTime"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bizType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="bonusFlag"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="couponValue"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="endTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="expressFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="fromStation"
+
+asdfadsf
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="haiNum"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idNo"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="idType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="insureFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantCode"
+
+12345
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="merchantName"
+
+美团
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="mobile"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="noSeatFlag"
+
+Y
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="officeId"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderDate"
+
+2019-05-26
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderNo"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="orderType"
+
+DP
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="payType"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="remark"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="requestID"
+
+1558860945824_33109
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="reserved"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="seatType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="serviceFee"
+
+0
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+102535b8fac25024a130ec34a6398f11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="startTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketNum"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketObtainMode"
+
+快递
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketPrices"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTakePoint"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketTime"
+
+
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ticketType"
+
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="toStation"
+
+asdffs
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+None
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="trainType"
+
+A
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="tranCode"
+
+adsfafsd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="userId"
+
+
+-------------------------------7d83e2d7a141e--
+
+2019-05-26 17:39:20,401 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 26 May 2019 09:39:20 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-05-26 17:39:20,402 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.013240

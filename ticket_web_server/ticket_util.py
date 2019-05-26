@@ -41,14 +41,14 @@ def get_time_stamp13():
 
 #################################################
 def create_sign(data, extra_code):
-    print("-----------")
+    #print("-----------")
     #print(data)
     dict_keys = data.keys()
     #print(dict_keys)
     keys = list(dict_keys)
     keys.sort()
-    print(keys)
-    print("-----------")
+    #jjprint(keys)
+    #print("-----------")
     #print [key for key in keys]
     #print [data[key] for key in keys]
     message = ""
@@ -62,7 +62,7 @@ def create_sign(data, extra_code):
                 message = message + tmp
         
     message = message + extra_code
-    print("message=%s" %message)
+    #print("message=%s" %message)
     sign = md5(message.encode("utf-8"))
     #print sign
     return sign
@@ -95,11 +95,13 @@ def make_form_request_v2(data):
             body = body + tmp
 
     tmp = multipart_end_fmt % (boundary)
-    #print("=================================")
-    #print(tmp)
-    #jprint("=================================")
     body = body + tmp
     
+    print("=================================")
+    print(header)
+    print(body)
+    print("=================================")
+
     return header, body
 
 
@@ -115,7 +117,7 @@ def get_access_token(data, extra_code):
 
     post_data = json.dumps(data)
     post_data = post_data.encode(encoding='UTF8')
-    print("post_data=%s" %post_data)
+    #print("post_data=%s" %post_data)
 
     url = "http://test.maidaopiao.com/base/doAction";
     headers = {
@@ -128,27 +130,19 @@ def get_access_token(data, extra_code):
 
     resp_headers, resp_data, status_code, err  = request_query(url, headers=headers, data=post_data, timeout=1000)
     if err is not None:
+        print("request access_token", err)
         return None
-    
+
     if status_code is None or status_code < 200 or status_code >= 400:
         return None
 
-    print("resp_headers====%s" % resp_headers)
-    print("resp_data====%s" % resp_data)
-    print("status_code: ", status_code)
-    print("err:", err)
-    
     try:
-        token = json.loads(resp_data)
+        token = json.loads(resp_data)["data"]["token"]
     except Exception as e:
-        print(e)
+        print("sign failed", e, resp_data)
         return None
-    
-    print("post_data: ", post_data)
-    print("resp_data: ", token)
 
-    return resp_data['data']['token'];
-
+    return token
 
 #################################################
 if __name__ == "__main__":
@@ -168,7 +162,7 @@ if __name__ == "__main__":
     print("data: ", dt)
     #print(get_time_stamp13())
     access_token = get_access_token(dt, "abx23579436")
-    #header, body = make_form_request_v2(dt)
+    header, body = make_form_request_v2(dt)
     #print("headers: ", header)
     #print("body: ", body)
 

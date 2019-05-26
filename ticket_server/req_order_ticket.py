@@ -162,8 +162,8 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
         if err is not None:
             self.finish_err_msg(str(err))
             return
-        
-        if qs[0][0] is None:
+
+        if len(qs) == 0 or qs[0][0] is None:
             self.finish_err_msg(r"非法uid")
             return
 
