@@ -71,7 +71,7 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         key = "access_token_%s" % ticket_uid
         print("**************************")
         
-        access_token = self.redis_client.get(key)
+        access_token = str(self.redis_client.get(key))
         print("token=%s" % access_token)
 
         if access_token is None:
@@ -84,23 +84,33 @@ class TransformRequestHandler(tornado.web.RequestHandler):
             self.finish_err_msg(r"验证失败")
             return
               
-        data["token"] = access_token
+        data["token"] = str(access_token)
+        print("data=%s" % data)
         sign = create_sign(data, "abx23579436") #self.ticket_token["extra_code"])
         data["sign"] = sign
         print("sign=%s" % sign)
 
         content_type, post_data = make_form_request_v2(data)
-                 
+        print("content_type====%s" % content_type)
+        print("post-data====%s" % post_data)
+
+        header_of_content_type = "Content-type: %s charset='utf-8'" % (content_type)
+        header_of_ticket_uid = "ticket-uid: %s" % (ticket_uid)
+        print("[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[")
+        print(header_of_content_type)
+        print(header_of_ticket_uid)
+        print("[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[")
+        
         headers = {
-                   "Content-type": "%s; charset='utf-8'" % content_type,
-                   "Accept": "application/json",
-                   "Cache-Control" : "no-cache", 
-                   "Pragma" : "no-cache",
-                   "ticket-uid": self.ticket_token["ticket-uid"]
+                   header_of_content_type,
+                   header_of_ticket_uid,
+                   "Accept : application/json",
+                   "Cache-Control : no-cache", 
+                   "Pragma : no-cache"
                   }
  
-        print("head=%s" % headers)
-        print("post-data=%s" % post_data)
+        print(headers)
+        
         resp_headers, resp_data, status_code, err = yield tornado.gen.Task(self.http_request_server, headers, post_data)
         self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s" % (resp_headers, resp_data, status_code, err))
         if err is not None:
@@ -111,6 +121,7 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         self.set_response_header(resp_headers)
 
         self.write(resp_data)
+        print(resp_data)
         self.finish()
         
         self.logger.info("cost time: %s" %((datetime.now() - start_time)))

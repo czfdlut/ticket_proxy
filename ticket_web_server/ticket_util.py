@@ -65,30 +65,37 @@ def make_form_request_v2(data):
     #print(header)
     
     body = "";
-    keys = data.keys()
+    dict_keys = data.keys()
+    keys = list(dict_keys)
     keys.sort()
+    print(keys)
     for k in keys:
         value = data[k]
         if k != "param":
             tmp = multipart_fmt % (boundary, k, value)
-            #print(tmp)
+            print(tmp)
             body = body + tmp
         else:
             new_value = json.dumps(value)
             tmp = multipart_fmt % (boundary, k, new_value)
-            #print(tmp)
+            print(tmp)
             body = body + tmp
 
     tmp = multipart_end_fmt % (boundary)
-    #print(tmp)
+    print("=================================")
+    print(tmp)
+    print("=================================")
     body = body + tmp
+    
+    print("header=%s" % header)
+    print("body=%s" % body)
     return header, body
 
 
 #################################################
 def get_access_token(data, extra_code):
     access_token = "123456789101112"
-    return access_token
+    return str(access_token)
 
 #################################################
 def get_access_token_v2(data, extra_code):
