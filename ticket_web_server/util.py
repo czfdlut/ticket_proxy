@@ -7,6 +7,7 @@ from datetime import datetime
 import json
 from collections import OrderedDict
 import time
+import datetime
 import urllib.request
 import http.client
 import socket
@@ -68,6 +69,17 @@ def get_notify_token(secret_key, _id):
 def md5(url):
     m = hashlib.md5(url)
     return m.hexdigest()
+
+#################################################
+def get_time_stamp13():
+    # 生成13时间戳   eg:1540281250399895
+    datetime_now = datetime.datetime.now()
+    # 10位，时间点相当于从1.1开始的当年时间编号
+    date_stamp = str(int(time.mktime(datetime_now.timetuple())))
+    # 3位，微秒
+    data_microsecond = str("%06d"%datetime_now.microsecond)[0:3]
+    date_stamp = date_stamp+data_microsecond
+    return date_stamp
 
 def request_query(url, headers={}, data=None, timeout=30):
     try:

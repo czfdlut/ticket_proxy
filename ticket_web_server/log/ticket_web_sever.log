@@ -1,20 +1,7 @@
-2019-06-02 11:59:52,976 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 11:59:56,040 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
-2019-06-02 11:59:56,040 - ticket_web_sever - post - 60 - INFO - access_token=None
-2019-06-02 11:59:56,040 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
-2019-06-02 11:59:56,040 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="IdName"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="address"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="allocationFlag"
-
-Y
--------------------------------7d83e2d7a141e
+2019-06-02 21:20:55,873 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 21:21:08,282 - ticket_web_sever - post - 107 - INFO - redis_access_token=8977451268d13603784d7ef92ab14e45
+2019-06-02 21:21:08,283 - ticket_web_sever - post - 132 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 21:21:08,283 - ticket_web_sever - post - 133 - INFO - post-data:-------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="bizBrief"
 
 订票
@@ -25,51 +12,23 @@ Content-Disposition: form-data; name="bizName"
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="bizNo"
 
-DP_1558860945824_33109
+DP_1559481624239_17429
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="bizTime"
 
-2019-05-26
+2019-06-02
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="bizType"
 
 DP
 -------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bonusFlag"
+Content-Disposition: form-data; name="command"
 
-0
+1001
 -------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="couponValue"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="endTime"
+Content-Disposition: form-data; name="endBizTime"
 
 
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="expressFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="fromStation"
-
-asdfadsf
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="haiNum"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idNo"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="insureFee"
-
-0
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="merchantCode"
 
@@ -79,127 +38,59 @@ Content-Disposition: form-data; name="merchantName"
 
 美团
 -------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="mobile"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="noSeatFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="officeId"
-
-
--------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="orderDate"
 
-2019-05-26
+2019-06-02
 -------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderNo"
+Content-Disposition: form-data; name="pageIndex"
 
-1558860945824_33109
+1
 -------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderType"
+Content-Disposition: form-data; name="pageSize"
 
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="payType"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="remark"
-
-
+100
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="requestID"
 
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="reserved"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="seatType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="serviceFee"
-
-0
+1559481624239_17429
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="sign"
 
-102535b8fac25024a130ec34a6398f11
+708e3300b67ca1ddcf6bb01b7292b1a5
 -------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="startTime"
+Content-Disposition: form-data; name="startBizTime"
 
 
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketNum"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketObtainMode"
-
-快递
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketPrices"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTakePoint"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="toStation"
-
-asdffs
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="token"
 
-None
+8977451268d13603784d7ef92ab14e45
 -------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="trainType"
+Content-Disposition: form-data; name="ver"
 
-A
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="tranCode"
-
-adsfafsd
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="userId"
-
-
+1.0
 -------------------------------7d83e2d7a141e--
 
-2019-06-02 11:59:56,065 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
-Date: Sun, 02 Jun 2019 03:59:56 GMT
-Content-Type: application/json; charset=UTF-8
-Content-Length: 65
+2019-06-02 21:21:08,350 - ticket_web_sever - post - 137 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 13:21:08 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
 Connection: close
+X-Application-Context: orderticket-config-wi:8081
 Allow: POST
 
- 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
-2019-06-02 11:59:56,066 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.026473
-2019-06-02 11:59:57,950 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
-2019-06-02 11:59:57,950 - ticket_web_sever - post - 60 - INFO - access_token=None
-2019-06-02 11:59:57,950 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
-2019-06-02 11:59:57,950 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
+ 	 resp_data:b'{"code":"FAIL","command":"1001","timestamp":"1559481668335","ver":"1.0","sign":"77b9d7f0fcd3149381894c66f1786503","errorCode":"VALUE_NOT_NULL","errcode":"FAIL","errmsg":"\xe5\x8f\x82\xe6\x95\xb0\xe4\xb8\xba\xe7\xa9\xba","msg":"\xe5\x8f\x82\xe6\x95\xb0\xe4\xb8\xba\xe7\xa9\xba"}'	 status_code:200	 err:None
+2019-06-02 21:21:08,350 - ticket_web_sever - post - 149 - INFO - cost time: 0:00:00.149819
+2019-06-02 21:21:17,604 - ticket_web_sever - post - 107 - INFO - redis_access_token=8977451268d13603784d7ef92ab14e45
+2019-06-02 21:21:17,605 - ticket_web_sever - post - 132 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 21:21:17,605 - ticket_web_sever - post - 133 - INFO - post-data:-------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="IdName"
 
-
+陈志丰
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="address"
 
-
+北京
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="allocationFlag"
 
@@ -215,11 +106,11 @@ Content-Disposition: form-data; name="bizName"
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="bizNo"
 
-DP_1558860945824_33109
+DP_1559450224387_16645
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="bizTime"
 
-2019-05-26
+2019-06-02
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="bizType"
 
@@ -229,13 +120,17 @@ Content-Disposition: form-data; name="bonusFlag"
 
 0
 -------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+1001
+-------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="couponValue"
 
 0
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="endTime"
 
-
+2019-06-03
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="expressFee"
 
@@ -243,7 +138,7 @@ Content-Disposition: form-data; name="expressFee"
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="fromStation"
 
-asdfadsf
+西安
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="haiNum"
 
@@ -251,7 +146,7 @@ Content-Disposition: form-data; name="haiNum"
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="idNo"
 
-
+22018119850911181
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="idType"
 
@@ -271,7 +166,7 @@ Content-Disposition: form-data; name="merchantName"
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="mobile"
 
-
+18600477264
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="noSeatFlag"
 
@@ -279,15 +174,15 @@ Y
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="officeId"
 
-
+1
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="orderDate"
 
-2019-05-26
+2019-06-02
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="orderNo"
 
-1558860945824_33109
+1559450224387_16645
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="orderType"
 
@@ -298,207 +193,16 @@ Content-Disposition: form-data; name="payType"
 0
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="remark"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="requestID"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="reserved"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="seatType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="serviceFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="sign"
-
-102535b8fac25024a130ec34a6398f11
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="startTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketNum"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketObtainMode"
-
-快递
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketPrices"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTakePoint"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="toStation"
-
-asdffs
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="token"
-
-None
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="trainType"
-
-A
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="tranCode"
-
-adsfafsd
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="userId"
-
-
--------------------------------7d83e2d7a141e--
-
-2019-06-02 11:59:57,972 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
-Date: Sun, 02 Jun 2019 03:59:57 GMT
-Content-Type: application/json; charset=UTF-8
-Content-Length: 65
-Connection: close
-Allow: POST
-
- 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
-2019-06-02 11:59:57,972 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.022643
-2019-06-02 12:04:55,026 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:05:09,243 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
-2019-06-02 12:05:09,244 - ticket_web_sever - post - 60 - INFO - access_token=None
-2019-06-02 12:05:09,244 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
-2019-06-02 12:05:09,244 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="IdName"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="address"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="allocationFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizBrief"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizName"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizNo"
-
-DP_1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizTime"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bonusFlag"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="couponValue"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="endTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="expressFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="fromStation"
-
-asdfadsf
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="haiNum"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idNo"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="insureFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantCode"
 
 12345
 -------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantName"
-
-美团
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="mobile"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="noSeatFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="officeId"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderDate"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderNo"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="payType"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="remark"
-
-
--------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="requestID"
 
-1558860945824_33109
+1559450224387_16645
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="reserved"
 
-
+1
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="seatType"
 
@@ -510,11 +214,11 @@ Content-Disposition: form-data; name="serviceFee"
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="sign"
 
-102535b8fac25024a130ec34a6398f11
+49ee8e9a34b4cb2b98a6e05e427f66b3
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="startTime"
 
-
+2019-06-02
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="ticketNum"
 
@@ -526,15 +230,15 @@ Content-Disposition: form-data; name="ticketObtainMode"
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="ticketPrices"
 
-
+1213
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="ticketTakePoint"
 
-
+1
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="ticketTime"
 
-
+2019-06-03
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="ticketType"
 
@@ -542,11 +246,11 @@ Content-Disposition: form-data; name="ticketType"
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="toStation"
 
-asdffs
+北京西
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="token"
 
-None
+8977451268d13603784d7ef92ab14e45
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="trainType"
 
@@ -554,801 +258,734 @@ A
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="tranCode"
 
-adsfafsd
+G666
 -------------------------------7d83e2d7a141e
 Content-Disposition: form-data; name="userId"
 
+1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
 
+1.0
 -------------------------------7d83e2d7a141e--
 
-2019-06-02 12:05:09,263 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
-Date: Sun, 02 Jun 2019 04:05:09 GMT
-Content-Type: application/json; charset=UTF-8
-Content-Length: 65
-Connection: close
-Allow: POST
-
- 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
-2019-06-02 12:05:09,263 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.020518
-2019-06-02 12:05:11,994 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
-2019-06-02 12:05:11,994 - ticket_web_sever - post - 60 - INFO - access_token=None
-2019-06-02 12:05:11,994 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
-2019-06-02 12:05:11,994 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="IdName"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="address"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="allocationFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizBrief"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizName"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizNo"
-
-DP_1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizTime"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bonusFlag"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="couponValue"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="endTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="expressFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="fromStation"
-
-asdfadsf
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="haiNum"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idNo"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="insureFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantCode"
-
-12345
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantName"
-
-美团
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="mobile"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="noSeatFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="officeId"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderDate"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderNo"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="payType"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="remark"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="requestID"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="reserved"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="seatType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="serviceFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="sign"
-
-102535b8fac25024a130ec34a6398f11
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="startTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketNum"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketObtainMode"
-
-快递
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketPrices"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTakePoint"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="toStation"
-
-asdffs
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="token"
-
-None
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="trainType"
-
-A
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="tranCode"
-
-adsfafsd
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="userId"
-
-
--------------------------------7d83e2d7a141e--
-
-2019-06-02 12:05:12,011 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
-Date: Sun, 02 Jun 2019 04:05:12 GMT
-Content-Type: application/json; charset=UTF-8
-Content-Length: 65
-Connection: close
-Allow: POST
-
- 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
-2019-06-02 12:05:12,012 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.018805
-2019-06-02 12:13:08,996 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:13:13,754 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
-2019-06-02 12:13:13,754 - ticket_web_sever - post - 60 - INFO - access_token=None
-2019-06-02 12:13:13,754 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
-2019-06-02 12:13:13,754 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="IdName"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="address"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="allocationFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizBrief"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizName"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizNo"
-
-DP_1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizTime"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bonusFlag"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="couponValue"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="endTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="expressFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="fromStation"
-
-asdfadsf
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="haiNum"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idNo"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="insureFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantCode"
-
-12345
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantName"
-
-美团
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="mobile"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="noSeatFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="officeId"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderDate"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderNo"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="payType"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="remark"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="requestID"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="reserved"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="seatType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="serviceFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="sign"
-
-102535b8fac25024a130ec34a6398f11
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="startTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketNum"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketObtainMode"
-
-快递
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketPrices"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTakePoint"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="toStation"
-
-asdffs
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="token"
-
-None
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="trainType"
-
-A
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="tranCode"
-
-adsfafsd
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="userId"
-
-
--------------------------------7d83e2d7a141e--
-
-2019-06-02 12:13:13,805 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
-Date: Sun, 02 Jun 2019 04:13:13 GMT
-Content-Type: application/json; charset=UTF-8
-Content-Length: 65
-Connection: close
-Allow: POST
-
- 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
-2019-06-02 12:13:13,805 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.052502
-2019-06-02 12:14:35,068 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:14:51,555 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:14:54,882 - ticket_web_sever - post - 53 - INFO - redis_access_token=None
-2019-06-02 12:14:54,882 - ticket_web_sever - post - 60 - INFO - access_token=None
-2019-06-02 12:14:54,883 - ticket_web_sever - post - 70 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
-2019-06-02 12:14:54,883 - ticket_web_sever - post - 71 - INFO - post-data:-------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="IdName"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="address"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="allocationFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizBrief"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizName"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizNo"
-
-DP_1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizTime"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bonusFlag"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="couponValue"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="endTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="expressFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="fromStation"
-
-asdfadsf
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="haiNum"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idNo"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="insureFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantCode"
-
-12345
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantName"
-
-美团
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="mobile"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="noSeatFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="officeId"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderDate"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderNo"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="payType"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="remark"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="requestID"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="reserved"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="seatType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="serviceFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="sign"
-
-102535b8fac25024a130ec34a6398f11
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="startTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketNum"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketObtainMode"
-
-快递
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketPrices"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTakePoint"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="toStation"
-
-asdffs
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="token"
-
-None
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="trainType"
-
-A
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="tranCode"
-
-adsfafsd
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="userId"
-
-
--------------------------------7d83e2d7a141e--
-
-2019-06-02 12:14:54,909 - ticket_web_sever - post - 75 - INFO - resp_headers:Server: nginx/1.15.8
-Date: Sun, 02 Jun 2019 04:14:54 GMT
-Content-Type: application/json; charset=UTF-8
-Content-Length: 65
-Connection: close
-Allow: POST
-
- 	 resp_data:b'{"errcode": -1, "errmsg": "\\u53c2\\u6570\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
-2019-06-02 12:14:54,910 - ticket_web_sever - post - 86 - INFO - cost time: 0:00:00.028063
-2019-06-02 12:20:04,660 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:20:15,890 - ticket_web_sever - post - 99 - INFO - redis_access_token=None
-2019-06-02 12:20:15,890 - ticket_web_sever - post - 106 - INFO - access_token=None
-2019-06-02 12:20:27,165 - ticket_web_sever - post - 99 - INFO - redis_access_token=None
-2019-06-02 12:20:27,165 - ticket_web_sever - post - 106 - INFO - access_token=None
-2019-06-02 12:21:39,544 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:21:42,625 - ticket_web_sever - post - 101 - INFO - redis_access_token=None
-2019-06-02 12:21:42,626 - ticket_web_sever - post - 108 - INFO - access_token=None
-2019-06-02 12:21:54,660 - ticket_web_sever - post - 101 - INFO - redis_access_token=None
-2019-06-02 12:21:54,660 - ticket_web_sever - post - 108 - INFO - access_token=None
-2019-06-02 12:22:02,307 - ticket_web_sever - post - 101 - INFO - redis_access_token=None
-2019-06-02 12:22:02,307 - ticket_web_sever - post - 108 - INFO - access_token=None
-2019-06-02 12:23:53,861 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:23:56,505 - ticket_web_sever - post - 101 - INFO - redis_access_token=None
-2019-06-02 12:23:56,506 - ticket_web_sever - post - 108 - INFO - access_token=None
-2019-06-02 12:24:44,976 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:24:47,553 - ticket_web_sever - post - 102 - INFO - redis_access_token=None
-2019-06-02 12:24:47,554 - ticket_web_sever - post - 109 - INFO - access_token=None
-2019-06-02 12:30:21,591 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-02 12:30:26,143 - ticket_web_sever - post - 103 - INFO - redis_access_token=None
-2019-06-02 12:30:26,143 - ticket_web_sever - post - 110 - INFO - access_token=None
-2019-06-02 12:30:26,143 - ticket_web_sever - post - 120 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
-2019-06-02 12:30:26,143 - ticket_web_sever - post - 121 - INFO - post-data:-------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="IdName"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="address"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="allocationFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizBrief"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizName"
-
-订票
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizNo"
-
-DP_1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizTime"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bizType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="bonusFlag"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="couponValue"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="endTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="expressFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="fromStation"
-
-asdfadsf
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="haiNum"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idNo"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="idType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="insureFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantCode"
-
-12345
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="merchantName"
-
-美团
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="mobile"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="noSeatFlag"
-
-Y
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="officeId"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderDate"
-
-2019-05-26
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderNo"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="orderType"
-
-DP
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="payType"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="remark"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="requestID"
-
-1558860945824_33109
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="reserved"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="seatType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="serviceFee"
-
-0
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="sign"
-
-102535b8fac25024a130ec34a6398f11
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="startTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketNum"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketObtainMode"
-
-快递
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketPrices"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTakePoint"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketTime"
-
-
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="ticketType"
-
-1
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="toStation"
-
-asdffs
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="token"
-
-None
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="trainType"
-
-A
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="tranCode"
-
-adsfafsd
--------------------------------7d83e2d7a141e
-Content-Disposition: form-data; name="userId"
-
-
--------------------------------7d83e2d7a141e--
-
-2019-06-02 12:30:26,187 - ticket_web_sever - post - 125 - INFO - resp_headers:Server: nginx/1.15.8
-Date: Sun, 02 Jun 2019 04:30:26 GMT
+2019-06-02 21:21:17,625 - ticket_web_sever - post - 137 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 13:21:17 GMT
 Content-Type: application/json; charset=UTF-8
 Content-Length: 94
 Connection: close
 Allow: POST
 
  	 resp_data:b'{"errcode": -1, "errmsg": "Error: HTTP 400: Bad Request (Missing argument param)", "data": {}}'	 status_code:200	 err:None
-2019-06-02 12:30:26,188 - ticket_web_sever - post - 136 - INFO - cost time: 0:00:00.045873
+2019-06-02 21:21:17,625 - ticket_web_sever - post - 149 - INFO - cost time: 0:00:00.130827
+2019-06-02 21:43:23,088 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 21:45:10,306 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 21:55:55,025 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 21:57:13,742 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:00:03,416 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:00:10,968 - ticket_web_sever - post - 107 - INFO - redis_access_token=None
+2019-06-02 22:01:24,594 - ticket_web_sever - post - 107 - INFO - redis_access_token=None
+2019-06-02 22:01:30,905 - ticket_web_sever - post - 107 - INFO - redis_access_token=None
+2019-06-02 22:01:37,137 - ticket_web_sever - post - 107 - INFO - redis_access_token=None
+2019-06-02 22:01:43,516 - ticket_web_sever - post - 107 - INFO - redis_access_token=None
+2019-06-02 22:02:08,134 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:02:41,853 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:02:45,829 - ticket_web_sever - post - 107 - INFO - redis_access_token=None
+2019-06-02 22:02:45,905 - ticket_web_sever - post - 123 - INFO - update access_token:access_token_proxy_test_uid
+2019-06-02 22:02:46,181 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:02:52,127 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:02:58,560 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:03:04,878 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:13:24,569 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:15:01,601 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:19:55,388 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:20:01,698 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:20:08,239 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:20:14,455 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:21:30,055 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:21:34,268 - ticket_web_sever - post - 107 - INFO - redis_access_token=b'8977451268d13603784d7ef92ab14e45'
+2019-06-02 22:23:24,583 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:23:28,540 - ticket_web_sever - post - 107 - INFO - redis_access_token=8977451268d13603784d7ef92ab14e45
+2019-06-02 22:23:28,541 - ticket_web_sever - post - 149 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 22:23:28,541 - ticket_web_sever - post - 150 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+1001
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "DP_1559450224387_16645", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02", "endTime": "2019-06-03", "ticketTime": "2019-06-03", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "22018119850911181", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "1213", "couponValue": "0", "bonusFlag": "0", "serviceFee": "0", "insureFee": "0", "expressFee": "0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "35385640507", "secret": "a14c4ab485a60833fe09064e27ae013e"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+395dd35bd57dfa02119ef07732ff10a9
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559485408540
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+8977451268d13603784d7ef92ab14e45
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 22:23:28,566 - ticket_web_sever - post - 154 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 14:23:28 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 22:23:28,567 - ticket_web_sever - post - 166 - INFO - cost time: 0:00:00.092594
+2019-06-02 22:27:24,305 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:27:39,204 - ticket_web_sever - post - 107 - INFO - redis_access_token=8977451268d13603784d7ef92ab14e45
+2019-06-02 22:27:39,205 - ticket_web_sever - post - 150 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 22:27:39,205 - ticket_web_sever - post - 151 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+1001
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "DP_1559450224387_16645", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02", "endTime": "2019-06-03", "ticketTime": "2019-06-03", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "22018119850911181", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "121", "couponValue": "0", "bonusFlag": "0", "serviceFee": "0", "insureFee": "0", "expressFee": "0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "35385640507", "secret": "a14c4ab485a60833fe09064e27ae013e", "totalPrices": "121"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+bc4ab1cf0e6b5d9ab23be372e39d18f1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559485659204
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+8977451268d13603784d7ef92ab14e45
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 22:27:39,218 - ticket_web_sever - post - 155 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 14:27:39 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 22:27:39,219 - ticket_web_sever - post - 167 - INFO - cost time: 0:00:00.110855
+2019-06-02 22:33:58,517 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:36:06,708 - ticket_web_sever - post - 107 - INFO - redis_access_token=0fc46b6c9dc9a41a9e76337ac0639a11
+2019-06-02 22:36:06,709 - ticket_web_sever - post - 150 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 22:36:06,709 - ticket_web_sever - post - 151 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+1001
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "DP_1559450224387_16645", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02", "endTime": "2019-06-03", "ticketTime": "2019-06-03", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "22018119850911181", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "121", "couponValue": "0", "bonusFlag": "0", "serviceFee": "0", "insureFee": "0", "expressFee": "0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "totalPrices": "121"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+45e681482697508e38f9e7e487198966
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559486166708
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+0fc46b6c9dc9a41a9e76337ac0639a11
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 22:36:06,728 - ticket_web_sever - post - 155 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 14:36:06 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 22:36:06,728 - ticket_web_sever - post - 167 - INFO - cost time: 0:00:00.094822
+2019-06-02 22:42:25,235 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:46:56,256 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:46:59,119 - ticket_web_sever - post - 107 - INFO - redis_access_token=7f167a34540de19ec81e63c571cac885
+2019-06-02 22:46:59,119 - ticket_web_sever - post - 161 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 22:46:59,119 - ticket_web_sever - post - 162 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+1001
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "20190602", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02 22:30:00", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02 22:30:00", "endTime": "2019-06-02 22:30:00", "ticketTime": "2019-06-02 22:30:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "121", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "totalPrices": "121"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+937a0cf8a486966092b3a63ef9d5397a
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559486819119
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+7f167a34540de19ec81e63c571cac885
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 22:46:59,138 - ticket_web_sever - post - 166 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 14:46:59 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 22:46:59,139 - ticket_web_sever - post - 178 - INFO - cost time: 0:00:00.086484
+2019-06-02 22:50:03,474 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 22:50:10,781 - ticket_web_sever - post - 107 - INFO - redis_access_token=05d4a31bfa2b553c326cb7ca8fa11da9
+2019-06-02 22:50:10,782 - ticket_web_sever - post - 162 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 22:50:10,782 - ticket_web_sever - post - 163 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+1001
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "20190602", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02 22:30:00", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02 22:30:00", "endTime": "2019-06-02 22:30:00", "ticketTime": "2019-06-02 22:30:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "totalPrices": "68.5"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+87081ae2b3f9735cd37298f009d59aa4
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559487010781
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+05d4a31bfa2b553c326cb7ca8fa11da9
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 22:50:10,801 - ticket_web_sever - post - 167 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 14:50:10 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 22:50:10,801 - ticket_web_sever - post - 179 - INFO - cost time: 0:00:00.111632
+2019-06-02 23:07:13,191 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 23:07:19,082 - ticket_web_sever - post - 107 - INFO - redis_access_token=df61b54a4a63de00a85f9417fca18d30
+2019-06-02 23:07:19,082 - ticket_web_sever - post - 163 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 23:07:19,082 - ticket_web_sever - post - 164 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+1001
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "merchantCode": "14324152292", "merchantName": "\u7f8e\u56e2\u8ba2\u7968\u7cfb\u7edf", "bizNo": "20190401", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u7528\u6237\u8ba2\u7968", "bizTime": "2019-06-02 02:53:43", "orderNo": "0000000", "orderType": "0", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "trainCode": "G666", "trainType": "G", "seatType": "0", "startTime": "2019-06-03 12:00:00", "endTime": "2019-06-03 12:00:00", "ticketTime": "2019-06-03 12:00:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u5f20\u4e09", "ticketPrices": "68.5", "totalPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "1", "userId": "1111", "address": "\u5317\u4eac\u671d\u9633", "requestID": "20190602025343", "ticketObtainMode": "1", "officeId": "2", "ticketTakpePoint": "1", "mobile": "18688886666", "reserved": "\u9884\u7559", "haiNum": 0, "allocationFlag": "Y", "remark": "\u5907\u6ce8"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+1d1f52aa81562c7a2ea88cee35fc13c8
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559488039082
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+df61b54a4a63de00a85f9417fca18d30
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 23:07:19,101 - ticket_web_sever - post - 168 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 15:07:19 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 23:07:19,102 - ticket_web_sever - post - 180 - INFO - cost time: 0:00:00.088974
+2019-06-02 23:12:31,908 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 23:12:38,829 - ticket_web_sever - post - 107 - INFO - redis_access_token=fda6884717ecec17b3c2a786898ee51b
+2019-06-02 23:12:38,830 - ticket_web_sever - post - 163 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 23:12:38,830 - ticket_web_sever - post - 164 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "merchantCode": "14324152292", "merchantName": "\u7f8e\u56e2\u8ba2\u7968\u7cfb\u7edf", "bizNo": "20190401", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u7528\u6237\u8ba2\u7968", "bizTime": "2019-06-02 02:53:43", "orderNo": "0000000", "orderType": "0", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "trainCode": "G666", "trainType": "G", "seatType": "0", "startTime": "2019-06-03 12:00:00", "endTime": "2019-06-03 12:00:00", "ticketTime": "2019-06-03 12:00:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u5f20\u4e09", "ticketPrices": "68.5", "totalPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "1", "userId": "1111", "address": "\u5317\u4eac\u671d\u9633", "requestID": "20190602025343", "ticketObtainMode": "1", "officeId": "2", "ticketTakpePoint": "1", "mobile": "18688886666", "reserved": "\u9884\u7559", "haiNum": 0, "allocationFlag": "Y", "remark": "\u5907\u6ce8"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+953dc460e2488595be409dca171fb3b1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559488358829
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+fda6884717ecec17b3c2a786898ee51b
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 23:12:38,849 - ticket_web_sever - post - 168 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 15:12:38 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 23:12:38,850 - ticket_web_sever - post - 180 - INFO - cost time: 0:00:00.095970
+2019-06-02 23:16:22,022 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 23:16:26,717 - ticket_web_sever - post - 107 - INFO - redis_access_token=9caf8f748058419770acc54481fe625c
+2019-06-02 23:16:26,717 - ticket_web_sever - post - 163 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 23:16:26,717 - ticket_web_sever - post - 164 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "merchantCode": "14324152292", "merchantName": "\u7f8e\u56e2\u8ba2\u7968\u7cfb\u7edf", "bizNo": "20190401", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u7528\u6237\u8ba2\u7968", "bizTime": "2019-06-02 02:53:43", "orderNo": "0000000", "orderType": "0", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "trainCode": "G666", "trainType": "G", "seatType": "0", "startTime": "2019-06-03 12:00:00", "endTime": "2019-06-03 12:00:00", "ticketTime": "2019-06-03 12:00:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u5f20\u4e09", "ticketPrices": "68.5", "totalPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "1", "userId": "1111", "address": "\u5317\u4eac\u671d\u9633", "requestID": "20190602025343", "ticketObtainMode": "1", "officeId": "2", "ticketTakpePoint": "1", "mobile": "18688886666", "reserved": "\u9884\u7559", "haiNum": 0, "allocationFlag": "Y", "remark": "\u5907\u6ce8"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+c7d1597d8009c51456c2568e63a55ea4
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559488586717
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+9caf8f748058419770acc54481fe625c
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 23:16:26,742 - ticket_web_sever - post - 168 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 15:16:26 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 23:16:26,743 - ticket_web_sever - post - 180 - INFO - cost time: 0:00:00.089113
+2019-06-02 23:29:29,675 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 23:32:02,026 - ticket_web_sever - post - 107 - INFO - redis_access_token=d477df30bc84cfdb4e32c0ccdf4bcb50
+2019-06-02 23:32:02,027 - ticket_web_sever - post - 163 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 23:32:02,027 - ticket_web_sever - post - 164 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "merchantCode": "14324152292", "merchantName": "\u7f8e\u56e2\u8ba2\u7968\u7cfb\u7edf", "bizNo": "20190401", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u7528\u6237\u8ba2\u7968", "bizTime": "2019-06-02 02:53:43", "orderNo": "0000000", "orderType": "0", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "trainCode": "G666", "trainType": "G", "seatType": "0", "startTime": "2019-06-03 12:00:00", "endTime": "2019-06-03 12:00:00", "ticketTime": "2019-06-03 12:00:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u5f20\u4e09", "ticketPrices": "68.5", "totalPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "1", "userId": "1111", "address": "\u5317\u4eac\u671d\u9633", "requestID": "20190602025343", "ticketObtainMode": "1", "officeId": "2", "ticketTakpePoint": "1", "mobile": "18688886666", "reserved": "\u9884\u7559", "haiNum": 0, "allocationFlag": "Y", "remark": "\u5907\u6ce8"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+59d9e007d0470ac7be920b41f1add019
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559489522026
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+d477df30bc84cfdb4e32c0ccdf4bcb50
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 23:32:02,038 - ticket_web_sever - post - 168 - INFO - resp_headers:None 	 resp_data:None	 status_code:None	 err:b'<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.15.8</center>\r\n</body>\r\n</html>\r\n'
+2019-06-02 23:32:02,039 - ticket_web_sever - post - 171 - ERROR - b'<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.15.8</center>\r\n</body>\r\n</html>\r\n'
+2019-06-02 23:32:28,918 - ticket_web_sever - post - 107 - INFO - redis_access_token=b96301846fbc4b958daa54705bcc7992
+2019-06-02 23:32:28,918 - ticket_web_sever - post - 163 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 23:32:28,919 - ticket_web_sever - post - 164 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "merchantCode": "14324152292", "merchantName": "\u7f8e\u56e2\u8ba2\u7968\u7cfb\u7edf", "bizNo": "20190401", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u7528\u6237\u8ba2\u7968", "bizTime": "2019-06-02 02:53:43", "orderNo": "0000000", "orderType": "0", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "trainCode": "G666", "trainType": "G", "seatType": "0", "startTime": "2019-06-03 12:00:00", "endTime": "2019-06-03 12:00:00", "ticketTime": "2019-06-03 12:00:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u5f20\u4e09", "ticketPrices": "68.5", "totalPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "1", "userId": "1111", "address": "\u5317\u4eac\u671d\u9633", "requestID": "20190602025343", "ticketObtainMode": "1", "officeId": "2", "ticketTakpePoint": "1", "mobile": "18688886666", "reserved": "\u9884\u7559", "haiNum": 0, "allocationFlag": "Y", "remark": "\u5907\u6ce8"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+efb758f866f3db8859ba9b2b1954fafe
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559489548918
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+b96301846fbc4b958daa54705bcc7992
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 23:32:28,936 - ticket_web_sever - post - 168 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 15:32:28 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 23:32:28,937 - ticket_web_sever - post - 180 - INFO - cost time: 0:00:00.094684
+2019-06-02 23:33:27,535 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 23:34:32,315 - ticket_web_sever - post - 107 - INFO - redis_access_token=7ff931e3b621cbd296b8c1a11c92ebcd
+2019-06-02 23:34:32,316 - ticket_web_sever - post - 163 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 23:34:32,316 - ticket_web_sever - post - 164 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "merchantCode": "14324152292", "merchantName": "\u7f8e\u56e2\u8ba2\u7968\u7cfb\u7edf", "bizNo": "20190401", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u7528\u6237\u8ba2\u7968", "bizTime": "2019-06-02 02:53:43", "orderNo": "0000000", "orderType": "0", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "trainCode": "G666", "trainType": "G", "seatType": "0", "startTime": "2019-06-03 12:00:00", "endTime": "2019-06-03 12:00:00", "ticketTime": "2019-06-03 12:00:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u5f20\u4e09", "ticketPrices": "68.5", "totalPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "1", "userId": "1111", "address": "\u5317\u4eac\u671d\u9633", "requestID": "20190602025343", "ticketObtainMode": "1", "officeId": "2", "ticketTakpePoint": "1", "mobile": "18688886666", "reserved": "\u9884\u7559", "haiNum": 0, "allocationFlag": "Y", "remark": "\u5907\u6ce8"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+3d5ed21a4c5bc6398b60c6d69d3e8754
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559489672315
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+7ff931e3b621cbd296b8c1a11c92ebcd
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 23:34:32,328 - ticket_web_sever - post - 168 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 02 Jun 2019 15:34:32 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 65
+Connection: close
+Allow: POST
+
+ 	 resp_data:b'{"errcode": -1, "errmsg": "\\u91d1\\u989d\\u9519\\u8bef", "data": {}}'	 status_code:200	 err:None
+2019-06-02 23:34:32,329 - ticket_web_sever - post - 180 - INFO - cost time: 0:00:00.068348
+2019-06-02 23:53:27,750 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 23:53:31,948 - ticket_web_sever - post - 107 - INFO - redis_access_token=352313560565637c62bab73598887d13
+2019-06-02 23:53:31,949 - ticket_web_sever - post - 163 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 23:53:31,949 - ticket_web_sever - post - 164 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "merchantCode": "14324152292", "merchantName": "\u7f8e\u56e2\u8ba2\u7968\u7cfb\u7edf", "bizNo": "20190401", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u7528\u6237\u8ba2\u7968", "bizTime": "2019-06-02 02:53:43", "orderNo": "0000000", "orderType": "0", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "trainCode": "G666", "trainType": "G", "seatType": "0", "startTime": "2019-06-03 12:00:00", "endTime": "2019-06-03 12:00:00", "ticketTime": "2019-06-03 12:00:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u5f20\u4e09", "ticketPrices": "68.5", "totalPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "1", "userId": "1111", "address": "\u5317\u4eac\u671d\u9633", "requestID": "20190602025343", "ticketObtainMode": "1", "officeId": "2", "ticketTakpePoint": "1", "mobile": "18688886666", "reserved": "\u9884\u7559", "haiNum": 0, "allocationFlag": "Y", "remark": "\u5907\u6ce8"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+16b6bb5dc53040b81d1055569f31b82d
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559490811948
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+352313560565637c62bab73598887d13
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-02 23:58:22,813 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-02 23:58:28,444 - ticket_web_sever - post - 107 - INFO - redis_access_token=edda547dc574605219b5475cffe986cc
+2019-06-02 23:58:28,445 - ticket_web_sever - post - 156 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-02 23:58:28,445 - ticket_web_sever - post - 157 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "20190602", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02 22:30:00", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02 22:30:00", "endTime": "2019-06-02 22:30:00", "ticketTime": "2019-06-02 22:30:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "totalPrices": "68.5"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+0d79c231b19b73983803121473169885
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559491108444
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+edda547dc574605219b5475cffe986cc
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-03 00:01:55,720 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-03 00:02:00,672 - ticket_web_sever - post - 107 - INFO - redis_access_token=a7ee3452ac863255f0eb262993046216
+2019-06-03 00:02:00,673 - ticket_web_sever - post - 156 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-03 00:02:00,673 - ticket_web_sever - post - 157 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "20190602", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02 22:30:00", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02 22:30:00", "endTime": "2019-06-02 22:30:00", "ticketTime": "2019-06-02 22:30:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "totalPrices": "68.5"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+640841c5a6935aea6aa095fddabf338f
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559491320672
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+a7ee3452ac863255f0eb262993046216
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-03 00:03:27,526 - ticket_web_sever - post - 107 - INFO - redis_access_token=de612645a7ec38bd0f36352b9e936582
+2019-06-03 00:03:27,527 - ticket_web_sever - post - 156 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-03 00:03:27,527 - ticket_web_sever - post - 157 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "20190602", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02 22:30:00", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02 22:30:00", "endTime": "2019-06-02 22:30:00", "ticketTime": "2019-06-02 22:30:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "totalPrices": "68.5"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+64fe065a51c3abb7232452d92fd11fdb
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559491407526
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+de612645a7ec38bd0f36352b9e936582
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-03 00:05:57,928 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-03 00:06:13,656 - ticket_web_sever - post - 107 - INFO - redis_access_token=3e7c072e0c05d9099d9fdc9de1097a3f
+2019-06-03 00:06:13,657 - ticket_web_sever - post - 156 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-03 00:06:13,657 - ticket_web_sever - post - 157 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode":"12345","merchantName":"\u7f8e\u56e2","bizNo":"20190602","bizType":"DP","bizName":"\u8ba2\u7968","bizBrief":"\u8ba2\u7968","bizTime":"2019-06-02 22:30:00","orderNo":"1559450224387_16645","orderType":"DP","orderDate":"2019-06-02","fromStation":"\u897f\u5b89","toStation":"\u5317\u4eac\u897f","tranCode":"G666","trainType":"A","seatType":"1","startTime":"2019-06-02 22:30:00","endTime":"2019-06-02 22:30:00","ticketTime":"2019-06-02 22:30:00","ticketType":"1","noSeatFlag":"Y","ticketNum":"1","idType":"1","idNo":"1:440101200702060012","IdName":"\u9648\u5fd7\u4e30","ticketPrices":"68.5","couponValue":"50.0","bonusFlag":"2.0","serviceFee":"5.0","insureFee":"3.0","expressFee":"10.0","payType":"0","mobile":"18600477264","userId":"1","address":"\u5317\u4eac","requestID":"1559450224387_16645","ticketObtainMode":"\u5feb\u9012","officeId":"1","ticketTakePoint":"1","reserved":"1","haiNum":"0","allocationFlag":"Y","remark":"12345","appid":"14324152292","secret":"59a69169ff81415dfc30ac652353f69f","totalPrices":"68.5"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+326f67e8c96962b8e0aa47eaf03f8c28
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559491573657
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+3e7c072e0c05d9099d9fdc9de1097a3f
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-03 00:07:27,838 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-03 00:07:36,603 - ticket_web_sever - post - 107 - INFO - redis_access_token=783b3e76c05eafc99a08bf2fbbf15c3f
+2019-06-03 00:07:36,604 - ticket_web_sever - post - 156 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-03 00:07:36,604 - ticket_web_sever - post - 157 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "20190602", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02 22:30:00", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02 22:30:00", "endTime": "2019-06-02 22:30:00", "ticketTime": "2019-06-02 22:30:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "totalPrices": "68.5"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+3efa9386fab556f4d9f29cbf77a4fde3
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559491656603
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+783b3e76c05eafc99a08bf2fbbf15c3f
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-06-03 00:18:32,681 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
+2019-06-03 00:18:46,645 - ticket_web_sever - post - 107 - INFO - redis_access_token=54b22704de8da17f690d8b5bbfaddf20
+2019-06-03 00:18:46,646 - ticket_web_sever - post - 156 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-06-03 00:18:46,646 - ticket_web_sever - post - 157 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3004
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "20190602", "bizType": "DP", "bizName": "\u8ba2\u7968", "bizBrief": "\u8ba2\u7968", "bizTime": "2019-06-02 22:30:00", "orderNo": "1559450224387_16645", "orderType": "DP", "orderDate": "2019-06-02", "fromStation": "\u897f\u5b89", "toStation": "\u5317\u4eac\u897f", "tranCode": "G666", "trainType": "A", "seatType": "1", "startTime": "2019-06-02 22:30:00", "endTime": "2019-06-02 22:30:00", "ticketTime": "2019-06-02 22:30:00", "ticketType": "1", "noSeatFlag": "Y", "ticketNum": "1", "idType": "1", "idNo": "1:440101200702060012", "IdName": "\u9648\u5fd7\u4e30", "ticketPrices": "68.5", "couponValue": "50.0", "bonusFlag": "2.0", "serviceFee": "5.0", "insureFee": "3.0", "expressFee": "10.0", "payType": "0", "mobile": "18600477264", "userId": "1", "address": "\u5317\u4eac", "requestID": "1559450224387_16645", "ticketObtainMode": "\u5feb\u9012", "officeId": "1", "ticketTakePoint": "1", "reserved": "1", "haiNum": "0", "allocationFlag": "Y", "remark": "12345", "appid": "14324152292", "secret": "59a69169ff81415dfc30ac652353f69f", "totalPrices": "68.5"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+4857d7a9cbd60e7c2107abe2759d3bb1
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1559492326645
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+54b22704de8da17f690d8b5bbfaddf20
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
