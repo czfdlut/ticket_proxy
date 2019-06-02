@@ -10,10 +10,10 @@ function req_order_ticket($access_token)
     global $appid, $appsecret, $extra_code;
     $sign = '';
     $ver = '1.0';
-    $timestamp = time(); //'1550130142439';
+    $timestamp = strval(time() * 1000); //'1550130142439';
     $cmd = '3004';
     $token = $access_token;
-    $openid = '';
+    $openid = '23ED8BDB61B06DDA97EE2AC461FE6C1E';
     
     $merchantCode = $appid;
     $merchantName = "美团订票系统";
@@ -31,7 +31,7 @@ function req_order_ticket($access_token)
     $trainType = 'G';
     $seatType = '0';
     $tomorrow = strtotime("tomorrow");
-    $startTime = "2019-04-21 13:00:00";//date("Y-m-d h:i:s", $tomorrow);
+    $startTime = strval(date("Y-m-d h:i:s", $tomorrow)); //"2019-04-21 13:00:00"
     $endTime = $startTime;
     $ticketTime = $startTime;
     $ticketType = '1';
@@ -50,7 +50,7 @@ function req_order_ticket($access_token)
     $mobile = '18688886666';
     $userId = '1111';
     $address = '陕西渭南';
-    $requestID = '20190401';
+    $requestID = strval(date("Ymdhis"));
     $ticketObtainMode = '1';
     $officeId = '2';
     $ticketTakpePoint = '1';
@@ -94,6 +94,7 @@ function req_order_ticket($access_token)
             'idNo' => $idNo,
             'IdName' => $IdName,
             'ticketPrices' => $ticketPrices,
+            'totalPrices' => $ticketPrices,
             'couponValue' => $couponValue,
             'bonusFlag' => $bonusFlag,
             'serviceFee' => $serviceFee,
@@ -106,6 +107,7 @@ function req_order_ticket($access_token)
             'ticketObtainMode' => $ticketObtainMode,
             'officeId' => $officeId,
             'ticketTakpePoint' => $ticketTakpePoint,
+            'mobile' => $mobile,
             'reserved' => $reserved,
             'haiNum' => $haiNum,
             'allocationFlag' => $allocationFlag,
@@ -137,21 +139,22 @@ function req_order_ticket($access_token)
         make_form_request_v2($content, $tmp, $post_data);
         print_r($tmp."\n");
         print_r($post_data."\n");
-        $content_type = sprintf("Content-type: %s; charset='utf-8'", $tmp); 
+        $content_type = sprintf("Content-Type: %s; charset='utf-8'", $tmp); 
         $header = array(
 	        $content_type,
-	        "Accept: application/json", 
+	        "Accept: */*", 
 	        "Cache-Control: no-cache", 
 	        "Pragma: no-cache",
             "ticket-uid: for_test",
-            //"Expect: 100-continue"
+            "Expect:"
         );
     }
-
-    //$uri = "https://www.xt-kp.com/Ticket/reqOrderTicket.json";
-    $uri = "http://test.maidaopiao.com/Ticket/reqOrderTicket.json";
+	//"Accept: application/json", 
+    //"Expect: 100-continue"
+    $uri = "https://www.xt-kp.com/Ticket/reqOrderTicket.json";
+    //$uri = "http://test.maidaopiao.com/Ticket/reqOrderTicket.json";
     $ret_data = "";
-    $errcode = request_xiti($header, $uri, $post_data, 1000, 2, $ret_data);
+    $errcode = request_xiti($header, $uri, $post_data, 2000, 2, $ret_data);
     print_r("ec=".$errcode."\n");
     print_r("ret=".$ret_data."\n");
     

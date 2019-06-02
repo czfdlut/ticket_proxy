@@ -35,7 +35,8 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
 
     def finish_err_msg(self, msg):
         self.set_header("Content-Type", "application/json;charset=UTF-8")
-        self.write({"errcode": -1, "errmsg": msg, "data": {}})
+        self.set_status(200)
+        self.write({"errcode": -1, "errmsg": str(msg), "data": {}})
         self.finish()
 
     def content_type_from_headers(self):
@@ -173,7 +174,7 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
         err, param = self.check_request_param()
         if err is not None:
             self.logger.error(err)
-            self.finish_err_msg(r"参数错误")
+            self.finish_err_msg(err)
             return
 
         self.logger.info("reqeust_body: %s " % self.request.body)
@@ -237,11 +238,16 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
         ##下单失败
         if hdata is None or hdata["status"] == 0:
             self.redis_client.incrbyfloat(balance_uid, ticket_prices)
+            self.write("{uid : testggg}")
+            self.finish()
+            self.logger.info("cost time: %s" %((datetime.now() - start_time)))
+            return
 
         if hdata is None:
             self.logger.error("db data error")
             self.write(resp_data)
             self.finish()
+            self.logger.info("cost time: %s" %((datetime.now() - start_time)))
             return
 
         ##下单成功

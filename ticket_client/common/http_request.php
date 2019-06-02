@@ -93,6 +93,9 @@ function http_post_request_with_header($header, $url, $timeout, &$post_data, &$r
     print_r($ret_data);
     print_r("\n");
     $http_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+    print_r("http_code=".$http_code."\n");
+    $errno = curl_errno($curl);
+    print_r("errno=".$errno."\n");
     curl_close($curl);
     return $http_code;
 }

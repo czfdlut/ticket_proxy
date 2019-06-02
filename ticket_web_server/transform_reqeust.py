@@ -45,11 +45,61 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         except Exception as e:
             self.finish_err_msg(str(e))
             return
-        
+        """ 
+        data = {
+            "appid": "14324152292",
+            "secret": "59a69169ff81415dfc30ac652353f69f",
+            "merchantCode": "14324152292",
+            "merchantName": "美团订票系统",
+            "bizNo": "20190401",
+            "bizType": "DP",
+            "bizName": "订票",
+            "bizBrief": "用户订票",
+            "bizTime": "2019-06-02 04:12:26",
+            "orderNo": "0000000",
+            "orderType": "0",
+            "orderDate": "2019-06-02",
+            "fromStation": "西安",
+            "toStation": "北京西",
+            "trainCode": "G666",
+            "trainType": "G",
+            "seatType": "0",
+            "startTime": "2019-04-21 13:00:00",
+            "endTime": "2019-04-21 13:00:00",
+            "ticketTime": "2019-04-21 13:00:00",
+            "ticketType": "1",
+            "noSeatFlag": "Y",
+            "ticketNum": "1",
+            "idType": "1",
+            "idNo": "1:440101200702060012",
+            "IdName": "张三1",
+            "ticketPrices": "68.5",
+            "couponValue": "50.0",
+            "bonusFlag": "2.0",
+            "serviceFee": "5.0",
+            "insureFee": "3.0",
+            "expressFee": "10.0",
+            "payType": "1",
+            "userId": "1111",
+            "address": "陕西渭南",
+            "requestID": "20190401",
+            "ticketObtainMode": "1",
+            "officeId": "2",
+            "ticketTakpePoint": "1",
+            "reserved": "预留",
+            "haiNum": 0,
+            "allocationFlag": "Y",
+            "remark": "备注"
+        } 
+        """
+
         extra_code = self.ticket_token["extra_code"]
         ticket_uid = self.ticket_token["ticket_uid"]
         key = "access_token_%s" % ticket_uid
         access_token = str(self.redis_client.get(key))
+
+        print("------ ", self.ticket_token)
+        print("-----key-- ", key)
         self.logger.info("redis_access_token=%s" % access_token)
 
         if access_token is None:
@@ -58,7 +108,7 @@ class TransformRequestHandler(tornado.web.RequestHandler):
             self.redis_client.expire(key, 3600)
         
         self.logger.info("access_token=%s" % access_token)
-        if len(access_token) == 0:
+        if access_token is None or len(access_token) == 0:
             self.finish_err_msg(r"验证失败")
             return
               

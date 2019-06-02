@@ -11,7 +11,7 @@ import urllib.request
 import http.client
 import socket
 
-def add_headers(self, headers, k, v):
+def add_headers(headers, k, v):
     is_exist_kv = False
     for k ,v in headers.items():
         if k.lower() == k.lower():
