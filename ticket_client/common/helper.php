@@ -34,7 +34,7 @@ function create_sign($content, $extra_code)
         }
     }
     $message = $message.$extra_code;
-    print_r($message."\n");
+    print_r("message=".$message."\n");
     $sign = md5($message);
     //print_r($sign);
     

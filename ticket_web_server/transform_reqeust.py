@@ -137,6 +137,8 @@ class TransformRequestHandler(tornado.web.RequestHandler):
         data["serviceFee"] = "5.0"
         data["insureFee"] = "3.0"
         data["expressFee"] = "10.0"
+        data["ticketObtainMode"] = "1"
+        data["trainCode"] = data["tranCode"]
         
         #data2 = {"appid":"14324152292","secret":"59a69169ff81415dfc30ac652353f69f","merchantCode":"14324152292","merchantName":"美团订票系统","bizNo":"20190401","bizType":"DP","bizName":"订票","bizBrief":"用户订票","bizTime":"2019-06-02 02:53:43","orderNo":"0000000","orderType":"0","orderDate":"2019-06-02","fromStation":"西安","toStation":"北京西","trainCode":"G666","trainType":"G","seatType":"0","startTime":"2019-06-03 12:00:00","endTime":"2019-06-03 12:00:00","ticketTime":"2019-06-03 12:00:00","ticketType":"1","noSeatFlag":"Y","ticketNum":"1","idType":"1","idNo":"1:440101200702060012","IdName":"张三","ticketPrices":"68.5","totalPrices":"68.5","couponValue":"50.0","bonusFlag":"2.0","serviceFee":"5.0","insureFee":"3.0","expressFee":"10.0","payType":"1","userId":"1111","address":"北京朝阳","requestID":"20190602025343","ticketObtainMode":"1","officeId":"2","ticketTakpePoint":"1","mobile":"18688886666","reserved":"预留","haiNum":0,"allocationFlag":"Y","remark":"备注"}
         content = {
