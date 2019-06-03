@@ -89,7 +89,7 @@ def request_query(url, headers={}, data=None, timeout=30):
         resp = urllib.request.urlopen(req, data=data, timeout=timeout)
         return resp.info(), resp.read(), resp.getcode(), None
     except (urllib.request.HTTPError, http.client.HTTPException) as err:
-        return None, None, None, err.read()
+        return None, None, None, str(err)
     except (socket.error, socket.timeout) as err:
         return None, None, None, str(err)
     except Exception as err:

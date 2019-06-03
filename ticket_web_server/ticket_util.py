@@ -55,7 +55,7 @@ def make_form_request_v2(data):
             #print(tmp)
             body = body + tmp
         else:
-            new_value = json.dumps(value)
+            new_value = json.dumps(value, separators=(',',':'))
             #new_value = json.dumps(value,separators=(',',':'))
             tmp = multipart_fmt % (boundary, k, new_value)
             #print(tmp)

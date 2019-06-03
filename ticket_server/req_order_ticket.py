@@ -212,12 +212,13 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
             self.redis_client.incrbyfloat(balance_uid, ticket_prices)
             self.finish_err_msg(r"交易非法")
             return
-
+        
+        self.logger.info("request: ", self.request.body)
         ##请求西铁
         headers = self.content_type_from_headers()
         resp_headers, resp_data, status_code, err = yield tornado.gen.Task(self.reqeust_proxy_server, headers, self.request.body)
         
-        self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s" % (resp_headers, resp_data, status_code, err))
+        self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s" % (resp_headers, resp_data.decode('utf8'), status_code, err))
 
         if err is not None:
             self.logger.error("request error:%s" % err)
@@ -232,20 +233,20 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
         self.set_response_status(200)
 
         self.logger.info("test: %s" % str("test"))
-        hdata = self.join_db_data(uid, param, resp_data)
+        hdata = self.join_db_data(uid, param, resp_data.decode('utf8'))
         self.logger.info("hdata: %s" % json.dumps(hdata))
 
         ##下单失败
         if hdata is None or hdata["status"] == 0:
             self.redis_client.incrbyfloat(balance_uid, ticket_prices)
-            self.write("{uid : testggg}")
+            self.write(resp_data.decode('utf8'))
             self.finish()
             self.logger.info("cost time: %s" %((datetime.now() - start_time)))
             return
 
         if hdata is None:
             self.logger.error("db data error")
-            self.write(resp_data)
+            self.write(resp_data.decode('utf8'))
             self.finish()
             self.logger.info("cost time: %s" %((datetime.now() - start_time)))
             return
@@ -256,7 +257,7 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
         self.mysql_db.insert("order_ticket", hdata)
         self.redis_client.release(lock)
 
-        self.write(resp_data)
+        self.write(resp_data.decode('utf8'))
         self.finish()
 
         self.logger.info("cost time: %s" %((datetime.now() - start_time)))
