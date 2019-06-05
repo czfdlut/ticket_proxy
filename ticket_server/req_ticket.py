@@ -141,10 +141,9 @@ class ReqTicketHandler(tornado.web.RequestHandler):
     def reqeust_proxy_server(self, headers, body):
         return request_query(self.url, headers=headers, data=body, timeout=self.timeout)
 
-    @tornado.web.asynchronous
+    #@tornado.web.asynchronous
     @tornado.gen.coroutine
     def post(self):
-        print("----")
         start_time = datetime.now()
 
         uid = self.get_uid_from_headers()

@@ -82,15 +82,23 @@ def get_time_stamp13():
     return date_stamp
 
 def request_query(url, headers={}, data=None, timeout=30):
+    status_code = None
+    info = None
+    response = None
     try:
         req = urllib.request.Request(url)
         for k, v in headers.items():
             req.add_header(k, v)
-        resp = urllib.request.urlopen(req, data=data, timeout=timeout)
-        return resp.info(), resp.read(), resp.getcode(), None
-    except (urllib.request.HTTPError, http.client.HTTPException) as err:
-        return None, None, None, str(err)
+        f = urllib.request.urlopen(req, data=data, timeout=timeout)
+        status_code = f.getcode()
+        info = f.info()
+        response = f.read().decode('utf8')
+        return info, response, status_code, None
+    except urllib.request.HTTPError as err:
+        return info, response, status_code, str(err)
+    except http.client.HTTPException as err:
+        return info, response, status_code, str(err)
     except (socket.error, socket.timeout) as err:
-        return None, None, None, str(err)
+        return info, response, status_code, str(err)
     except Exception as err:
-        return None, None, None, str(err)
+        return info, response, status_code, str(err)

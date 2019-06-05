@@ -14,8 +14,8 @@ import tornado.httpclient
 
 class OrderCancel(tornado.web.RequestHandler):
     def initialize(self):
-        self.url = self.config.get("REQ-API", "url")
-        self.timeout = self.config.getint("REQ-API", "timeout")
+        self.url = self.config.get("CACEL-API", "url")
+        self.timeout = self.config.getint("CACEL-API", "timeout")
 
     @property
     def logger(self):
@@ -38,9 +38,10 @@ class OrderCancel(tornado.web.RequestHandler):
         self.mysql_db.execute_sql(sql)
 
     def finish_err_msg(self, msg):
-        self.set_header("Content-Type", "application/json")
+        self.set_header("Content-Type", "application/json;charset=UTF-8")
         self.write({"errcode": -1, "errmsg": msg, "data": {}})
         self.finish()
+        self.logger.info("finish order cacel reqeust=====================end")
 
     def content_type_from_headers(self):
         for k,v in self.request.headers.items():
@@ -51,7 +52,6 @@ class OrderCancel(tornado.web.RequestHandler):
     def get_ticket_prices(self, uid, request_body):
         try:
             param = json.loads(self.get_argument("param"))
-            print("param: ", param)
             orderId = param["orderId"]
         except Exception as err:
             self.logger.error("Error: %s" % err)
@@ -177,7 +177,7 @@ class OrderCancel(tornado.web.RequestHandler):
         err = self.check_request_param()
         if err is not None:
             self.logger.error(err)
-            self.finish_err_msg("param exception")
+            self.finish_err_msg(err)
             return
         
         ##查询票价
@@ -226,7 +226,8 @@ class OrderCancel(tornado.web.RequestHandler):
             ##更新reids余额
             balance_uid = "ticket_balance_uid_%s" % uid
             self.redis_client.incrbyfloat(balance_uid, uid, ticket_prices)
-                
+        
+        self.set_header("Content-Type", "application/json;charset=UTF-8")          
         self.write(resp_data)
         self.finish()
 

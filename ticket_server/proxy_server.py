@@ -5,6 +5,7 @@ from req_ticket import ReqTicketHandler
 from req_order_ticket import ReqOrderTicketHandler
 from order_cancel import OrderCancel
 from admin_update_balance import UpdateBalanceHandler
+from req_ticket_callback import ReqTicketCallBack
 from util import logger_handler
 import tornado.httpserver
 import tornado.ioloop
@@ -66,12 +67,14 @@ class EventApplication(tornado.web.Application):
             (r"/Ticket/reqOrderTicket.json", ReqOrderTicketHandler),
             (r"/Ticket/orderCancel.json", OrderCancel),
             (r"/admin/update/balance", UpdateBalanceHandler),
+            (r"/TicketOrder/callback", ReqTicketCallBack),
             (r"/test", Test1Handler),
         ], debug=True)
 
 if __name__ == "__main__":
     tornado.options.parse_command_line()
     application = EventApplication()
+    print("port", tornado.options.options.port)
 
     http_server = tornado.httpserver.HTTPServer(application)
     http_server.listen(tornado.options.options.port, tornado.options.options.bind)

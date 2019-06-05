@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*
 from redis_client import RedisClient
 from mysql_client import MySqlClient
-from transform_reqeust import TransformRequestHandler
+from order_request import OrderRequestHandler
+from order_cancel_request import OrderCancelRequestHandler
 from ticket_report import TicketReportHandler
+from upload_img_request import UploadImgHandler
 from util import logger_handler
 import tornado.httpserver
 import tornado.ioloop
@@ -44,12 +46,10 @@ class EventApplication(tornado.web.Application):
         self.redis_client.connect()
                            
         tornado.web.Application.__init__(self, [
-            (r"/Ticket/uploadIdImg.json", TransformRequestHandler),
-            (r"/Ticket/queryTicketResult.json", TransformRequestHandler),
-            (r"/Ticket/orderCancel2.json", TransformRequestHandler),
-            (r"/Ticket/reqTicket.json", TransformRequestHandler),
-            (r"/Ticket/reqOrderTicket.json", TransformRequestHandler),
-            (r"/Ticket/orderCancel.json", TransformRequestHandler),
+            (r"/Ticket/uploadIdImg.json", UploadImgHandler),
+            #(r"/Ticket/reqTicket.json", TransformRequestHandler),
+            (r"/Ticket/reqOrderTicket.json", OrderRequestHandler),
+            (r"/Ticket/orderCancel.json", OrderCancelRequestHandler),
             (r"/Ticket/report.json", TicketReportHandler),
         ], debug=True)
 

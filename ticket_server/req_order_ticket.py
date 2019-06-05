@@ -9,8 +9,8 @@ import tornado.web
 from datetime import datetime
 import json
 from tornado.concurrent import Future
-from tornado.httpclient import AsyncHTTPClient
-import tornado.httpclient
+#from tornado.httpclient import AsyncHTTPClient
+#import tornado.httpclient
 
 class ReqOrderTicketHandler(tornado.web.RequestHandler):
     def initialize(self):
@@ -35,9 +35,11 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
 
     def finish_err_msg(self, msg):
         self.set_header("Content-Type", "application/json;charset=UTF-8")
-        self.set_status(200)
-        self.write({"errcode": -1, "errmsg": str(msg), "data": {}})
+        body = {"errcode": -1, "errmsg": msg, "data": {} }
+        self.write(body)
         self.finish()
+        self.logger.info("finish reqeust=====================end")
+        return
 
     def content_type_from_headers(self):
         for k,v in self.request.headers.items():
@@ -214,41 +216,30 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
             return
         
         self.logger.info("request: ", self.request.body)
+
         ##请求西铁
         headers = self.content_type_from_headers()
         resp_headers, resp_data, status_code, err = yield tornado.gen.Task(self.reqeust_proxy_server, headers, self.request.body)
         
-        self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s" % (resp_headers, resp_data.decode('utf8'), status_code, err))
+        self.logger.info("resp_headers:%s\n resp_data:%s\n status_code:%s\n err:%s\n" % (resp_headers, resp_data, status_code, err))
 
         if err is not None:
             self.logger.error("request error:%s" % err)
             self.redis_client.incrbyfloat(balance_uid, ticket_prices)
-            self.write(err)
-            self.finish()
+            self.finish_err_msg(str(err))
             return
-
+            
         ##notify client
-        add_headers(resp_headers, "Content-Type", "application/json;charset=UTF-8")    
-        self.set_response_header(resp_headers)
-        self.set_response_status(200)
-
-        self.logger.info("test: %s" % str("test"))
-        hdata = self.join_db_data(uid, param, resp_data.decode('utf8'))
+        hdata = self.join_db_data(uid, param, resp_data)
         self.logger.info("hdata: %s" % json.dumps(hdata))
-
+         
         ##下单失败
         if hdata is None or hdata["status"] == 0:
+            self.logger.error("order failed:%s" % resp_data)
             self.redis_client.incrbyfloat(balance_uid, ticket_prices)
-            self.write(resp_data.decode('utf8'))
+            self.set_header("Content-Type", "application/json;charset=UTF-8")
+            self.write(resp_data)
             self.finish()
-            self.logger.info("cost time: %s" %((datetime.now() - start_time)))
-            return
-
-        if hdata is None:
-            self.logger.error("db data error")
-            self.write(resp_data.decode('utf8'))
-            self.finish()
-            self.logger.info("cost time: %s" %((datetime.now() - start_time)))
             return
 
         ##下单成功
@@ -256,9 +247,10 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
         lock = self.redis_client.acquire(lock_req_order_uid, 1)
         self.mysql_db.insert("order_ticket", hdata)
         self.redis_client.release(lock)
-
-        self.write(resp_data.decode('utf8'))
+        
+        self.set_header("Content-Type", "application/json;charset=UTF-8")
+        self.write(resp_data)
         self.finish()
 
-        self.logger.info("cost time: %s" %((datetime.now() - start_time)))
+        self.logger.info("order ticket cost time: %s" %((datetime.now() - start_time)))
 
