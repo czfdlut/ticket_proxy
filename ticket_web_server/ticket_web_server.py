@@ -5,6 +5,7 @@ from order_request import OrderRequestHandler
 from order_cancel_request import OrderCancelRequestHandler
 from ticket_report import TicketReportHandler
 from upload_img_request import UploadImgHandler
+from req_ticket_callback import ReqTicketCallBack
 from util import logger_handler
 import tornado.httpserver
 import tornado.ioloop
@@ -51,6 +52,7 @@ class EventApplication(tornado.web.Application):
             (r"/Ticket/reqOrderTicket.json", OrderRequestHandler),
             (r"/Ticket/orderCancel.json", OrderCancelRequestHandler),
             (r"/Ticket/report.json", TicketReportHandler),
+            (r"/TicketOrder/callback", ReqTicketCallBack),
         ], debug=True)
 
 if __name__ == "__main__":

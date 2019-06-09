@@ -55,9 +55,10 @@ function req_order_callback()
     $header = array();
     if ($type == 1) 
     {
+        //"Content-type: application/x-www-form-urlencoded;charset='utf-8'", 
         $post_data = make_request($content);
         $header = array(
-            "Content-type: application/x-www-form-urlencoded;charset='utf-8'", 
+            "Content-type: application/json;charset='utf-8'", 
             "Accept: application/json", 
             "Cache-Control: no-cache", 
             "Pragma: no-cache",
@@ -83,7 +84,7 @@ function req_order_callback()
     }
 
     //$uri = "http://127.0.0.1:9002/Ticket/reqTicket.json";
-    $uri = "http://test.maidaopiao.com/TicketOrder/callback";
+    $uri = "http://test.maidaopiao.com:8080/TicketOrder/callback";
     $ret_data = "";
     $errcode = request_xiti($header, $uri, $post_data, 1000, 2, $ret_data);
     print_r("ec=".$errcode."\n");
