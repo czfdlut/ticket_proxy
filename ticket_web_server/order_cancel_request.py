@@ -45,6 +45,8 @@ class OrderCancelRequestHandler(tornado.web.RequestHandler):
         
         extra_code = self.ticket_token["extra_code"]
         ticket_uid = self.ticket_token["ticket_uid"]
+        ##only test
+        ticket_uid="for_test"
         appid = self.ticket_token["appid"]
         appsecret = self.ticket_token["appsecret"]
 
@@ -70,16 +72,18 @@ class OrderCancelRequestHandler(tornado.web.RequestHandler):
             self.redis_client.set(key, access_token)
             self.redis_client.expire(key, 3600)
             self.logger.info("update access_token:%s" % key)
-          
-        data = {
-            "merchantCode": appid,
-            "merchantName": "meituan",
-            "bizNo": "2019224",
-            "bizType": "DPQX",
-            "mobile": "18688886666",
-            "orderId": "9",
-            "requestID": "20191224" 
-        }
+        
+        print("data:", data)
+        
+        data["appid"] = appid
+        data["secret"] = appsecret
+        #data["merchantName"] = "meituan"
+        #data["orderId"] = "0000000"
+        #data["requestID"] = "20191224"
+        #data["bizNo"] = "20190602"
+        #data["bizType"] = "DPQX"
+
+        print("data:", data)
 
         content = {
           "sign": "",

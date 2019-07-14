@@ -189,10 +189,10 @@ class OrderCancel(tornado.web.RequestHandler):
         self.logger.info("query prices")
         ##查询票价
         ticket_prices = self.get_ticket_prices(uid, self.request.body)
-        if ticket_prices is None:
-            self.logger.error("orderId error")
-            self.finish_err_msg("orderId error")
-            return
+        #if ticket_prices is None:
+        #    self.logger.error("orderId error")
+        #    self.finish_err_msg("orderId error")
+        #    return
         
         self.logger.info("notify client")
         ##notify client
