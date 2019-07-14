@@ -55,7 +55,6 @@ class TicketReportHandler(tornado.web.RequestHandler):
             return     
             
         total = int(qs[0][0])  
-        pos = start * total/pagesize
                 
         if table == "account_balance":
             fields = {
@@ -122,7 +121,7 @@ class TicketReportHandler(tornado.web.RequestHandler):
         
         keys = fields.keys()
         marks = fields.values()        
-        sql = "SELECT %s FROM %s ORDER BY `updateTime` LIMIT %d, %d " % (",".join(keys), table, pos, pagesize)            
+        sql = "SELECT %s FROM %s ORDER BY `updateTime` DESC LIMIT %d, %d " % (",".join(keys), table, start, pagesize)            
         qs, err = self.mysql_db.execute_query_sql(sql)
         if err is not None:
             self.finish_err_msg(str(err))

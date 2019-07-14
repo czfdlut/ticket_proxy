@@ -60,10 +60,15 @@ class OrderCancel(tornado.web.RequestHandler):
         sql = "select ticketPrices from order_ticket where uid='%s' and orderNo ='%s' limit 1" \
             % (uid, orderId)
         qs, err = self.mysql_db.execute_query_sql(sql)
+        print("qs:", qs, "err:", err)
         if err is not None:
             self.logger.error(str(err))
             return None        
-        
+
+        if len(qs) == 0:
+            self.logger.info("sql return empty results")
+            return None
+
         if qs[0][0] is None:
             self.logger.error("not found uid:%s orderid:%s" %(uid, orderId))
             return None
@@ -176,16 +181,20 @@ class OrderCancel(tornado.web.RequestHandler):
         ##参数检查
         err = self.check_request_param()
         if err is not None:
+            self.logger.info("check param failed")
             self.logger.error(err)
             self.finish_err_msg(err)
             return
         
+        self.logger.info("query prices")
         ##查询票价
         ticket_prices = self.get_ticket_prices(uid, self.request.body)
         if ticket_prices is None:
+            self.logger.error("orderId error")
             self.finish_err_msg("orderId error")
             return
         
+        self.logger.info("notify client")
         ##notify client
         resp_headers = {"Content-Type":"application/json"}
         self.set_response_header(resp_headers)

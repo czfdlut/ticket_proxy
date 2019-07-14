@@ -1,1 +1,1 @@
-ps -ef|grep ticket_server | awk '{print $2}' | grep -v 'grep' | xargs kill -9
+ps -ef|grep ticket_web_server | awk '{print $2}' | grep -v 'grep' | xargs kill -9

@@ -100,7 +100,7 @@ def get_access_token(ticket_uid, data, extra_code):
     post_data = post_data.encode(encoding='UTF8')
     #print("post_data=%s" %post_data)
 
-    url = "http://test.maidaopiao.com/base/doAction";
+    url = "http://test.maidaopiao.com:8081/base/doAction";
     headers = {"Content-type": "application/json;charset='utf-8'", "ticket-uid": ticket_uid }
     resp_headers, resp_data, status_code, err  = request_query(url, headers=headers, data=post_data, timeout=3000)
     if err is not None:

@@ -26,7 +26,8 @@ class OrderCancelRequestHandler(tornado.web.RequestHandler):
    
     @tornado.gen.coroutine
     def http_request_server(self, headers, body):         
-        url = "http://test.maidaopiao.com" +  self.request.path
+        #url = "http://test.maidaopiao.com" +  self.request.path
+        url = "http://test.maidaopiao.com:8081" +  self.request.path
         return request_query(url, headers=headers, data=body.encode(encoding='UTF8'), timeout=10)
    
     @tornado.web.asynchronous

@@ -1,3 +1,41 @@
-2019-06-09 12:18:37,476 - ticket_web_sever - connect - 55 - INFO - redis connect is ok!
-2019-06-09 12:19:26,994 - ticket_web_sever - post - 26 - INFO - order ticket cost time: 0:00:00.000400
-2019-06-09 12:20:01,508 - ticket_web_sever - post - 26 - INFO - order ticket cost time: 0:00:00.000384
+2019-07-14 12:09:42,610 - ticket_web_sever - post - 56 - INFO - redis_access_token=0282ebaba072474d1df4886eee173483
+2019-07-14 12:09:42,611 - ticket_web_sever - post - 98 - INFO - content_type:multipart/form-data; boundary=-----------------------------7d83e2d7a141e
+2019-07-14 12:09:42,611 - ticket_web_sever - post - 99 - INFO - post-data:-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="command"
+
+3007
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="openid"
+
+23ED8BDB61B06DDA97EE2AC461FE6C1E
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="param"
+
+{"merchantCode":"14324152292","merchantName":"meituan","bizNo":"2019224","bizType":"DPQX","mobile":"18688886666","orderId":"9","requestID":"20191224"}
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="sign"
+
+1827e4c2eb8d4721ed4fdafada6ed9f3
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="timestamp"
+
+1563077382611
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="token"
+
+0282ebaba072474d1df4886eee173483
+-------------------------------7d83e2d7a141e
+Content-Disposition: form-data; name="ver"
+
+1.0
+-------------------------------7d83e2d7a141e--
+
+2019-07-14 12:09:42,627 - ticket_web_sever - post - 105 - INFO - resp_headers:Server: nginx/1.15.8
+Date: Sun, 14 Jul 2019 04:09:42 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 54
+Connection: close
+Allow: POST
+
+ 	 resp_data:{"errcode": -1, "errmsg": "orderId error", "data": {}}	 status_code:200	 err:None
+2019-07-14 12:09:42,627 - ticket_web_sever - post - 116 - INFO - cost time: 0:00:00.096269

@@ -84,7 +84,7 @@ function req_order_callback()
     }
 
     //$uri = "http://127.0.0.1:9002/Ticket/reqTicket.json";
-    $uri = "http://test.maidaopiao.com:8080/TicketOrder/callback";
+    $uri = "http://test.maidaopiao.com:8081/TicketOrder/callback";
     $ret_data = "";
     $errcode = request_xiti($header, $uri, $post_data, 1000, 2, $ret_data);
     print_r("ec=".$errcode."\n");
