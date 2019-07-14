@@ -1,0 +1,137 @@
+daemon off;
+#user  work;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+error_log  logs/error.log  notice;
+
+#pid        logs/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  logs/access.log  main;
+    sendfile        on;
+    lua_shared_dict config 1m;
+    tcp_nopush     on;
+    keepalive_timeout  65;
+    
+    proxy_redirect off ;
+    proxy_next_upstream error timeout invalid_header http_500 http_502 http_503;
+    proxy_connect_timeout 300;
+    proxy_send_timeout 300;
+    proxy_read_timeout 600;
+    proxy_ignore_client_abort on;
+    proxy_max_temp_file_size 128m;
+    proxy_set_header HOST $host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+    client_max_body_size 30m;
+    client_body_buffer_size 1024k;
+
+    #gzip  on;
+
+    upstream ticket_forward_proxy {
+	    server 127.0.0.1:9002 max_fails=3 fail_timeout=15s;
+	    server www.xt-kp.com max_fails=3 fail_timeout=15s;
+    }
+
+    upstream ticket_assgin_proxy {
+	    server 127.0.0.1:9002 max_fails=3 fail_timeout=15s;
+    }
+
+    lua_package_path "/home/work/nginx/?.lua;/home/work/nginx/lualib/?.lua;;";
+    lua_package_cpath "/home/work/nginx/lualib/?.so;;";
+
+    server {
+        listen       8080;
+        server_name  localhost;
+
+        #access_log  logs/host.access.log  main;
+
+        add_header Allow "POST" always;
+        if ( $request_method !~ ^(|POST)$ ) {
+            return 405;
+        }
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+        lua_code_cache off;
+        #get access_token
+	    location /base/doAction {
+            #lua_code_cache off;
+            access_by_lua_file ticket/proxy_forward_auth.lua;
+            proxy_pass http://ticket_forward_proxy;	
+	    }
+
+        #upload user identity
+	    location /Ticket/uploadIdImg.json {
+            access_by_lua_file ticket/proxy_forward_auth.lua;
+            proxy_pass https://ticket_forward_proxy;	
+	    }
+        
+        #query ticket information
+	    location /Ticket/queryTicketResult.json {
+            content_by_lua_file ticket/proxy_forward_auth.lua;
+            proxy_pass https://ticket_forward_proxy;	
+	    }
+
+         #request order ticket
+	    location /Ticket/reqOrderTicket.json {
+            #access_by_lua_file ticket/proxy_assgin_auth.lua;
+            proxy_pass http://ticket_assgin_proxy;	
+	    }
+        
+        #cancel ticket order 
+	    location /Ticket/orderCancel.json {
+            access_by_lua_file ticket/proxy_assgin_auth.lua;
+            proxy_pass http://ticket_assgin_proxy;	
+	    }
+        
+        #ticket revocation
+	    location /Ticket/orderCancel2.json {
+            access_by_lua_file ticket/proxy_assgin_auth.lua;
+            proxy_pass http://ticket_assgin_proxy;	
+	    }
+
+        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+        #
+        #location ~ \.php$ {
+        #    proxy_pass   http://127.0.0.1;
+        #}
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        #location ~ \.php$ {
+        #    root           html;
+        #    fastcgi_pass   127.0.0.1:9000;
+        #    fastcgi_index  index.php;
+        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+        #    include        fastcgi_params;
+        #}
+
+        # deny access to .htaccess files, if Apache's document root
+        # concurs with nginx's one
+        #
+        #location ~ /\.ht {
+        #    deny  all;
+        #}
+    }
+}

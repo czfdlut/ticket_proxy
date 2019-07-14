@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1280, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <title>admin</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="head_box">
+            <div class="head__inner">
+                <div class="head__inner_hd">
+                    <div class="layout">
+                        <div class="layout__side">
+                            <h1 class="logo">西铁智慧商旅服务平台</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast"></div>
+
+    <div class="main">
+        <div class="tool">
+            <a class="btn btn-primary" href="javascript:void(0);" id="reqTicket-btn">申请订票</a>
+            <a class="btn btn-primary" href="javascript:void(0);" id="ticketUploadIdImg-btn">上传乘车人身份证</a>
+            <a class="btn btn-primary" href="javascript:void(0);" id="orderCancel-btn">订单退单</a>
+        </div>
+        <div class="order-form">
+                <form action="" id="getTicket-form">
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">商户系统编号</label>
+                            <label class="input">
+                                <input name="merchantCode" type="text" class="input-sm" value="12345">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">商户名称</label>
+                            <label class="input">
+                                <input name="merchantName" type="text" class="input-sm" value="美团">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">业务流水编号</label>
+                            <label class="input">
+                                <input name="bizNo" type="text" class="input-sm">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">业务类型</label>
+                            <label class="input">
+                                <input name="bizType" type="text" class="input-sm" value="DP">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">业务名称</label>
+                            <label class="input">
+                                <input name="bizName" type="text" class="input-sm" value="订票">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">业务摘要</label>
+                            <label class="input">
+                                <input name="bizBrief" type="text" class="input-sm" value="订票">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">业务日期</label>
+                            <label class="input">
+                                <input name="bizTime" type="text" class="input-sm datepicker" readonly>
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">订票时间</label>
+                            <label class="input">
+                                <input name="orderDate" type="text" class="input-sm datepicker" readonly>
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">开始时间</label>
+                            <label class="input">
+                                <input name="startBizTime" type="text" class="input-sm datepicker" readonly>
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">结束时间</label>
+                            <label class="input">
+                                <input name="endBizTime" type="text" class="input-sm datepicker" readonly>
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">页码</label>
+                            <label class="input">
+                                <input name="pageIndex" type="text" class="input-sm" value="1">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">每页记录条数</label>
+                            <label class="input">
+                                <input name="pageSize" type="text" class="input-sm" value="100">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">请求流水号</label>
+                            <label class="input">
+                                <input name="requestID" type="text" class="input-sm">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="col col-4">
+                        <div class="form-item">
+                            <label class="label">&nbsp;</label>
+                            <button type="button" class="btn btn-primary btn-getTicket">
+                                查询
+                            </button>
+                        </div>
+                    </section>
+                </form>
+        </div>
+        <table class="table table-bordered" id="orderList">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+        <!-- <div class="text-right">
+            <ul class="pagination">
+                <li class="paginate_button previous disabled" id="datatable_fixed_column_previous"><a href="#"
+                        aria-controls="datatable_fixed_column" data-dt-idx="0" tabindex="0">Previous</a></li>
+                <li class="paginate_button active"><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="1"
+                        tabindex="0">1</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="2"
+                        tabindex="0">2</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="3"
+                        tabindex="0">3</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="4"
+                        tabindex="0">4</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="5"
+                        tabindex="0">5</a></li>
+                <li class="paginate_button disabled" id="datatable_fixed_column_ellipsis"><a href="#"
+                        aria-controls="datatable_fixed_column" data-dt-idx="6" tabindex="0">…</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="7"
+                        tabindex="0">10</a></li>
+                <li class="paginate_button next" id="datatable_fixed_column_next"><a href="#"
+                        aria-controls="datatable_fixed_column" data-dt-idx="8" tabindex="0">Next</a></li>
+            </ul>
+        </div> -->
+    </div>
+
+    <div class="pop-bg"></div>
+
+    <div class="pop-box" id="reqTicket-pop">
+        <div class="pop-title">申请订票</div>
+        <div class="pop-close">x</div>
+        <div class="pop-content">
+            <div class="pop-form">
+                <form action="">
+                    <section>
+                        <label class="label">商户系统编号</label>
+                        <label class="input">
+                            <input name="merchantCode" type="text" class="input-sm" value="12345">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">商户名称</label>
+                        <label class="input">
+                            <input name="merchantName" type="text" class="input-sm" value="美团">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">业务流水编号</label>
+                        <label class="input">
+                            <input name="bizNo" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">业务类型</label>
+                        <label class="input">
+                            <input name="bizType" type="text" class="input-sm" value="DP">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">业务名称</label>
+                        <label class="input">
+                            <input name="bizName" type="text" class="input-sm" value="订票">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">业务摘要</label>
+                        <label class="input">
+                            <input name="bizBrief" type="text" class="input-sm" value="订票">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">业务日期</label>
+                        <label class="input">
+                            <input name="bizTime" type="text" class="input-sm datepicker" readonly>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">订单流水号</label>
+                        <label class="input">
+                            <input name="orderNo" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">订单类型</label>
+                        <label class="input">
+                            <input name="orderType" type="text" class="input-sm" value="DP">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">订票时间</label>
+                        <label class="input">
+                            <input name="orderDate" type="text" class="input-sm datepicker" readonly>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">乘车站</label>
+                        <label class="input">
+                            <input name="fromStation" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">到站</label>
+                        <label class="input">
+                            <input name="toStation" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">站车次</label>
+                        <label class="input">
+                            <input name="trainCode" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">列车类型</label>
+                        <label class="select">
+                            <select name="trainType" id="">
+                                <option value="A">A-所有</option>
+                                <option value="G">G-高铁</option>
+                                <option value="C">C-城际</option>
+                                <option value="D">D-动车</option>
+                                <option value="Z">Z-直达</option>
+                                <option value="T">T-特快</option>
+                                <option value="K">K-快速</option>
+                                <option value="P">P-普通</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">席位类型</label>
+                        <label class="select">
+                            <select name="seatType" id="">
+                                <option value="1">硬座</option>
+                                <option value="2">软座</option>
+                                <option value="3">硬卧</option>
+                                <option value="4">软卧</option>
+                                <option value="5">动卧</option>
+                                <option value="6">高级软卧</option>
+                                <option value="M">一等座</option>
+                                <option value="O">二等座</option>
+                                <option value="P">商务座</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">发车时间</label>
+                        <label class="input">
+                            <input name="startTime" type="text" class="input-sm datepicker" readonly>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">到站时间</label>
+                        <label class="input">
+                            <input name="endTime" type="text" class="input-sm datepicker" readonly>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">乘车日期</label>
+                        <label class="input">
+                            <input name="ticketTime" type="text" class="input-sm datepicker" readonly>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">票种</label>
+                        <label class="select">
+                            <select name="ticketType" id="">
+                                <option value="1">成人</option>
+                                <option value="0">学生票</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">接受无座</label>
+                        <label class="select">
+                            <select name="noSeatFlag" id="">
+                                <option value="Y">接受</option>
+                                <option value="N">不接受</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">数量</label>
+                        <label class="input">
+                            <input name="ticketNum" type="text" class="input-sm" value="1">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">乘客证件类型</label>
+                        <label class="select">
+                            <select name="idType" id="">
+                                <option value="1">-二代身份证</option>
+                                <option value="2">一代身份证</option>
+                                <option value="3">临时身份证</option>
+                                <option value="B">护照</option>
+                                <option value="Z">订孩票用成人证件</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">乘客证件上传序号</label>
+                        <label class="input">
+                            <input name="idNo" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">乘客姓名</label>
+                        <label class="input">
+                            <input name="IdName" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">票价</label>
+                        <label class="input">
+                            <input name="ticketPrices" type="text" class="input-sm" onchange="document.getElementById('reqTicket_totalPrices').value = this.value">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">总票价</label>
+                        <label class="input">
+                            <input name="totalPrices" id="reqTicket_totalPrices" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">优惠券</label>
+                        <label class="input">
+                            <input name="couponValue" type="text" class="input-sm" value="0">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">积分兑换</label>
+                        <label class="input">
+                            <input name="bonusFlag" type="text" class="input-sm" value="0">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">服务费</label>
+                        <label class="input">
+                            <input name="serviceFee" type="text" class="input-sm" value="0">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">乘客险费用</label>
+                        <label class="input">
+                            <input name="insureFee" type="text" class="input-sm" value="0">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">快递费</label>
+                        <label class="input">
+                            <input name="expressFee" type="text" class="input-sm" value="0">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">支付类型</label>
+                        <label class="select">
+                            <select name="payType" id="">
+                                <option value="0">-云闪付</option>
+                                <option value="1">支付宝</option>
+                                <option value="2">微信</option>
+                                <option value="3">其他</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">用户手机号</label>
+                        <label class="input">
+                            <input name="mobile" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">会员</label>
+                        <label class="input">
+                            <input name="userId" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">送货地址</label>
+                        <label class="input">
+                            <input name="address" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">请求流水号</label>
+                        <label class="input">
+                            <input name="requestID" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">出票方式</label>
+                        <label class="input">
+                            <input name="ticketObtainMode" type="text" class="input-sm" value="1">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">出票窗口ID</label>
+                        <label class="input">
+                            <input name="officeId" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">取票点ID</label>
+                        <label class="input">
+                            <input name="ticketTakePoint" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">预留</label>
+                        <label class="input">
+                            <input name="reserved" type="text" class="input-sm">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">孩票数量</label>
+                        <label class="input">
+                            <input name="haiNum" type="text" class="input-sm" value="0">
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">是否可以接受调配</label>
+                        <label class="select">
+                            <select name="allocationFlag" id="">
+                                <option value="Y">接受</option>
+                                <option value="N">不接受</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">备注说明</label>
+                        <label class="textarea">
+                            <textarea rows="3" name="remark" placeholder=""></textarea>
+                        </label>
+                    </section>
+                </form>
+            </div>
+            <div class="pop-foot">
+                <button type="button" class="btn btn-default close">
+                    取消
+                </button>
+                <button type="submit" class="btn btn-primary btn-submit" data-action="reqTicket">
+                    提交
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop-box" id="ticketUploadIdImg-pop">
+            <div class="pop-title">上传乘车人身份证</div>
+            <div class="pop-close">x</div>
+            <div class="pop-content">
+                <div class="pop-form">
+                    <form action="">
+                        <section>
+                            <label class="label">商户系统编号</label>
+                            <label class="input">
+                                <input name="merchantCode" type="text" class="input-sm" value="12345">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">商户名称</label>
+                            <label class="input">
+                                <input name="merchantName" type="text" class="input-sm" value="美团">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">业务流水编号</label>
+                            <label class="input">
+                                <input name="bizNo" type="text" class="input-sm" value="DP">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">业务类型</label>
+                            <label class="input">
+                                <input name="bizType" type="text" class="input-sm" value="UP">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">业务名称</label>
+                            <label class="input">
+                                <input name="bizName" type="text" class="input-sm">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">业务摘要</label>
+                            <label class="input">
+                                <input name="bizBrief" type="text" class="input-sm">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">业务日期</label>
+                            <label class="input">
+                                <input name="bizTime" type="text" class="input-sm datepicker" readonly>
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">订单流水号</label>
+                            <label class="input">
+                                <input name="orderNo" type="text" class="input-sm">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">乘客证件类型</label>
+                            <label class="select">
+                                <select name="idType" id="">
+                                    <option value="1">-二代身份证</option>
+                                    <option value="2">一代身份证</option>
+                                    <option value="3">临时身份证</option>
+                                    <option value="B">护照</option>
+                                    <option value="Z">订孩票用成人证件</option>
+                                </select>
+                                <i></i>
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">乘客证件上传序号</label>
+                            <label class="input">
+                                <input name="idNo" type="text" class="input-sm">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">乘客姓名</label>
+                            <label class="input">
+                                <input name="IdName" type="text" class="input-sm">
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">乘客身份证正面照图片地址</label>
+                            <label class="input input-file">
+                                <span class="button"><input name="facadeIdFile" type="file" onchange="this.parentNode.nextSibling.value = this.value">浏览</span><input type="text" class="input-sm" readonly>
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">乘客身份证反面照图片地址</label>
+                            <label class="input input-file">
+                                <span class="button"><input name="backIdFile" type="file" onchange="this.parentNode.nextSibling.value = this.value">浏览</span><input type="text" class="input-sm" readonly>
+                            </label>
+                        </section>
+                        <section>
+                            <label class="label">请求流水号</label>
+                            <label class="input">
+                                <input name="requestID" type="text" class="input-sm">
+                            </label>
+                        </section>
+                    </form>
+                </div>
+                <div class="pop-foot">
+                    <button type="button" class="btn btn-default close">
+                        取消
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-submit" data-action="ticketUploadIdImg">
+                        提交
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="pop-box" id="orderCancel-pop">
+                <div class="pop-title">订单退单</div>
+                <div class="pop-close">x</div>
+                <div class="pop-content">
+                    <div class="pop-form">
+                        <form action="">
+                            <section>
+                                <label class="label">商户系统编号</label>
+                                <label class="input">
+                                    <input name="merchantCode" type="text" class="input-sm datepicker" readonly>
+                                </label>
+                            </section>
+                            <section>
+                                <label class="label">商户名称</label>
+                                <label class="input">
+                                    <input name="merchantName" type="text" class="input-sm">
+                                </label>
+                            </section>
+                            <section>
+                                <label class="label">业务流水编号</label>
+                                <label class="input">
+                                    <input name="bizNo" type="text" class="input-sm">
+                                </label>
+                            </section>
+                            <section>
+                                <label class="label">业务类型</label>
+                                <label class="input">
+                                    <input name="bizType" type="text" class="input-sm" value="DPQX">
+                                </label>
+                            </section>
+                            <section>
+                                <label class="label">请求订单手机号</label>
+                                <label class="input">
+                                    <input name="mobile" type="text" class="input-sm">
+                                </label>
+                            </section>
+                            <section>
+                                <label class="label">订单号</label>
+                                <label class="input">
+                                    <input name="orderId" type="text" class="input-sm">
+                                </label>
+                            </section>
+                            <section>
+                                <label class="label">请求流水号</label>
+                                <label class="input">
+                                    <input name="requestID" type="text" class="input-sm">
+                                </label>
+                            </section>
+                        </form>
+                    </div>
+                    <div class="pop-foot">
+                        <button type="button" class="btn btn-default close">
+                            取消
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-submit" data-action="orderCancel">
+                            提交
+                        </button>
+                    </div>
+                </div>
+            </div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/index.js"></script>
+
+</html>

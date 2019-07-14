@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1280, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <title>report</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="head_box">
+            <div class="head__inner">
+                <div class="head__inner_hd">
+                    <div class="layout">
+                        <div class="layout__side">
+                            <h1 class="logo">西铁智慧商旅服务平台</h1>
+                        </div>
+                        <div class="nav">
+                            <a class="nav-item" href="index.html">订单</a>
+                            <a class="nav-item" name="ticket" href="report.html?n=ticket">报表-查询订单</a>
+                            <a class="nav-item" name="order_ticket" href="report.html?n=order_ticket">报表-订票</a>
+                            <a class="nav-item" name="order_cancel" href="report.html?n=order_cancel">报表-撤销订单</a>
+                            <a class="nav-item" name="account_balance" href="report.html?n=account_balance">报表-帐户余额</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast"></div>
+    <div class="main" style="padding-top:20px">
+        <table class="table table-bordered" id="reportList">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+        <div class="text-right">
+            <!-- <ul class="pagination">
+                <li class="paginate_button previous disabled" id="datatable_fixed_column_previous"><a href="#"
+                        aria-controls="datatable_fixed_column" data-dt-idx="0" tabindex="0">Previous</a></li>
+                <li class="paginate_button active"><a href="report.html?s=1&c=10" aria-controls="datatable_fixed_column" data-dt-idx="1"
+                        tabindex="0">1</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="2"
+                        tabindex="0">2</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="3"
+                        tabindex="0">3</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="4"
+                        tabindex="0">4</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="5"
+                        tabindex="0">5</a></li>
+                <li class="paginate_button disabled" id="datatable_fixed_column_ellipsis"><a href="#"
+                        aria-controls="datatable_fixed_column" data-dt-idx="6" tabindex="0">…</a></li>
+                <li class="paginate_button "><a href="#" aria-controls="datatable_fixed_column" data-dt-idx="7"
+                        tabindex="0">10</a></li>
+                <li class="paginate_button next" id="datatable_fixed_column_next"><a href="#"
+                        aria-controls="datatable_fixed_column" data-dt-idx="8" tabindex="0">Next</a></li>
+            </ul> -->
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/page.js"></script>
+<script src="js/report.js"></script>
+
+</html>
