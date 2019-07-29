@@ -13,16 +13,15 @@ import tornado.web
 import tornado.options
 import configparser
 from datetime import datetime
-
-tornado.options.define("port", default=9001, type=int, help="port")
-tornado.options.define("bind", default="0.0.0.0", type=str, help="address bind to")
-tornado.options.define("debug", help="0:info | 1:debug", type=int, default=0)
+import argparse
 
 class EventApplication(tornado.web.Application):
 
-    def __init__(self):
+    def __init__(self, publish):
         log_name = "ticket_web_sever"
-        config_path = "./conf/config.conf"
+        config_path = "./conf/config_test.conf"
+        if publish == 1:
+            config_path = "./conf/config.conf"
 
         try:
             self.config = configparser.ConfigParser()
@@ -38,7 +37,7 @@ class EventApplication(tornado.web.Application):
                     "ticket_uid": "proxy_test_uid"
                     }
 
-        self.logger = logger_handler(log_name, logpath=log_path, debug=tornado.options.options.debug)
+        self.logger = logger_handler(log_name, logpath=log_path, debug=publish)
 
         self.mysql_db = MySqlClient(config_path, "MYSQL", self.logger)            
         self.redis_client = RedisClient(config_path, "REDIS", self.logger)
@@ -48,7 +47,6 @@ class EventApplication(tornado.web.Application):
                            
         tornado.web.Application.__init__(self, [
             (r"/Ticket/uploadIdImg.json", UploadImgHandler),
-            #(r"/Ticket/reqTicket.json", TransformRequestHandler),
             (r"/Ticket/reqOrderTicket.json", OrderRequestHandler),
             (r"/Ticket/orderCancel.json", OrderCancelRequestHandler),
             (r"/Ticket/report.json", TicketReportHandler),
@@ -56,11 +54,19 @@ class EventApplication(tornado.web.Application):
         ], debug=True)
 
 if __name__ == "__main__":
-    tornado.options.parse_command_line()
-    application = EventApplication()
-    print("port: ", tornado.options.options.port)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--bind", help="address", type=str, default="0.0.0.0")
+    parser.add_argument("--port", help="server port online:9001, test:7001", type=int, default=9001)
+    parser.add_argument("--publish", help="0:test | 1:online", type=int, default=0)
+    args = parser.parse_args()
 
+    print("args.bind:", args.bind)
+    print("args.port:", args.port)
+    print("args.publish:", args.publish)
+
+    application = EventApplication(args.publish)
     http_server = tornado.httpserver.HTTPServer(application)
-    http_server.listen(tornado.options.options.port, tornado.options.options.bind)
+    http_server.listen(args.port, args.bind)
     tornado.ioloop.IOLoop.current().start()
+
 

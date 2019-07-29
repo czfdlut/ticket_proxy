@@ -32,6 +32,7 @@ class OrderRequestHandler(tornado.web.RequestHandler):
     @tornado.gen.coroutine
     def http_request_server(self, headers, body):         
         url = "http://test.maidaopiao.com:8081" +  self.request.path
+        self.logger.info("request url ", url)
         return request_query(url, headers=headers, data=body.encode(encoding='UTF8'), timeout=10)
    
     #@tornado.web.asynchronous
@@ -77,12 +78,12 @@ class OrderRequestHandler(tornado.web.RequestHandler):
               
         data["appid"] = appid
         data["secret"] = appsecret
-        data["bizNo"] = "20190602"
-        data["bizTime"] = "2019-06-02 22:30:00"
-        data["startTime"] = "2019-06-02 22:30:00"
+        #data["bizNo"] = "20190602"
+        #data["bizTime"] = "2019-06-02 22:30:00"
+        #data["startTime"] = "2019-06-02 22:30:00"
         data["endTime"] = data["startTime"]
         data["ticketTime"] = data["startTime"]
-        data["idNo"] = "1:440101200702060012"
+        #data["idNo"] = "1:440101200702060012"
         data["ticketPrices"] = "68.5"
         data["totalPrices"] = data["ticketPrices"]
         data["couponValue"] = "50.0"
