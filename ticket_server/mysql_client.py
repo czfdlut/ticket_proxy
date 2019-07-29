@@ -181,10 +181,11 @@ class MySqlClient(object):
 if __name__ == "__main__":
     obj = MySqlClient("./conf/config_test.conf", "MYSQL", logger_handler("test"))
     obj.connect()
-    result = obj.execute_query_sql("select order_ticket.id from order_ticket, account_balance where order_ticket.uid='for_test' and account_balance.balance>1.0 limit 1")
-    print("result: ", result)
+    #result = obj.execute_query_sql("select order_ticket.id from order_ticket, account_balance where order_ticket.uid='for_test' and account_balance.balance>1.0 limit 1")
+    #print("result: ", result)
 
-    hdata = {'uid': 'for_test', 'status': 1, "orderNo": "orderNo", 'merchantCode': '00001', 'merchantName': '携程订票系统', 'bizNo': '10000123', 'bizName': '订票', 'orderDate': '2018-09-01', 'ticketPrices': '368.5', 'mobile': '13800138000', 'requestID': '20180606000005', 'updateTime': '2019-03-01 18:35:30'}
+    #hdata = {'uid': 'for_test', 'status': 1, "orderNo": "orderNo", 'merchantCode': '00001', 'merchantName': '携程订票系统', 'bizNo': '10000123', 'bizName': '订票', 'orderDate': '2018-09-01', 'ticketPrices': '368.5', 'mobile': '13800138000', 'requestID': '20180606000005', 'updateTime': '2019-03-01 18:35:30'}
+    hdata = {"uid": "proxy_test_uid", "errmsg": "\u6210\u529f", "status": 1, "merchantCode": "12345", "merchantName": "\u7f8e\u56e2", "bizNo": "DP_1559450224387_16645", "bizName": "\u8ba2\u7968", "orderDate": "2019-06-02", "orderNo": "1559450224387_16645", "ticketPrices": "68.5", "mobile": "18600477264", "requestID": "1559450224387_16647", "updateTime": "2019-07-15 12:21:40"}
     obj.insert("order_ticket", hdata)
 
     # hdatas = [

@@ -4,7 +4,6 @@ from redis_client import RedisClient
 from req_ticket import ReqTicketHandler
 from req_order_ticket import ReqOrderTicketHandler
 from order_cancel import OrderCancel
-from admin_update_balance import UpdateBalanceHandler
 from req_ticket_callback import ReqTicketCallBack
 from util import logger_handler
 import tornado.httpserver
@@ -12,12 +11,9 @@ import tornado.ioloop
 import tornado.web
 import tornado.options
 import configparser
+import argparse
 from datetime import datetime
 from tornado.httpclient import AsyncHTTPClient
-
-tornado.options.define("port", default=9002, type=int, help="port")
-tornado.options.define("bind", default="0.0.0.0", type=str, help="address bind to")
-tornado.options.define("debug", help="0:info | 1:debug", type=int, default=0)
 
 class Test1Handler(tornado.web.RequestHandler):
     @tornado.gen.coroutine
@@ -42,10 +38,12 @@ class StatusCheck(tornado.web.RequestHandler):
         self.finish("proxy server ok\n")
 
 class EventApplication(tornado.web.Application):
-    def __init__(self):
+    def __init__(self, publish):
         log_name = "proxy_sever"
-        config_path = "./conf/config.conf"
-
+        config_path = "./conf/config_test.conf"
+        if publish == 1:
+            config_path = "./conf/config.conf"
+                    
         try:
             self.config = configparser.ConfigParser()
             self.config.read(config_path)
@@ -53,7 +51,7 @@ class EventApplication(tornado.web.Application):
         except Exception as e:
             raise Exception(e)
 
-        self.logger = logger_handler(log_name, logpath=log_path, debug=tornado.options.options.debug)
+        self.logger = logger_handler(log_name, logpath=log_path, debug=publish)
 
         self.mysql_db = MySqlClient(config_path, "MYSQL", self.logger)
         self.redis_client = RedisClient(config_path, "REDIS", self.logger)
@@ -66,16 +64,22 @@ class EventApplication(tornado.web.Application):
             (r"/Ticket/reqTicket.json", ReqTicketHandler),
             (r"/Ticket/reqOrderTicket.json", ReqOrderTicketHandler),
             (r"/Ticket/orderCancel.json", OrderCancel),
-            (r"/admin/update/balance", UpdateBalanceHandler),
             (r"/TicketOrder/callback", ReqTicketCallBack),
             (r"/test", Test1Handler),
         ], debug=True)
 
 if __name__ == "__main__":
-    tornado.options.parse_command_line()
-    application = EventApplication()
-    print("port", tornado.options.options.port)
-
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--bind", help="address", type=str, default="0.0.0.0")
+    parser.add_argument("--port", help="server port online:9002, test:7002", type=int, default=9002)
+    parser.add_argument("--publish", help="0:test | 1:online", type=int, default=0)
+    args = parser.parse_args()
+    
+    print("args.bind:", args.bind)
+    print("args.port:", args.port)
+    print("args.publish:", args.publish)
+    
+    application = EventApplication(args.publish)
     http_server = tornado.httpserver.HTTPServer(application)
-    http_server.listen(tornado.options.options.port, tornado.options.options.bind)
+    http_server.listen(args.port, args.bind)
     tornado.ioloop.IOLoop.current().start()

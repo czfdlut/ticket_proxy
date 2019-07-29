@@ -9,8 +9,6 @@ import tornado.web
 from datetime import datetime
 import json
 from tornado.concurrent import Future
-#from tornado.httpclient import AsyncHTTPClient
-#import tornado.httpclient
 
 class ReqOrderTicketHandler(tornado.web.RequestHandler):
     def initialize(self):
@@ -55,9 +53,12 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
 
         if "ticketPrices" not in param:
             return "Error: not found ticketPrices", None
-
-        if float(param["ticketPrices"]) < 1.0 or float(param["ticketPrices"]) > 3000:
-            return "Error: money out of money", None
+        
+        try: 
+            if float(param["ticketPrices"]) < 1.0 or float(param["ticketPrices"]) > 3000:
+                return "Error: money out of money", None
+        except Exception as err:
+            return "Error: %s" % err, None
 
         if "merchantCode" not in param:
             return "Error: not found merchantCode", None
@@ -242,12 +243,17 @@ class ReqOrderTicketHandler(tornado.web.RequestHandler):
             self.finish()
             return
 
+        self.logger.info("start write data to db====staart")
+ 
         ##下单成功
         lock_req_order_uid = "ticket_uid_%s_lock_req" % uid
         lock = self.redis_client.acquire(lock_req_order_uid, 1)
         self.mysql_db.insert("order_ticket", hdata)
         self.redis_client.release(lock)
         
+        self.logger.info("start write data to db====end")
+        print("resp_data: ", resp_data)
+
         self.set_header("Content-Type", "application/json;charset=UTF-8")
         self.write(resp_data)
         self.finish()
