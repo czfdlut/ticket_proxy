@@ -1,4 +1,7 @@
-2019-07-27 23:09:28,086 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.009682
-2019-07-27 23:09:29,312 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.008502
-2019-07-27 23:34:04,127 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.007955
-2019-07-27 23:36:40,727 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.007910
+2019-07-29 11:13:24,742 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.008503
+2019-07-29 11:13:33,745 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.007914
+2019-07-29 11:13:35,843 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.007954
+2019-07-29 11:13:42,266 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.007731
+2019-07-29 11:13:49,986 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.008300
+2019-07-29 11:13:50,832 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.004326
+2019-07-29 11:13:51,845 - ticket_web_sever - get - 148 - INFO - cost time: 0:00:00.004384
