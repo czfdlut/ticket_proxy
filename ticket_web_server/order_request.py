@@ -33,7 +33,7 @@ class OrderRequestHandler(tornado.web.RequestHandler):
     def http_request_server(self, headers, body):         
         url = "http://test.maidaopiao.com:8081" +  self.request.path
         self.logger.info("request url ", url)
-        return request_query(url, headers=headers, data=body.encode(encoding='UTF8'), timeout=10)
+        return request_query(url, headers=headers, data=body, timeout=10)
    
     #@tornado.web.asynchronous
     @tornado.gen.coroutine
@@ -76,23 +76,24 @@ class OrderRequestHandler(tornado.web.RequestHandler):
             self.redis_client.expire(key, 3600)
             self.logger.info("update access_token:%s" % key)
               
-        data["appid"] = appid
-        data["secret"] = appsecret
+        #data["appid"] = appid
+        #data["secret"] = appsecret
+        
         #data["bizNo"] = "20190602"
         #data["bizTime"] = "2019-06-02 22:30:00"
         #data["startTime"] = "2019-06-02 22:30:00"
-        data["endTime"] = data["startTime"]
-        data["ticketTime"] = data["startTime"]
+        #data["endTime"] = data["startTime"]
+        #data["ticketTime"] = data["startTime"]
         #data["idNo"] = "1:440101200702060012"
-        data["ticketPrices"] = "68.5"
-        data["totalPrices"] = data["ticketPrices"]
-        data["couponValue"] = "50.0"
-        data["bonusFlag"] = "2.0"
-        data["serviceFee"] = "5.0"
-        data["insureFee"] = "3.0"
-        data["expressFee"] = "10.0"
-        data["ticketObtainMode"] = "1"
-        data["trainCode"] = data["trainCode"]
+        #data["ticketPrices"] = "68.5"
+        #data["totalPrices"] = data["ticketPrices"]
+        #data["couponValue"] = "50.0"
+        #data["bonusFlag"] = "2.0"
+        #data["serviceFee"] = "5.0"
+        #data["insureFee"] = "3.0"
+        #data["expressFee"] = "10.0"
+        #data["ticketObtainMode"] = "1"
+        #data["trainCode"] = data["trainCode"]
         
         content = {
           "sign": "367dc4bea216b766ae5d0f44dc4d5169",
@@ -111,8 +112,12 @@ class OrderRequestHandler(tornado.web.RequestHandler):
         self.logger.info("content_type:%s" % content_type)
         self.logger.info("post-data:%s" % post_data)
 
+        a = post_data.encode(encoding='utf-8')
+
+
+
         headers = {"Content-Type" : content_type, "ticket-uid" : ticket_uid}
-        resp_headers, resp_data, status_code, err = yield tornado.gen.Task(self.http_request_server, headers, post_data)
+        resp_headers, resp_data, status_code, err = yield tornado.gen.Task(self.http_request_server, headers, a)
         
         self.logger.info("resp_headers:%s \t resp_data:%s\t status_code:%s\t err:%s" % (resp_headers, resp_data, status_code, err))
         if err is not None:
