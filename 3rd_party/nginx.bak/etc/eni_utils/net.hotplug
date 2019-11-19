@@ -1,0 +1,80 @@
+#!/bin/sh
+
+#set -x
+
+# Don't do anything if the network is stopped
+if [ ! -f /var/lock/subsys/network ]; then
+    exit 0
+fi
+if [ -f /dev/.in_sysinit ] ; then
+    exit 0
+fi
+
+source /etc/eni_utils/eni-helper
+
+INTERFACE_CONF_PATH=/etc/sysconfig/network-scripts
+
+if ! eni_log "net.hotplug: enter net.hotplug"; then
+    exit 1
+fi
+
+. ${INTERFACE_CONF_PATH}/network-functions
+
+if [ "$INTERFACE" == "" ]; then
+	eni_log "net.hotplug: interface is null"
+	exit 1
+fi
+
+case $ACTION in
+add|register)
+
+	case $INTERFACE in
+		# interfaces that are brought up as a part of configuration
+		ppp*|ippp*|isdn*|plip*|lo*|irda*|dummy*|ipsec*|tun*|tap*)
+			exit 0
+			;;
+		# interfaces that are registered then brought up
+		*)
+			if [ -e /proc/net/vlan/${INTERFACE} ]; then
+				exit 0
+			fi
+			export IN_HOTPLUG=1
+			if [ -x /sbin/ifup ]; then
+				addr=$(get_hwaddr ${INTERFACE})
+				if [ -n "$addr" ]; then
+					nconfig=$(get_config_by_hwaddr ${addr})
+					[ -n "$nconfig" ] && INTERFACE=$nconfig
+				fi
+				eni_log "net.hotplug: action $ACTION, interface $INTERFACE"
+				eni_log "net.hotplug: exec /sbin/ifup $INTERFACE"
+				exec /sbin/ifup $INTERFACE
+			fi
+			;;
+	esac
+	;;
+
+remove|unregister)
+	case $INTERFACE in
+		# interfaces that are brought down as part of deconfiguration
+		ppp*|ippp*|isdn*|plip*|lo*|irda*|dummy*|ipsec*|tun*|tap*)
+			exit 0
+			;;
+		*)
+			export IN_HOTPLUG=1
+			if [ -x /sbin/ifdown ]; then
+				eni_log "net.hotplug: action $ACTION, interface $INTERFACE"
+				eni_log "net.hotplug: exec /sbin/ifdown $INTERFACE"
+				exec /sbin/ifdown $INTERFACE
+			fi
+			;;
+	esac
+	;;
+
+*)
+	exit 1 ;;
+
+esac
+
+eni_log "net.hotplug: leave net.hotplug"
+
+#set +x

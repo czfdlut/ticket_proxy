@@ -1,0 +1,16 @@
+six>=1.9.0
+requests
+
+[async]
+tornado
+
+[cli]
+pygments
+prompt_toolkit<2.0.0
+tabulate
+
+[pandas]
+pandas
+
+[sqlalchemy]
+sqlalchemy

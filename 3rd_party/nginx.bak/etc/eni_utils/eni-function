@@ -1,0 +1,110 @@
+# This file provides functions to network scripts that source it.
+
+#set -x
+
+source /etc/eni_utils/eni-helper
+
+INTERFACE_CONF_PATH=/etc/sysconfig/network-scripts
+
+# Set up a default search path.
+PATH="/sbin:/usr/sbin:/bin:/usr/bin"
+export PATH
+
+# metadata query requires an interface and hardware address
+if [ -z "${INTERFACE}" ]; then
+	exit
+fi
+HWADDR=$(cat /sys/class/net/${INTERFACE}/address 2>/dev/null)
+if [ -z "${HWADDR}" ] && [ "${ACTION}" != "remove" ]; then
+	exit
+fi
+export HWADDR
+
+config_file="${INTERFACE_CONF_PATH}/ifcfg-${INTERFACE}"
+
+# make no changes to unmanaged interfaces
+if [ -s ${config_file} ]; then
+	unmanaged=$(LANG=C grep -l "^[[:space:]]*EC2SYNC=no\([[:space:]#]\|$\)" $config_file)
+	if [ "${config_file}" == "${unmanaged}" ]; then
+		exit
+	fi
+fi
+
+remove_primary() {
+	if [ "${INTERFACE}" == "eth0" ]; then
+		return
+	fi
+	rm -f ${config_file}
+}
+
+rewrite_primary() {
+	if [ "${INTERFACE}" == "eth0" ]; then
+		return
+	fi
+	eni_log "eni-function: rewrite_primary: device: ${INTERFACE}, hwaddr: ${HWADDR}"
+
+	if [[ -s $config_file ]] ; then
+		cfg_hwaddr=$(awk -F'=' '/^HWADDR=.*/ {print $NF}' $config_file)
+		if [[ $cfg_hwaddr != $HWADDR ]]; then
+			eni_log "eni-function: rewrite_primary: device ${INTERFACE} real HWADDR ${HWADDR} not match with config file persistent HWADDR ${cfg_hwaddr}"
+			return
+		fi
+	fi
+
+	cat <<- EOF > ${config_file}
+	DEVICE=${INTERFACE}
+	BOOTPROTO=dhcp
+	ONBOOT=yes
+	TYPE=Ethernet
+	USERCTL=yes
+	PEERDNS=no
+	IPV6INIT=no
+	PERSISTENT_DHCLIENT=yes
+	HWADDR=${HWADDR}
+	DEFROUTE=no
+	EOF
+}
+
+remove_rules() {
+	ip=""
+	filename=`ps aux |grep dhclient |grep ${INTERFACE} | egrep " -lf /.*\.leases " -o |awk '{print $2'}`
+	eni_log "eni-function: remove_rules, filename: $filename"
+	while read -r line
+	do
+		name=${line}
+		tmpip=`echo $name |grep "fixed-address" | egrep "[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*" -o`
+		if [ -n "$tmpip" ]; then
+			ip=$tmpip
+		fi
+	done < "$filename"
+
+	# Delete ip rules, if they exist
+	eni_log "eni-function: out of the loop, ip is $ip"
+	if [ -n "$ip" ]; then
+		for ruleid in $(ip rule list | egrep "from ${ip}" | awk -F: '{print $1}'); do
+			ip rule del pref ${ruleid};
+		done
+	fi
+}
+
+plug_interface() {
+	eni_log 'eni-function: enter plug_interface'
+	rewrite_primary
+	eni_log 'eni-function: leave plug_interface'
+}
+
+unplug_interface() {
+	remove_rules
+	# Can't remove the config file, as ifdown need read this config file.
+	#remove_primary
+}
+
+activate_primary() {
+	/sbin/ifup ${INTERFACE}
+}
+
+deactivate_primary() {
+	/sbin/ifdown ${INTERFACE}
+}
+
+#set +x

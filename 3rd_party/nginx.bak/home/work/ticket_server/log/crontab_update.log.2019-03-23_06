@@ -1,0 +1,120 @@
+2019-03-23 06:54:52,345 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 06:54:52,346 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 06:54:52.346406
+2019-03-23 06:55:52,337 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 06:55:52,338 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 06:55:52.338226
+2019-03-23 06:56:52,339 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 06:56:52,339 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 06:56:52.339622
+2019-03-23 06:57:52,359 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 06:57:52,359 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 06:57:52.359399
+2019-03-23 06:58:52,348 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 06:58:52,348 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 06:58:52.348366
+2019-03-23 06:59:52,348 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 06:59:52,348 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 06:59:52.348813
+2019-03-23 07:00:52,359 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:00:52,359 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:00:52.359356
+2019-03-23 07:01:52,357 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:01:52,357 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:01:52.357651
+2019-03-23 07:02:52,364 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:02:52,365 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:02:52.365006
+2019-03-23 07:03:52,355 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:03:52,355 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:03:52.355756
+2019-03-23 07:04:52,356 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:04:52,356 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:04:52.356284
+2019-03-23 07:05:52,362 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:05:52,363 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:05:52.363008
+2019-03-23 07:06:52,352 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:06:52,352 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:06:52.352281
+2019-03-23 07:07:52,360 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:07:52,360 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:07:52.360234
+2019-03-23 07:08:52,359 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:08:52,359 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:08:52.359269
+2019-03-23 07:09:52,354 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:09:52,355 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:09:52.355182
+2019-03-23 07:10:52,349 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:10:52,349 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:10:52.349898
+2019-03-23 07:11:52,363 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:11:52,363 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:11:52.363705
+2019-03-23 07:12:52,363 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:12:52,364 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:12:52.364167
+2019-03-23 07:13:52,362 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:13:52,362 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:13:52.362671
+2019-03-23 07:14:52,364 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:14:52,364 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:14:52.364783
+2019-03-23 07:15:52,361 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:15:52,362 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:15:52.362014
+2019-03-23 07:16:52,344 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:16:52,345 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:16:52.345196
+2019-03-23 07:17:52,336 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:17:52,337 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:17:52.337132
+2019-03-23 07:18:52,357 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:18:52,357 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:18:52.357520
+2019-03-23 07:19:52,350 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:19:52,350 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:19:52.350504
+2019-03-23 07:20:52,360 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:20:52,360 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:20:52.360267
+2019-03-23 07:21:52,339 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:21:52,339 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:21:52.339690
+2019-03-23 07:22:52,364 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:22:52,364 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:22:52.364570
+2019-03-23 07:23:52,364 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:23:52,364 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:23:52.364754
+2019-03-23 07:24:52,362 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:24:52,362 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:24:52.362970
+2019-03-23 07:25:52,352 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:25:52,352 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:25:52.352611
+2019-03-23 07:26:52,344 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:26:52,344 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:26:52.344867
+2019-03-23 07:27:52,362 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:27:52,362 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:27:52.362259
+2019-03-23 07:28:52,365 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:28:52,365 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:28:52.365309
+2019-03-23 07:29:52,352 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:29:52,352 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:29:52.352727
+2019-03-23 07:30:52,363 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:30:52,363 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:30:52.363555
+2019-03-23 07:31:52,362 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:31:52,363 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:31:52.363186
+2019-03-23 07:32:52,363 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:32:52,363 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:32:52.363972
+2019-03-23 07:33:52,363 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:33:52,363 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:33:52.363371
+2019-03-23 07:34:52,358 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:34:52,359 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:34:52.359044
+2019-03-23 07:35:52,358 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:35:52,358 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:35:52.358324
+2019-03-23 07:36:52,362 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:36:52,362 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:36:52.362355
+2019-03-23 07:37:52,356 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:37:52,357 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:37:52.357187
+2019-03-23 07:38:52,352 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:38:52,353 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:38:52.352994
+2019-03-23 07:39:52,349 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:39:52,349 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:39:52.349436
+2019-03-23 07:40:52,357 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:40:52,357 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:40:52.357473
+2019-03-23 07:41:52,361 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:41:52,361 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:41:52.361800
+2019-03-23 07:42:52,352 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:42:52,353 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:42:52.353089
+2019-03-23 07:43:52,357 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:43:52,357 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:43:52.357757
+2019-03-23 07:44:52,340 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:44:52,340 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:44:52.340495
+2019-03-23 07:45:52,340 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:45:52,340 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:45:52.340397
+2019-03-23 07:46:52,338 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:46:52,338 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:46:52.338797
+2019-03-23 07:47:52,351 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:47:52,351 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:47:52.351440
+2019-03-23 07:48:52,340 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:48:52,340 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:48:52.340909
+2019-03-23 07:49:52,342 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:49:52,342 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:49:52.342322
+2019-03-23 07:50:52,350 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:50:52,350 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:50:52.350780
+2019-03-23 07:51:52,344 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:51:52,344 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:51:52.344658
+2019-03-23 07:52:52,356 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:52:52,356 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:52:52.356528
+2019-03-23 07:53:52,360 - crontab_update - crontab_uids - 79 - INFO - uids: [{'uid': 'for_test', 'status': -1}]
+2019-03-23 07:53:52,360 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 07:53:52.360624

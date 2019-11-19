@@ -1,0 +1,289 @@
+create table t1 (a int primary key auto_increment, b varchar(100));
+select http_post("http://localhost:PORT/sql", 'select * from t1;');;
+http_post("http://localhost:PORT/sql", 'select * from t1;')
+{
+   "query" : "select * from t1;",
+   "sqlstate" : "00000"
+}
+
+insert into t1 (b) values ("from MySQL protocol");
+select http_post('http://localhost:PORT/sql', 'select * from t1;');;
+http_post('http://localhost:PORT/sql', 'select * from t1;')
+{
+   "query" : "select * from t1;",
+   "result_set" : [
+      [ "1", "from MySQL protocol" ]
+   ],
+   "sqlstate" : "00000"
+}
+
+select http_post('http://localhost:PORT/sql', 'insert into t1 (b) values (\'from http\');');;
+http_post('http://localhost:PORT/sql', 'insert into t1 (b) values (\'from http\');')
+{
+   "query" : "insert into t1 (b) values ('from http');",
+   "sqlstate" : "00000"
+}
+
+SELECT * from t1;
+a	b
+1	from MySQL protocol
+2	from http
+drop table t1;
+create schema json;
+use json;
+{
+   "sqlstate" : "00000"
+}
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 35,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 35,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+{
+   "sqlstate" : "00000"
+}
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 36,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+{
+   "error_message" : "* Line 1, Column 1\n  Syntax error: value, object or array expected.\n",
+   "error_type" : "json error"
+}
+{
+   "error_message" : "table must be specified in URI query string.",
+   "error_type" : "http error"
+}
+{
+   "error_message" : "table must be specified in URI query string.",
+   "error_type" : "http error"
+}
+{
+   "sqlstate" : "00000"
+}
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 36,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         }
+      },
+      {
+         "_id" : 2,
+         "document" : {
+            "age" : 21,
+            "firstname" : "Mohit",
+            "lastname" : "Srivastava"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 36,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         }
+      },
+      {
+         "_id" : 2,
+         "document" : {
+            "age" : 21,
+            "firstname" : "Mohit",
+            "lastname" : "Srivastava"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 36,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         }
+      },
+      {
+         "_id" : 2,
+         "document" : {
+            "age" : 21,
+            "firstname" : "Mohit",
+            "lastname" : "Srivastava"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+SET GLOBAL json_server_schema="json";
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 36,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         }
+      },
+      {
+         "_id" : 2,
+         "document" : {
+            "age" : 21,
+            "firstname" : "Mohit",
+            "lastname" : "Srivastava"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+SET GLOBAL json_server_table="people";
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 36,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         }
+      },
+      {
+         "_id" : 2,
+         "document" : {
+            "age" : 21,
+            "firstname" : "Mohit",
+            "lastname" : "Srivastava"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+{
+   "error_message" : "* Line 1, Column 19\n  Missing ',' or '}' in object declaration\n",
+   "error_type" : "json error"
+}
+{
+   "sqlstate" : "00000"
+}
+{
+   "sqlstate" : "00000"
+}
+{
+   "sqlstate" : "00000"
+}
+{
+   "result_set" : [
+      {
+         "_id" : 1,
+         "document" : {
+            "age" : 35,
+            "firstname" : "Henrik",
+            "lastname" : "Ingo"
+         },
+         "metadata" : {
+            "dob" : "16-feb-1977",
+            "interest" : "opensource",
+            "nick" : "hingo"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+{
+   "sqlstate" : "00000"
+}
+{
+   "result_set" : [
+      {
+         "_id" : 2,
+         "document" : {
+            "age" : 21,
+            "firstname" : "Mohit",
+            "lastname" : "Srivastava"
+         }
+      }
+   ],
+   "sqlstate" : "00000"
+}
+{
+   "sqlstate" : "00000"
+}
+{
+   "sqlstate" : "00000"
+}
+{
+   "error_message" : "_id must be specified in URI query string or set --json_server.allow_drop_table =true",
+   "error_type" : "http error"
+}
+{
+   "error_message" : "_id must be specified in URI query string or set --json_server.allow_drop_table =true",
+   "error_type" : "http error"
+}
+{
+   "error_message" : "_id must be specified in URI query string or set --json_server.allow_drop_table =true",
+   "error_type" : "http error"
+}
+{
+   "error_message" : "_id must be specified in URI query string or set --json_server.allow_drop_table =true",
+   "error_type" : "http error"
+}
+SET GLOBAL json_server_allow_drop_table="ON";
+{
+   "sqlstate" : "00000"
+}
+{
+   "error_code" : 1146,
+   "error_message" : "Unknown table 'json.people'",
+   "error_type" : "sql error",
+   "internal_sql_query" : "SELECT * FROM `json`.`people`;",
+   "schema" : "json",
+   "sqlstate" : "00000",
+   "table" : "people"
+}
+{
+   "sqlstate" : "00000"
+}
+SET GLOBAL json_server_allow_drop_table="OFF";
+SET GLOBAL json_server_table="";
+SET GLOBAL json_server_schema="test";
+drop schema json;

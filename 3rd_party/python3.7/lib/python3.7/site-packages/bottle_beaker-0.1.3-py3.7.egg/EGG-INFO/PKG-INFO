@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: bottle-beaker
+Version: 0.1.3
+Summary: Bottle plugin beaker, WSGI middleware for sessions and caching
+Home-page: https://github.com/bottlepy/bottle-beaker
+Author: Thiago Avelino
+Author-email: thiago@avelino.xxx
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Environment :: Plugins
+Classifier: Framework :: Bottle
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires: bottle (>=0.9)
+Requires: beaker

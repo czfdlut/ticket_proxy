@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source /etc/eni_utils/eni-helper
+INTERFACE_CONF_PATH=/etc/sysconfig/network-scripts
+
+rm -rf $LOG_DIR
+echo '' > /etc/udev/rules.d/70-persistent-net.rules
+rm -rf $INTERFACE_CONF_PATH/ifcfg-eth*
+cat > $INTERFACE_CONF_PATH/ifcfg-eth0 << EOF
+DEVICE=eth0
+BOOTPROTO=dhcp
+ONBOOT=yes
+EOF

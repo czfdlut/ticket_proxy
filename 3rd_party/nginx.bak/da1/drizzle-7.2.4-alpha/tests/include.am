@@ -1,0 +1,225 @@
+# vim:ft=automake
+# Copyright (C) 2000-2006 MySQL AB
+# Copyright (C) 2010 Monty Taylor
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Library General Public
+# License as published by the Free Software Foundation; version 2
+# of the License.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Library General Public License for more details.
+#
+# You should have received a copy of the GNU Library General Public
+# License along with this library; if not, write to the Free
+# Software Foundation, Inc., 51 Franklin Place - Suite 330, Boston,
+# MA 02110-1301, USA
+
+benchdir_root=		$(prefix)
+testdir =	        $(benchdir_root)/mysql-test
+EXTRA_SCRIPTS = 	tests/valgrind.supp $(PRESCRIPTS)
+GENSCRIPTS =		tests/dtr tests/mtr tests/test-run tests/qp
+PRESCRIPTS =		tests/test-run.pl tests/stress-test.pl
+PLUGIN_TESTS =		$(pandora_plugin_test_list)
+NORMAL_TESTS =		main,bool_type,cast,ddl_transactions,execute,flush_tables,identifiers,jp,mysql_compatibility,regression,tamil,time_type,unsigned_integer_type,uuid_type,microtime_type,$(PLUGIN_TESTS)
+ALL_TESTS =		main,big,jp,tamil,regression,microtime_type,$(PLUGIN_TESTS)
+noinst_SCRIPTS =	$(GENSCRIPTS) $(PRESCRIPTS)
+CLEANFILES += 		$(GENSCRIPTS) tests/mtr
+
+TEST_RUN= $(PERL) -I$(top_srcdir)/tests/lib \
+		${top_srcdir}/tests/test-run.pl \
+		--top-srcdir=${top_srcdir} \
+		--top-builddir=${top_builddir} \
+		--vardir=${top_builddir}/tests/var \
+		--reorder \
+		--suitepath=${top_srcdir}/plugin \
+		--testdir=${top_srcdir}/tests \
+		--dtr-build-thread=$$$$
+
+TEST_RUN_MEM= $(PERL) -I$(top_srcdir)/tests/lib \
+	      ${top_srcdir}/tests/test-run.pl \
+	      --top-srcdir=${top_srcdir} \
+	      --top-builddir=${top_builddir} \
+	      --mem \
+	      --reorder \
+	      --suitepath=${top_srcdir}/plugin \
+	      --testdir=${top_srcdir}/tests \
+	      --dtr-build-thread=$$$$
+
+TEST_RUN_QP= $(PYTHON) $(top_srcdir)/tests/kewpie.py \
+                --top-srcdir=${top_srcdir} \
+                --top-builddir=${top_builddir} \
+                --reorder \
+                --basedir=${top_srcdir} \
+                --testdir=${top_srcdir}/tests \
+                --workdir=${top_srcdir}/tests/workdir
+
+TEST_RUN_QP_MODE= $(PYTHON) $(top_srcdir)/tests/kewpie.py \
+                --top-srcdir=${top_srcdir} \
+                --top-builddir=${top_builddir} \
+                --basedir=${top_srcdir} \
+                --testdir=${top_srcdir}/tests \
+                --workdir=${top_srcdir}/tests/workdir
+
+
+EXTRA_DIST += \
+	$(EXTRA_SCRIPTS) \
+	${srcdir}/tests/kewpie.py \
+	${srcdir}/tests/qp_data \
+	${srcdir}/tests/qp_tests/crashme/*.py \
+	${srcdir}/tests/qp_tests/randgen_basic/*.py \
+	${srcdir}/tests/qp_tests/randgen_innoTrxLog/*.py \
+	${srcdir}/tests/qp_tests/randgen_slavePlugin/*.py \
+	${srcdir}/tests/qp_tests/sqlbench/*.py \
+	${srcdir}/tests/lib/modes/dtr/*py \
+	${srcdir}/tests/lib/modes/native/*py \
+	${srcdir}/tests/lib/opts/*.py \
+	${srcdir}/tests/lib/server_mgmt/*py \
+	${srcdir}/tests/lib/sys_mgmt/*py \
+	${srcdir}/tests/lib/test_mgmt/*py \
+	${srcdir}/tests/lib/util/*py \
+	${srcdir}/tests/lib/*.py \
+	${srcdir}/tests/test_tools/randgen \
+	${srcdir}/tests/test_tools/sql-bench \
+	${srcdir}/tests/README.stress \
+	${srcdir}/tests/suite \
+	${srcdir}/tests/t \
+	${srcdir}/tests/include/*.inc \
+	${srcdir}/tests/include/*.sql \
+	${srcdir}/tests/include/*.test \
+	${srcdir}/tests/r/*.result \
+	${srcdir}/tests/r/*.require \
+	${srcdir}/tests/r/pbxt/*result \
+	${srcdir}/tests/std_data \
+	${srcdir}/tests/lib/*.pl \
+	${srcdir}/tests/lib/My/*.pm \
+	tests/strip-valgrind
+
+
+check-local: tests/var/drizzle test-drizzle
+
+tests/var:
+	$(mkdir_p) tests/var
+
+tests/var/drizzle: tests/var
+	$(mkdir_p) tests/var/drizzle
+
+
+# dtr - a shortcut for executing test-run.pl
+tests/dtr: tests/var/drizzle
+	$(RM) -f tests/dtr
+	$(LN_S) test-run.pl tests/dtr
+
+tests/mtr: tests/var/drizzle
+	$(RM) -f tests/mtr
+	$(LN_S) test-run.pl tests/mtr
+
+# test-run - a shortcut for executing test-run.pl
+tests/test-run: tests/var/drizzle
+	$(RM) -f tests/test-run
+	$(LN_S) test-run.pl tests/test-run
+
+tests/qp: tests/var/drizzle
+	$(RM) -f tests/kewpie
+	$(LN_S) kewpie.py tests/kewpie
+
+
+.PHONY: test
+.PHONY: test-all
+.PHONY: test-big
+.PHONY: test-crashme
+.PHONY: test-drizzle
+.PHONY: test-qp
+.PHONY: test-plugins
+.PHONY: test-randgen
+
+# Target 'test' will run the regression test suite using the built server.
+#
+# If you are running in a shared environment, users can avoid clashing
+# port numbers by setting individual small numbers 1-100 to the
+# environment variable MTR_BUILD_THREAD. The script "test-run"
+# will then calculate the various port numbers it needs from this,
+# making sure each user use different ports.
+
+test: html tests/var/drizzle check
+
+# Please keep the list of tests in alphabetical order for ease of
+# maintenance and verification
+
+#check_PROGRAMS+= test-all
+
+test-all: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=$(ALL_TESTS)
+
+test-mem: tests/var/drizzle
+	$(TEST_RUN_MEM) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=$(NORMAL_TESTS)
+
+test-drizzle: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=$(NORMAL_TESTS)
+
+gdb-drizzled: tests/var/drizzle
+	./libtool --mode=execute gdb ./drizzled/drizzled
+
+test-valgrind: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --valgrind --force --suite=$(NORMAL_TESTS) && python tests/strip-valgrind
+
+test-valgrind-suppressions: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --valgrind --valgrind-option='--gen-suppressions=all' --valgrind-option='--show-reachable=yes' --force --suite=$(NORMAL_TESTS) && python tests/strip-valgrind)
+
+test-junitxml: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=$(NORMAL_TESTS) --subunit | subunit2junitxml --no-passthrough > junit-format.xml
+
+test-big: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=big
+
+test-big-junitxml: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=big --subunit | subunit2junitxml --no-passthrough > junit-format-big.xml
+
+test-jp: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=jp
+
+test-plugins: tests/var/drizzle
+	$(TEST_RUN) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=$(PLUGIN_TESTS)
+
+test-dbqp: tests/var/drizzle
+	$(TEST_RUN_DBQP) $(TEST_RUN_EXTRA_OPTIONS) --fast --force --suite=$(NORMAL_TESTS)
+
+test-randgen-dbqp: tests/var/drizzle
+	$(TEST_RUN_DBQP_MODE) --mode=randgen --suite=main
+
+test-qp: tests/var/drizzle
+	$(TEST_RUN_QP) $(TEST_RUN_EXTRA_OPTIONS) --mode=dtr --fast --force --suite=$(NORMAL_TESTS)
+
+test-randgen-all: tests/var/drizzle
+	$(TEST_RUN_QP_MODE) --suite=randgen_basic,randgen_innoTrxLog,randgen_slavePlugin --force	
+
+test-randgen: tests/var/drizzle
+	$(TEST_RUN_QP_MODE) --suite=randgen_basic,randgen_innoTrxLog --force
+
+test-randgen-basic: tests/var/drizzle
+	$(TEST_RUN_QP_MODE) --suite=randgen_basic --force
+
+test-randgen-slave: tests/var/drizzle
+	$(TEST_RUN_QP_MODE) --suite=randgen_slavePlugin --force
+
+test-randgen-innodb-log: tests/var/drizzle
+	$(TEST_RUN_QP_MODE) --suite=randgen_innoTrxLog --force
+
+test-crashme: tests/var/drizzle
+	$(TEST_RUN_QP_MODE) --suite=crashme
+
+test-sqlbench: tests/var/drizzle
+	$(TEST_RUN_QP_MODE) --suite=sqlbench
+
+
+distclean-local: nukevar
+
+nukevar:
+	rm -rf tests/var \
+        rm -rf tests/workdir \
+        rm tests/dbqp_data/* \
+	rm tests/kewpie/qp_data/*
+ 
+.PHONY: nukevar

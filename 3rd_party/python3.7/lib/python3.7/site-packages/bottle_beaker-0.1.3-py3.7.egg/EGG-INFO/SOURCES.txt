@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+bottle_beaker.py
+requirements.txt
+setup.cfg
+setup.py
+bottle_beaker.egg-info/PKG-INFO
+bottle_beaker.egg-info/SOURCES.txt
+bottle_beaker.egg-info/dependency_links.txt
+bottle_beaker.egg-info/not-zip-safe
+bottle_beaker.egg-info/requires.txt
+bottle_beaker.egg-info/top_level.txt

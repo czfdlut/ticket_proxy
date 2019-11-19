@@ -1,0 +1,10 @@
+[Unit]
+Description=auto run aliyunservice or agent
+[Service]
+Type=simple
+ExecStart=/usr/sbin/aliyun-service
+Restart=always 
+KillMode=process 
+RestartSec=1
+[Install]
+WantedBy=multi-user.target

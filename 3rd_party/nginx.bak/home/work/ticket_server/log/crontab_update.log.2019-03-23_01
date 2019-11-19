@@ -1,0 +1,360 @@
+2019-03-23 01:53:54,706 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:53:54.706799
+2019-03-23 01:53:54,707 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:53:54,708 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:54:24,734 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:54:24.734570
+2019-03-23 01:54:24,734 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:54:24,735 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:54:54,764 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:54:54.763999
+2019-03-23 01:54:54,764 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:54:54,765 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:55:24,790 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:55:24.790743
+2019-03-23 01:55:24,791 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:55:24,791 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:55:54,813 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:55:54.813472
+2019-03-23 01:55:54,813 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:55:54,814 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:56:24,844 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:56:24.844643
+2019-03-23 01:56:24,845 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:56:24,845 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:56:54,874 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:56:54.874413
+2019-03-23 01:56:54,874 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:56:54,875 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:57:24,903 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:57:24.903437
+2019-03-23 01:57:24,903 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:57:24,904 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:57:54,927 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:57:54.927016
+2019-03-23 01:57:54,927 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:57:54,927 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:58:24,949 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:58:24.949048
+2019-03-23 01:58:24,949 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:58:24,950 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:58:54,980 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:58:54.980060
+2019-03-23 01:58:54,980 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:58:54,981 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:59:24,992 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:59:24.992669
+2019-03-23 01:59:24,993 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:59:24,993 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 01:59:55,015 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 01:59:55.015191
+2019-03-23 01:59:55,015 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 01:59:55,016 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:00:25,038 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:00:25.038048
+2019-03-23 02:00:25,038 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:00:25,039 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:00:55,058 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:00:55.058806
+2019-03-23 02:00:55,059 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:00:55,059 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:01:25,084 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:01:25.084561
+2019-03-23 02:01:25,084 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:01:25,085 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:01:55,101 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:01:55.101161
+2019-03-23 02:01:55,101 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:01:55,102 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:02:25,123 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:02:25.123825
+2019-03-23 02:02:25,124 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:02:25,124 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:02:55,144 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:02:55.144653
+2019-03-23 02:02:55,145 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:02:55,145 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:03:25,166 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:03:25.166060
+2019-03-23 02:03:25,166 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:03:25,167 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:03:55,190 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:03:55.190653
+2019-03-23 02:03:55,191 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:03:55,191 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:04:25,215 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:04:25.215082
+2019-03-23 02:04:25,215 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:04:25,216 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:04:55,234 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:04:55.234739
+2019-03-23 02:04:55,235 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:04:55,235 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:05:25,265 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:05:25.265197
+2019-03-23 02:05:25,265 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:05:25,266 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:05:55,294 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:05:55.294674
+2019-03-23 02:05:55,295 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:05:55,295 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:06:25,321 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:06:25.321350
+2019-03-23 02:06:25,321 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:06:25,322 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:06:55,349 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:06:55.349106
+2019-03-23 02:06:55,349 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:06:55,350 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:07:25,365 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:07:25.365132
+2019-03-23 02:07:25,365 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:07:25,366 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:07:55,387 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:07:55.387836
+2019-03-23 02:07:55,388 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:07:55,388 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:08:25,418 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:08:25.418529
+2019-03-23 02:08:25,418 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:08:25,419 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:08:55,433 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:08:55.433156
+2019-03-23 02:08:55,433 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:08:55,434 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:09:25,453 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:09:25.452975
+2019-03-23 02:09:25,453 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:09:25,453 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:09:55,479 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:09:55.479363
+2019-03-23 02:09:55,479 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:09:55,480 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:10:25,491 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:10:25.491846
+2019-03-23 02:10:25,492 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:10:25,492 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:10:55,522 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:10:55.522803
+2019-03-23 02:10:55,523 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:10:55,524 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:11:25,535 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:11:25.535415
+2019-03-23 02:11:25,535 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:11:25,536 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:11:55,566 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:11:55.566262
+2019-03-23 02:11:55,566 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:11:55,567 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:12:25,594 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:12:25.594542
+2019-03-23 02:12:25,594 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:12:25,595 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:12:55,609 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:12:55.609846
+2019-03-23 02:12:55,610 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:12:55,610 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:13:25,638 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:13:25.638055
+2019-03-23 02:13:25,638 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:13:25,639 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:13:55,665 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:13:55.665631
+2019-03-23 02:13:55,666 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:13:55,666 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:14:25,686 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:14:25.686074
+2019-03-23 02:14:25,686 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:14:25,687 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:14:55,712 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:14:55.712606
+2019-03-23 02:14:55,713 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:14:55,713 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:15:25,736 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:15:25.736053
+2019-03-23 02:15:25,736 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:15:25,737 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:15:55,749 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:15:55.749868
+2019-03-23 02:15:55,750 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:15:55,750 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:16:25,764 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:16:25.764565
+2019-03-23 02:16:25,764 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:16:25,765 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:16:55,771 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:16:55.771036
+2019-03-23 02:16:55,771 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:16:55,772 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:17:25,790 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:17:25.790756
+2019-03-23 02:17:25,791 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:17:25,791 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:17:55,811 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:17:55.811454
+2019-03-23 02:17:55,811 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:17:55,812 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:18:25,838 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:18:25.837996
+2019-03-23 02:18:25,838 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:18:25,839 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:18:55,854 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:18:55.854812
+2019-03-23 02:18:55,855 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:18:55,855 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:19:25,884 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:19:25.883997
+2019-03-23 02:19:25,884 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:19:25,884 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:19:55,901 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:19:55.900983
+2019-03-23 02:19:55,901 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:19:55,901 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:20:25,920 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:20:25.920133
+2019-03-23 02:20:25,920 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:20:25,921 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:20:55,950 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:20:55.949997
+2019-03-23 02:20:55,950 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:20:55,950 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:21:25,962 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:21:25.962911
+2019-03-23 02:21:25,963 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:21:25,963 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:21:55,985 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:21:55.985598
+2019-03-23 02:21:55,986 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:21:55,986 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:22:26,007 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:22:26.007324
+2019-03-23 02:22:26,007 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:22:26,008 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:22:56,031 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:22:56.031382
+2019-03-23 02:22:56,031 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:22:56,032 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:23:26,051 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:23:26.051755
+2019-03-23 02:23:26,052 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:23:26,053 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:23:56,079 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:23:56.079811
+2019-03-23 02:23:56,080 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:23:56,080 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:24:26,109 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:24:26.109048
+2019-03-23 02:24:26,109 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:24:26,110 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:24:56,137 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:24:56.137100
+2019-03-23 02:24:56,137 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:24:56,138 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:25:26,165 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:25:26.165068
+2019-03-23 02:25:26,165 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:25:26,166 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:25:56,196 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:25:56.196256
+2019-03-23 02:25:56,196 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:25:56,197 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:26:26,227 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:26:26.227458
+2019-03-23 02:26:26,227 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:26:26,228 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:26:56,258 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:26:56.258673
+2019-03-23 02:26:56,259 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:26:56,259 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:27:26,287 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:27:26.286991
+2019-03-23 02:27:26,287 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:27:26,287 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:27:56,311 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:27:56.311793
+2019-03-23 02:27:56,312 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:27:56,312 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:28:26,340 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:28:26.340067
+2019-03-23 02:28:26,340 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:28:26,341 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:28:56,368 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:28:56.368545
+2019-03-23 02:28:56,368 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:28:56,369 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:29:26,397 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:29:26.397606
+2019-03-23 02:29:26,398 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:29:26,398 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:29:56,426 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:29:56.426166
+2019-03-23 02:29:56,426 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:29:56,427 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:30:26,456 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:30:26.456515
+2019-03-23 02:30:26,456 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:30:26,457 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:30:56,486 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:30:56.486668
+2019-03-23 02:30:56,487 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:30:56,487 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:31:26,517 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:31:26.517906
+2019-03-23 02:31:26,518 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:31:26,518 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:31:56,542 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:31:56.541956
+2019-03-23 02:31:56,542 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:31:56,542 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:32:26,569 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:32:26.569375
+2019-03-23 02:32:26,569 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:32:26,570 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:32:56,597 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:32:56.597491
+2019-03-23 02:32:56,597 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:32:56,598 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:33:26,621 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:33:26.621361
+2019-03-23 02:33:26,621 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:33:26,622 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:33:56,637 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:33:56.637004
+2019-03-23 02:33:56,637 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:33:56,637 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:34:26,663 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:34:26.663651
+2019-03-23 02:34:26,664 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:34:26,664 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:34:56,694 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:34:56.694908
+2019-03-23 02:34:56,695 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:34:56,695 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:35:26,725 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:35:26.725534
+2019-03-23 02:35:26,725 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:35:26,726 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:35:56,748 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:35:56.748074
+2019-03-23 02:35:56,748 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:35:56,749 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:36:26,778 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:36:26.778843
+2019-03-23 02:36:26,779 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:36:26,779 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:36:56,794 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:36:56.793954
+2019-03-23 02:36:56,794 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:36:56,794 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:37:26,813 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:37:26.813399
+2019-03-23 02:37:26,813 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:37:26,814 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:37:56,840 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:37:56.839989
+2019-03-23 02:37:56,840 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:37:56,840 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:38:26,857 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:38:26.857671
+2019-03-23 02:38:26,858 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:38:26,858 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:38:56,887 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:38:56.887339
+2019-03-23 02:38:56,887 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:38:56,888 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:39:26,908 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:39:26.908536
+2019-03-23 02:39:26,908 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:39:26,909 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:39:56,931 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:39:56.931263
+2019-03-23 02:39:56,931 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:39:56,932 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:40:26,961 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:40:26.961323
+2019-03-23 02:40:26,961 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:40:26,962 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:40:56,991 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:40:56.991375
+2019-03-23 02:40:56,991 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:40:56,992 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:41:27,012 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:41:27.012295
+2019-03-23 02:41:27,012 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:41:27,013 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:41:57,039 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:41:57.039400
+2019-03-23 02:41:57,039 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:41:57,040 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:42:27,059 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:42:27.059033
+2019-03-23 02:42:27,059 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:42:27,060 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:42:57,078 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:42:57.078492
+2019-03-23 02:42:57,078 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:42:57,079 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:43:27,094 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:43:27.094791
+2019-03-23 02:43:27,095 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:43:27,095 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:43:57,124 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:43:57.124083
+2019-03-23 02:43:57,124 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:43:57,125 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:44:27,136 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:44:27.136708
+2019-03-23 02:44:27,137 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:44:27,137 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:44:57,163 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:44:57.163698
+2019-03-23 02:44:57,164 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:44:57,164 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:45:27,190 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:45:27.190662
+2019-03-23 02:45:27,191 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:45:27,191 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:45:57,221 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:45:57.221904
+2019-03-23 02:45:57,222 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:45:57,222 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:46:27,252 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:46:27.251988
+2019-03-23 02:46:27,252 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:46:27,252 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:46:57,264 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:46:57.264584
+2019-03-23 02:46:57,265 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:46:57,265 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:47:27,285 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:47:27.285814
+2019-03-23 02:47:27,286 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:47:27,286 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:47:57,306 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:47:57.306928
+2019-03-23 02:47:57,307 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:47:57,308 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:48:27,328 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:48:27.328158
+2019-03-23 02:48:27,328 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:48:27,329 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:48:57,349 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:48:57.349801
+2019-03-23 02:48:57,350 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:48:57,350 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:49:27,378 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:49:27.378843
+2019-03-23 02:49:27,379 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:49:27,379 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:49:57,392 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:49:57.392591
+2019-03-23 02:49:57,393 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:49:57,393 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:50:27,414 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:50:27.413975
+2019-03-23 02:50:27,414 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:50:27,414 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:50:57,435 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:50:57.435596
+2019-03-23 02:50:57,436 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:50:57,436 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:51:27,456 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:51:27.456588
+2019-03-23 02:51:27,457 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:51:27,457 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:51:57,483 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:51:57.483716
+2019-03-23 02:51:57,484 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:51:57,484 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:52:27,505 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:52:27.505730
+2019-03-23 02:52:27,506 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:52:27,506 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:52:57,534 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:52:57.534213
+2019-03-23 02:52:57,534 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:52:57,535 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>
+2019-03-23 02:53:27,563 - crontab_update - crontab_uids - 83 - INFO - cur time: 2019-03-23 02:53:27.563312
+2019-03-23 02:53:27,563 - crontab_update - crontab_update - 39 - INFO - url: http://127.0.0.1:8080/admin/update/balance?start_time=2019-03-22+00%3A00%3A00&end_time=2019-03-23+00%3A00%3A00&uid=for_test
+2019-03-23 02:53:27,564 - crontab_update - crontab_update - 43 - ERROR - <urlopen error [Errno 111] Connection refused>

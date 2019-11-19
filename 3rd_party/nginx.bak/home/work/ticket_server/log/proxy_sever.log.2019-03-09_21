@@ -1,0 +1,20 @@
+2019-03-09 20:48:19,199 - proxy_sever - get - 50 - INFO - 127.0.0.1:9002/admin/update/balance?start_time=2019-03-08+00%3A00%3A00&end_time=2019-03-09+00%3A00%3A00&uid=for_test
+2019-03-09 20:48:19,203 - proxy_sever - get - 85 - INFO - total balance: 125985.0 stime:2019-03-08 utime:2019-03-07 etime:2019-03-09
+2019-03-09 20:48:19,206 - proxy_sever - stats_curday_balance - 29 - INFO - order balance: [(68.0,)]
+2019-03-09 20:48:19,209 - proxy_sever - stats_curday_balance - 41 - INFO - cancel balance: [(236.0,)]
+2019-03-09 20:48:19,209 - proxy_sever - get - 97 - INFO - query balance: {"order_balance": 68.0, "cancel_balance": 236.0}
+2019-03-09 20:48:19,209 - proxy_sever - get - 112 - INFO - total_balance: 125985.000000 trans_balance: -168.000000 balance: 126153.000000
+2019-03-09 20:48:19,210 - proxy_sever - get - 121 - INFO - hdata: {"totalBalance": 126153.0, "lastTransMoney": -168.0, "uid": "for_test", "updateTime": "2019-03-09 20:48:19"}
+2019-03-09 20:48:19,217 - proxy_sever - get - 145 - INFO - =====================end
+2019-03-09 20:48:29,882 - proxy_sever - get - 50 - INFO - 127.0.0.1:9002/admin/update/balance?start_time=2019-03-08+00%3A00%3A00&end_time=2019-03-09+00%3A00%3A00&uid=for_test
+2019-03-09 20:48:29,886 - proxy_sever - get - 85 - INFO - total balance: 126153.0 stime:2019-03-08 utime:2019-03-09 etime:2019-03-09
+2019-03-09 20:49:04,012 - proxy_sever - get - 50 - INFO - 127.0.0.1:9002/admin/update/balance?start_time=2019-03-08+00%3A00%3A00&end_time=2019-03-09+00%3A00%3A00&uid=for_test
+2019-03-09 20:49:04,016 - proxy_sever - get - 85 - INFO - total balance: 125985.0 stime:2019-03-08 utime:2019-03-07 etime:2019-03-09
+2019-03-09 20:49:04,019 - proxy_sever - stats_curday_balance - 29 - INFO - order balance: [(68.0,)]
+2019-03-09 20:49:04,022 - proxy_sever - stats_curday_balance - 41 - INFO - cancel balance: [(236.0,)]
+2019-03-09 20:49:04,022 - proxy_sever - get - 97 - INFO - query balance: {"order_balance": 68.0, "cancel_balance": 236.0}
+2019-03-09 20:49:04,022 - proxy_sever - get - 112 - INFO - total_balance: 125985.000000 trans_balance: -168.000000 balance: 126153.000000
+2019-03-09 20:49:04,022 - proxy_sever - get - 121 - INFO - hdata: {"totalBalance": 126153.0, "lastTransMoney": -168.0, "uid": "for_test", "updateTime": "2019-03-09 20:49:04"}
+2019-03-09 20:49:04,030 - proxy_sever - get - 145 - INFO - =====================end
+2019-03-09 20:57:10,928 - proxy_sever - connect - 55 - INFO - redis connect is ok!
+2019-03-09 21:14:05,791 - proxy_sever - connect - 55 - INFO - redis connect is ok!

@@ -1,0 +1,14 @@
+LOG_DIR=/var/log/multi-nic-util/
+mkdir -p $LOG_DIR
+LOG_FILE=${LOG_DIR}/$(date +"%Y%m%d").log    # ${year}${month}${day}.log
+
+eni_date() {
+	date +"%Y-%m-%d %H:%M:%S.%3N"
+}
+
+eni_log() {
+	local eni_msg="$1"
+	local eni_nic=$INTERFACE
+	[[ -z $eni_nic ]] && eni_nic=$interface
+	echo "[$(eni_date)] [$eni_nic] [$eni_msg]" >> $LOG_FILE
+}

@@ -1,0 +1,15 @@
+# Connect to both master and slave
+connect (master,localhost,root,,test,$MASTER_MYPORT,);
+connect (slave,localhost,root,,test,$SLAVE_MYPORT,);
+
+vertical_results;
+
+echo == MASTER ===========================================================;
+connection master;
+show master status;
+show slave status;
+
+echo == SLAVE ===========================================================;
+connection slave;
+show master status;
+show slave status;

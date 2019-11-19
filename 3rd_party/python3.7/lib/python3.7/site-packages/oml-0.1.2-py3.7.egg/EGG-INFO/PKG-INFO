@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: oml
+Version: 0.1.2
+Summary: Open Mining Language
+Home-page: http://openmining.io
+Author: Avelino
+Author-email: thiago@avelino.xxx
+License: MIT
+Download-URL: https://github.com/mining/oml/tarball/master
+Description: Language to preprocess Olap Cubes for Open Mining
+Keywords: langague dml oml openmining mining
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

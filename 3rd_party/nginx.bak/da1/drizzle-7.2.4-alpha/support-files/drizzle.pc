@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+pkgincludedir=@pkgincludedir@
+
+Name: drizzle
+Description: Drizzle CLI
+Version: 7.2
+URL: http://drizzle.org/
+Cflags:
+

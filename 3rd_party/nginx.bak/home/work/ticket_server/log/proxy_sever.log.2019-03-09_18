@@ -1,0 +1,2 @@
+2019-03-09 18:58:34,032 - proxy_sever - get - 50 - INFO - 127.0.0.1:9002/admin/update/balance?start_time=2019-03-09+00%3A00%3A00&end_time=2019-03-08+00%3A00%3A00&uid=for_test
+2019-03-09 18:58:34,039 - proxy_sever - get - 85 - INFO - total balance: 125781.0 stime:2019-03-09 utime:2019-03-09 etime:2019-03-08

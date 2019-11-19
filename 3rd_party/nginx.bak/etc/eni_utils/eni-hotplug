@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#set -x
+
+ENI_UTIL_PATH=/etc/eni_utils
+source $ENI_UTIL_PATH/eni-helper
+
+eni_log "eni-hotplug: enter eni-hotplug"
+
+. ${ENI_UTIL_PATH}/eni-function
+
+case $ACTION in
+	add)
+		eni_log "eni-hotplug: add interface ${INTERFACE}"
+		plug_interface
+	;;
+	remove)
+		eni_log "eni-hotplug: remove interface ${INTERFACE}"
+		unplug_interface
+	;;
+esac
+
+eni_log "eni-hotplug: leave eni-hotplug"
+
+#set +x

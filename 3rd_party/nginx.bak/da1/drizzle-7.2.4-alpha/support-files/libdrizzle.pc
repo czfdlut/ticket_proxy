@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libdrizzle
+Description: Drizzle Protocol Library
+Version: 1.0.1
+Libs: -L${libdir} -ldrizzle
+URL: http://drizzle.org/
+Cflags: -I${includedir}
